@@ -1,0 +1,58 @@
+.main_footerBlade {
+  width: 100%;
+  background-color: #ed8663;
+  padding: 80px 0;
+  background-image: url(./bg/Asset\ 8.png);
+  background-position: bottom right;
+  background-size: 650px;
+  background-repeat: no-repeat;
+}
+
+.footerBlade_flex {
+  width: 70%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.footerBlade_flex h2 {
+  font-size: 49px;
+  font-weight: 400;
+  font-family: vanioregular;
+  background: url(./bg/springVector.png) no-repeat center center;
+  background-position: 25%;
+}
+
+.footerBlade_flex p {
+  font-weight: 300;
+  margin: 30px 0;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .main_footerBlade {
+    padding-top: 50px;
+    border-radius: 20px;
+    background-image: none;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .br_hide {
+    display: none;
+  }
+
+  .footerBlade_flex {
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+  }
+
+  .footerBlade_flex h2 {
+    font-size: 30px;
+    background: none;
+  }
+
+  .footerBlade_flex p {
+    font-size: 25px;
+  }
+}
