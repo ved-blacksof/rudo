@@ -22,6 +22,7 @@ module.exports = {
           "100%": { transform: "translateX(-100%)" },
         },
       },
+
       colors: {
         darkGreen: "#006445",
         green: "#4ABE9A",

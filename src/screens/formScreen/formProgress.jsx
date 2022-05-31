@@ -34,10 +34,10 @@ const FormProgress = ({ prevHandler, elemRef }) => {
         </div>
       </div>
       <div className=" bg-white py-2 xl:py-5 px-3  ">
-        <div className=" relative md:w-10/12  max-w-screen-lg mx-auto xl:h-7 h-4 rounded-full bg-gradient-to-r from-btnRight to-footerBg flex  items-center">
+        <div className=" relative md:w-10/12  max-w-screen-lg mx-auto xl:h-7 h-4 rounded-full bg-gradient-to-r from-green to-footerBg flex  items-center">
           <svg
             style={{ left: (Object.keys(ansData).length / 9) * 100 + "%" }}
-            className="xl:h-14 xl:w-14 h-8 w-8 -mt-4 absolute transition-all duration-200"
+            className="xl:h-20 xl:w-20 h-8 w-8 -mt-4 absolute transition-all duration-200"
             viewBox="0 0 52 66"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
