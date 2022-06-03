@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 const Banner = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert("this is form submit handler ");
+    console.log("this is form submit handler ");
   };
   return (
     <section className=" bg-cream">

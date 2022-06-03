@@ -79,17 +79,17 @@ const QuestionsScreen = () => {
         }}
         className="flex flex-col bg-formBg relative "
       >
-        <div className="  grow-0  py-4  xl:py-6 px-3  bg-formBg  xl:flex-1 overflow-auto  min-h-[80vh] ">
+        <div className="grow-0 py-4 xl:py-6 px-3  bg-formBg  xl:flex-1 overflow-auto  min-h-[80vh] ">
           <Splide
             options={splideOptions}
-            className="mx-auto xl:px-3 max-w-screen-lg bg-formBg overflow-auto  "
+            className="mx-auto xl:px-3 max-w-screen-lg bg-formBg overflow-auto"
           >
             {formQues.map((i, index) => {
               const { title, category, options } = i;
               return (
                 <SplideSlide
                   key={index}
-                  className="flex  py-4 lg:py-8 xl:py-10 flex-nowrap px-3  flex-col w-full overflow-auto  "
+                  className="flex py-4 lg:py-8 xl:py-10 flex-nowrap px-3  flex-col w-full overflow-auto  "
                 >
                   <h1 className=" text-base font-epilogue font-normal text-dark lg:text-2xl ">
                     <span className="font-normal font-epilogue">
@@ -100,7 +100,7 @@ const QuestionsScreen = () => {
                   <h1 className=" text-2xl font-epilogue font-bold text-dark lg:text-4xl">
                     {title}
                   </h1>
-                  <div className="flex items-start justify-start h-min flex-wrap flex-col gap-4   xl:mt-4  xl:mb-6 py-4  ">
+                  <div className="flex items-start justify-start h-min flex-wrap  gap-4   xl:mt-4  xl:mb-6 py-4  ">
                     {options.map((i, qIndex) => {
                       return (
                         <OptionItem

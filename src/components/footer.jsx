@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoIcon from "../assets/social/twitter.png";
+import logoIcon from "../assets/icons/logo.svg";
 import twitter from "../assets/social/twitter.png";
 import instagram from "../assets/social/insta.png";
 import linkedin from "../assets/social/linkedin.png";
@@ -16,6 +16,13 @@ const Footer = () => {
           <a href="https://www.blacksof.com/" rel="noreferrer" target="_blank">
             <img src={twitter} alt="" />
           </a>
+          <a
+            href="https://www.instagram.com/accounts/login/?next=/rudowealth/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img src={instagram} alt="" />
+          </a>
           <a href="https://www.blacksof.com/" rel="noreferrer" target="_blank">
             <img src={fb} alt="" />
           </a>
@@ -25,13 +32,6 @@ const Footer = () => {
             target="_blank"
           >
             <img src={linkedin} alt="" />
-          </a>
-          <a
-            href="https://www.instagram.com/accounts/login/?next=/rudowealth/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img src={instagram} alt="" />
           </a>
         </div>
         <span className="font-epilogue text-dark w-full">

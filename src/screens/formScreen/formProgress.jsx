@@ -6,9 +6,9 @@ const FormProgress = ({ prevHandler, elemRef }) => {
   const { ansData, stage } = useFormContext();
   return (
     <div className=" progress-indicator gap-3 z-[15] mt-auto absolute bottom-0 left-0 right-0">
-      {stage === 2 && (
-        <div className=" bg-formBg  px-3 xl:py-4 hidden lg:block">
-          <div className=" z-[20] w-full px-2 pt-1 pb-4 md:w-10/12  max-w-screen-xl mx-auto">
+      {stage === 2 && Object.keys(ansData).length > 0 && (
+        <div className="bg-formBg  px-3 xl:py-4 hidden lg:block">
+          <div className=" z-[20] w-full px-2 pt-1 pb-2 md:w-10/12  max-w-screen-xl mx-auto">
             <button onClick={prevHandler} ref={elemRef}>
               <img src={chevronLeft} alt="arrow-left" />
             </button>
@@ -33,11 +33,11 @@ const FormProgress = ({ prevHandler, elemRef }) => {
           </div>
         </div>
       </div>
-      <div className=" bg-white py-2 xl:py-5 px-3  ">
+      <div className=" bg-white py-3 xl:py-7 px-3">
         <div className=" relative md:w-10/12  max-w-screen-lg mx-auto xl:h-7 h-4 rounded-full bg-gradient-to-r from-green to-footerBg flex  items-center">
           <svg
             style={{ left: (Object.keys(ansData).length / 9) * 100 + "%" }}
-            className="xl:h-20 xl:w-20 h-8 w-8 -mt-4 absolute transition-all duration-200"
+            className="xl:h-20 xl:w-20 h-12 w-12 -mt-4 absolute transition-all duration-200"
             viewBox="0 0 52 66"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

@@ -9,7 +9,7 @@ const Nav = () => {
   const BurgerBtn = () => {
     return (
       <button onClick={toggleModal} className=" flex md:hidden">
-        <label for="check" className=" flex md:hidden">
+        <label htmlFor="check" className=" flex md:hidden">
           <input type="checkbox" id="check" />
           <span className="bg-red"></span>
           <span className="bg-red"></span>
