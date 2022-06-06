@@ -24,7 +24,7 @@ const Nav = () => {
         <Link to="/">
           <img src={logoIcon} alt="" loading="eager" className=" h-12 " />
         </Link>
-        <div className="hidden md:flex items-center justify-center gap-4 flex-nowrap px-2 ">
+        {/* <div className="hidden md:flex items-center justify-center gap-4 flex-nowrap px-2 ">
           <Link
             to="/blogs"
             className="text-gray hover:text-dark py-2 px-4 text-xl font-bold font-epilogue tracking-wide "
@@ -39,8 +39,8 @@ const Nav = () => {
           >
             # Financial Wellness test
           </Link>
-        </div>
-        <BurgerBtn />
+        </div> */}
+        {/* <BurgerBtn /> */}
       </nav>
       <MobileModal isOpen={isModalOpen} />
     </header>
