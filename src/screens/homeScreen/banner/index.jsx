@@ -5,11 +5,11 @@ import ReactPlayer from "react-player";
 const Banner = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-
+  const [popup, setPopup] = useState(false);
+  const [status, setStatus] = useState(0);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("this is form submit handler ");
 
 
     const options = {
@@ -17,7 +17,7 @@ const Banner = () => {
       url: 'https://app.viral-loops.com/api/v2/events',
       headers: { 'Content-Type': 'application/json' },
       data: {
-        apiToken: 'C9tn6LiSMMRHtlGJ30NsZPaJVMo',
+        apiToken: 'HFCtRYPzql8crzcv4jDvewuICmk',
         params: {
           event: 'registration',
           user: {
@@ -29,15 +29,66 @@ const Banner = () => {
       }
     };
 
-    axios.request(options).then(function (response) {
-      console.log(response.data);
-      setName("");
-      setEmail("")
-    }).catch(function (error) {
-      console.error(error);
-    });
+    if (name.length > 2 && email.length > 2) {
+
+      axios.request(options)
+        .then(function (response) {
+          if (response.data.isNew) {
+            setPopup(true)
+            setStatus(200)  //To show the Successfull message
+            setName("");
+            setEmail("")
+          }
+          else {
+            setPopup(true)
+            setStatus(400)  //To show the something went wrong message
+            setName("");
+            setEmail("")
+          }
+        })
+        .catch(function (error) {
+          console.error(error);
+          setStatus(error.isNew)
+          setPopup(true)
+          setName("");
+          setEmail("")
+        });
+    }
+    else{
+      alert("Please fill all the fields")
+    }
 
   };
+
+  const PopupFun = ({ title, subtitle }) => {
+    return (
+      <div className="banner__popup z-[1000000]">
+        <div className="fixed  z-10 inset-0 overflow-y-auto bg-white">
+          <div className="flex items-end  sm:items-center justify-center min-h-full p-4 text-center sm:p-0 ">
+
+            <div className="relative bg-red rounded-lg text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full ">
+              <div className=" px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div className="sm:flex sm:items-start">
+                  <div className="mt-3 text-center sm:mt-0 sm:ml-2 sm:text-left">
+                    <h3 className="text-xl leading-6 font-bold font-epilogue text-white" id="modal-title">{title}</h3>
+                    <div className="mt-2">
+                      <p className="text-sm font-epilogue text-white">{subtitle}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse ">
+                <button type="button" onClick={() => setPopup(false)}
+                  className="w-full inline-flex justify-center rounded-md border-2  px-4 py-2  text-base font-medium text-white  hover:bg-white hover:text-black hover:border-white  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm ">
+                  OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div >
+    )
+  }
+
   return (
     <section className=" bg-cream">
       <div className="px-3 md:w-11/12 mx-auto flex items-center justify-around gap-y-10 gap-x-4 lg:flex-row flex-col min-h-[45rem]  py-16 bg-cream">
@@ -59,9 +110,9 @@ const Banner = () => {
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              type="text"
-              size="3"
+              type="name"
               placeholder="Name"
+              autoComplete
               className="px-4 pt-2 pb-1 font-epilogue text-gray md:text-lg shadow-inputShadow outline-none rounded-md flex-1  w-full"
             />
             <input
@@ -69,7 +120,7 @@ const Banner = () => {
               onChange={(e) => setEmail(e.target.value)}
               type="email"
               placeholder="Email Address"
-              size="3"
+              autoComplete
               className="px-4 pt-2 pb-1 font-epilogue text-gray md:ext-lg shadow-inputShadow outline-none rounded-md flex-1 w-full"
             />
             <button
@@ -103,6 +154,15 @@ const Banner = () => {
           />
         </div>
       </div>
+      {
+        popup ?
+          status === 200 ?
+            <PopupFun title="You have submitted Successfully" subtitle="Thankyou for joining us" /> :
+            status === 400 ?
+              <PopupFun title="You are already registered" subtitle="Thankyou" /> :
+              <PopupFun title="Oops! something went wrong" subtitle="Please try after some time" />
+          : ""
+      }
     </section>
   );
 };

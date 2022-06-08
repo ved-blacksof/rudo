@@ -19,7 +19,7 @@ const Nav = () => {
     );
   };
   return (
-    <header className="shadow-navBar bg-cream  sticky top-0 left-0 right-0 z-[10000] ">
+    <header className="shadow-navBar bg-cream  sticky top-0 left-0 right-0 z-[10] ">
       <nav className=" h-[4.5rem] py-2 px-3 lg:w-11/12 mx-auto  flex flex-nowrap items-center justify-between gap-4  ">
         <Link to="/">
           <img src={logoIcon} alt="" loading="eager" className=" h-12 " />
