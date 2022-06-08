@@ -12,51 +12,51 @@ const Banner = () => {
     event.preventDefault();
 
 
-    const options = {
-      method: 'POST',
-      url: 'https://app.viral-loops.com/api/v2/events',
-      headers: { 'Content-Type': 'application/json' },
-      data: {
-        apiToken: 'HFCtRYPzql8crzcv4jDvewuICmk',
-        params: {
-          event: 'registration',
-          user: {
-            firstname: name,
-            email: email,
-            consents: { '1': true }
-          },
-        }
-      }
-    };
+    // const options = {
+    //   method: 'POST',
+    //   url: 'https://app.viral-loops.com/api/v2/events',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   data: {
+    //     apiToken: 'HFCtRYPzql8crzcv4jDvewuICmk',
+    //     params: {
+    //       event: 'registration',
+    //       user: {
+    //         firstname: name,
+    //         email: email,
+    //         consents: { '1': true }
+    //       },
+    //     }
+    //   }
+    // };
 
-    if (name.length > 2 && email.length > 2) {
+    // if (name.length > 2 && email.length > 2) {
 
-      axios.request(options)
-        .then(function (response) {
-          if (response.data.isNew) {
-            setPopup(true)
-            setStatus(200)  //To show the Successfull message
-            setName("");
-            setEmail("")
-          }
-          else {
-            setPopup(true)
-            setStatus(400)  //To show the something went wrong message
-            setName("");
-            setEmail("")
-          }
-        })
-        .catch(function (error) {
-          console.error(error);
-          setStatus(error.isNew)
-          setPopup(true)
-          setName("");
-          setEmail("")
-        });
-    }
-    else{
-      alert("Please fill all the fields")
-    }
+    //   axios.request(options)
+    //     .then(function (response) {
+    //       if (response.data.isNew) {
+    //         setPopup(true)
+    //         setStatus(200)  //To show the Successfull message
+    //         setName("");
+    //         setEmail("")
+    //       }
+    //       else {
+    //         setPopup(true)
+    //         setStatus(400)  //To show the something went wrong message
+    //         setName("");
+    //         setEmail("")
+    //       }
+    //     })
+    //     .catch(function (error) {
+    //       console.error(error);
+    //       setStatus(error.isNew)
+    //       setPopup(true)
+    //       setName("");
+    //       setEmail("")
+    //     });
+    // }
+    // else {
+    //   alert("Please fill all the fields")
+    // }
 
   };
 
@@ -103,33 +103,39 @@ const Banner = () => {
             let us grow your spare change into a million bucks in a fun and
             rewarding way.
           </div>
-          <form
-            onSubmit={handleSubmit}
-            className=" font-epilogue flex items-center justify-center gap-4 md:flex-row flex-col bg-orange bg-opacity-10 py-4 px-6  rounded-lg my-4  max-w-screen-sm  "
-          >
-            <input
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              type="name"
-              placeholder="Name"
-              autoComplete
-              className="px-4 pt-2 pb-1 font-epilogue text-gray md:text-lg shadow-inputShadow outline-none rounded-md flex-1  w-full"
-            />
-            <input
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              placeholder="Email Address"
-              autoComplete
-              className="px-4 pt-2 pb-1 font-epilogue text-gray md:ext-lg shadow-inputShadow outline-none rounded-md flex-1 w-full"
-            />
-            <button
-              type="submit"
-              className="bg-red hover:outline-red  outline  outline-offset-2 outline-2 font-epilogue text-lg text-white font-bold pt-2 pb-1 grid place-content-center px-4 rounded-full min-w-[10rem]"
+
+          <div className="bg-orange bg-opacity-10 py-4 px-6 font-epilogue">
+
+            <div data-vl-widget="embedForm">
+            </div>
+            {/* <form
+              onSubmit={handleSubmit}
+              className=" font-epilogue flex items-center justify-center gap-4 md:flex-row flex-col rounded-lg my-4  max-w-screen-sm  "
             >
-              Start Today
-            </button>
-          </form>
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                type="name"
+                placeholder="Name"
+                autoComplete
+                className="px-4 pt-2 pb-1 font-epilogue text-gray md:text-lg shadow-inputShadow outline-none rounded-md flex-1  w-full"
+              />
+              <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                placeholder="Email Address"
+                autoComplete
+                className="px-4 pt-2 pb-1 font-epilogue text-gray md:ext-lg shadow-inputShadow outline-none rounded-md flex-1 w-full"
+              />
+              <button
+                type="submit"
+                className="bg-red hover:outline-red  outline  outline-offset-2 outline-2 font-epilogue text-lg text-white font-bold pt-2 pb-1 grid place-content-center px-4 rounded-full min-w-[10rem]"
+              > Start Today</button>
+
+            </form> */}
+
+          </div>
         </div>
         <div className="grow-[2] shrink hidden place-content-center xl:grid basis-96 ">
           <ReactPlayer

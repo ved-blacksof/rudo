@@ -1,6 +1,7 @@
 import logoIcon from "../../assets/icons/logo.svg";
 import chevronLeft from "./svgs/chevronDesktop.svg";
 const FormHeader = ({ prevHandler, elemRef }) => {
+  // console.log(stage)
   return (
     <header className="shadow-navBar bg-cream  sticky top-0 left-0 right-0 z-[100]">
       <div className=" absolute px-6 place-content-center  h-[3rem] my-[0.5rem] grid  lg:hidden">
