@@ -6,7 +6,7 @@ import ContextProvider from "../context";
 const ViewWithNavAndFooter = () => {
   return (
     <>
-      <Ribbon />
+      {/* <Ribbon /> */}
       <NavBar />
       <Outlet />
       <Footer />

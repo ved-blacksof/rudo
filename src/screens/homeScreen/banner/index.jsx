@@ -1,12 +1,14 @@
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
+import "./style.css"
 
 const Banner = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [popup, setPopup] = useState(false);
   const [status, setStatus] = useState(0);
+  const [tabs, setTabs] = useState(0);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -89,6 +91,15 @@ const Banner = () => {
     )
   }
 
+  const handleTabs = () => {
+
+  }
+
+  useEffect(() => {
+    // setTabs(0)
+  }, [tabs])
+
+
   return (
     <section className=" bg-cream">
       <div className="px-3 md:w-11/12 mx-auto flex items-center justify-around gap-y-10 gap-x-4 lg:flex-row flex-col min-h-[45rem]  py-16 bg-cream">
@@ -98,16 +109,33 @@ const Banner = () => {
             Let&apos;s grow it{" "}
             <span className=" text-red "> automatically!</span>
           </h1>
-          <div className=" text-gray text-xl md:text-2xl xl:text-3xl font-epilogue max-w-screen-md  ">
+          <div className=" text-gray text-xl md:text-xl xl:text-xl font-epilogue max-w-screen-md  ">
             Start small but steady! With RuDo, build a Global ETF portfolio and
             let us grow your spare change into a million bucks in a fun and
             rewarding way.
           </div>
 
-          <div className="bg-orange bg-opacity-10 py-4 px-6 font-epilogue">
+          <div className="bg-orange bg-opacity-10 py-4 px-6 font-epilogue ">
 
-            <div data-vl-widget="embedForm">
+            <div className="tabs-wrapper">
+              <h4 className={ tabs===0 ? "tab active " : "tab" } onClick={() => setTabs(0)}>Share</h4>
+              <h4 className={ tabs===1 ? "tab active " : "tab" } onClick={() => setTabs(1)}>Milestones </h4>
+              <h4 className={ tabs===2 ? "tab active " : "tab" } onClick={() => setTabs(2)}>Refferel Counts</h4>
             </div>
+
+            <div className="viral-loops-wrapper">
+              <div className={tabs === 0 ? "embed-form height-100" : "embed-form height-0 "}>
+                <div data-vl-widget="embedForm"></div>
+              </div>
+              <div className={tabs === 1 ? " height-100" : "embed-form height-0 "}>
+                <div data-vl-widget="milestoneWidget"></div>
+              </div>
+              <div className={tabs === 2 ? " height-100" : "embed-form height-0 "}>
+                <div data-vl-widget="referralCountWidget"></div>
+              </div>
+
+            </div>
+
             {/* <form
               onSubmit={handleSubmit}
               className=" font-epilogue flex items-center justify-center gap-4 md:flex-row flex-col rounded-lg my-4  max-w-screen-sm  "
