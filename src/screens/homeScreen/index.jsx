@@ -4,6 +4,7 @@ import CardStack from "./cardStack";
 import HomeCardAnim from "./homeCardAnim";
 import LaunchingSoon from "./launchingSoon";
 import FooterBlade from "./subFooter";
+import Banner2 from "./banner2";
 
 const HomePage = () => {
   return (

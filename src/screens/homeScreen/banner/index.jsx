@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
+import Banner2 from "../banner2";
 import "./style.css"
 
 const Banner = () => {
@@ -9,56 +10,10 @@ const Banner = () => {
   const [popup, setPopup] = useState(false);
   const [status, setStatus] = useState(0);
   const [tabs, setTabs] = useState(0);
+  const [showHowItWork, setShowHowItWork] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-
-    // const options = {
-    //   method: 'POST',
-    //   url: 'https://app.viral-loops.com/api/v2/events',
-    //   headers: { 'Content-Type': 'application/json' },
-    //   data: {
-    //     apiToken: 'HFCtRYPzql8crzcv4jDvewuICmk',
-    //     params: {
-    //       event: 'registration',
-    //       user: {
-    //         firstname: name,
-    //         email: email,
-    //         consents: { '1': true }
-    //       },
-    //     }
-    //   }
-    // };
-
-    // if (name.length > 2 && email.length > 2) {
-
-    //   axios.request(options)
-    //     .then(function (response) {
-    //       if (response.data.isNew) {
-    //         setPopup(true)
-    //         setStatus(200)  //To show the Successfull message
-    //         setName("");
-    //         setEmail("")
-    //       }
-    //       else {
-    //         setPopup(true)
-    //         setStatus(400)  //To show the something went wrong message
-    //         setName("");
-    //         setEmail("")
-    //       }
-    //     })
-    //     .catch(function (error) {
-    //       console.error(error);
-    //       setStatus(error.isNew)
-    //       setPopup(true)
-    //       setName("");
-    //       setEmail("")
-    //     });
-    // }
-    // else {
-    //   alert("Please fill all the fields")
-    // }
 
   };
 
@@ -91,12 +46,9 @@ const Banner = () => {
     )
   }
 
-  const handleTabs = () => {
-
-  }
 
   useEffect(() => {
-    // setTabs(0)
+
   }, [tabs])
 
 
@@ -107,7 +59,7 @@ const Banner = () => {
           <h1 className=" text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
             Got Spare Change? <br />
             Let&apos;s grow it{" "}
-            <span className=" text-red "> automatically!</span>
+            <span className=" text-red "> automatically! </span>
           </h1>
           <div className=" text-gray text-xl md:text-xl xl:text-xl font-epilogue max-w-screen-md  ">
             Start small but steady! With RuDo, build a Global ETF portfolio and
@@ -118,9 +70,9 @@ const Banner = () => {
           <div className="bg-orange bg-opacity-10 py-4 px-6 font-epilogue ">
 
             <div className="tabs-wrapper">
-              <h4 className={ tabs===0 ? "tab active " : "tab" } onClick={() => setTabs(0)}>Share</h4>
-              <h4 className={ tabs===1 ? "tab active " : "tab" } onClick={() => setTabs(1)}>Milestones </h4>
-              <h4 className={ tabs===2 ? "tab active " : "tab" } onClick={() => setTabs(2)}>Refferel Counts</h4>
+              <h4 className={tabs === 0 ? "tab active " : "tab"} onClick={() => setTabs(0)}>Signup</h4>
+              <h4 className={tabs === 1 ? "tab active " : "tab"} onClick={() => setTabs(1)}>Milestones</h4>
+              <h4 className={tabs === 2 ? "tab active " : "tab"} onClick={() => setTabs(2)}>Referral Counts</h4>
             </div>
 
             <div className="viral-loops-wrapper">
@@ -136,56 +88,42 @@ const Banner = () => {
 
             </div>
 
-            {/* <form
-              onSubmit={handleSubmit}
-              className=" font-epilogue flex items-center justify-center gap-4 md:flex-row flex-col rounded-lg my-4  max-w-screen-sm  "
-            >
-              <input
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                type="name"
-                placeholder="Name"
-                autoComplete
-                className="px-4 pt-2 pb-1 font-epilogue text-gray md:text-lg shadow-inputShadow outline-none rounded-md flex-1  w-full"
-              />
-              <input
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                type="email"
-                placeholder="Email Address"
-                autoComplete
-                className="px-4 pt-2 pb-1 font-epilogue text-gray md:ext-lg shadow-inputShadow outline-none rounded-md flex-1 w-full"
-              />
-              <button
-                type="submit"
-                className="bg-red hover:outline-red  outline  outline-offset-2 outline-2 font-epilogue text-lg text-white font-bold pt-2 pb-1 grid place-content-center px-4 rounded-full min-w-[10rem]"
-              > Start Today</button>
-
-            </form> */}
-
           </div>
         </div>
-        <div className="grow-[2] shrink hidden  xl:grid basis-96 ">
-          <ReactPlayer
-            url="https://youtu.be/fE-2h3stIhw"
-            muted={true}
-            loop={true}
-            playing={true}
-            controls={true}
-            height={480}
-            width={480}
-          />
-        </div>
-        <div className=" grow-[2]  shrink  place-content-center grid xl:hidden shrink-1 basis-96">
-          <ReactPlayer
-            url="https://youtu.be/fE-2h3stIhw"
-            muted={true}
-            loop={true}
-            playing={true}
-            controls={true}
-            height={330}
-            width={330}
-          />
+        <div>
+          <div className="grow-[2] shrink hidden xl:grid basis-96 ">
+            <ReactPlayer
+              url="https://youtu.be/fE-2h3stIhw"
+              muted={true}
+              loop={true}
+              playing={true}
+              controls={true}
+              height={480}
+              width={480}
+            />
+          </div>
+          <div className=" grow-[2]  shrink  place-content-center grid xl:hidden shrink-1 basis-96">
+            <ReactPlayer
+              url="https://youtu.be/fE-2h3stIhw"
+              muted={true}
+              loop={true}
+              playing={true}
+              controls={true}
+              height={330}
+              width={330}
+            />
+          </div>
+
+          <div className="refer-card text-white p-4 rounded-lg text-xl bg-red font-epilogue">
+            <h1>Refer & Earn AED50</h1>
+            <h4 className="text-xs">Refer a friend and get AED50 added in your and your friends RuDo Account!</h4>
+            <div onClick={() => { showHowItWork ? setShowHowItWork(false) : setShowHowItWork(true) }}
+                 className="work-butn font-bold transition-all rounded-lg  text-white text-xs p-2 pt-3 bg-cyan cursor-pointer">
+              How it works?
+              <p className="btn-back"></p>
+            </div>
+          </div>
+
         </div>
       </div>
       {
@@ -196,6 +134,12 @@ const Banner = () => {
               <PopupFun title="You are already registered" subtitle="Thankyou" /> :
               <PopupFun title="Oops! something went wrong" subtitle="Please try after some time" />
           : ""
+      }
+      {
+        showHowItWork ?
+          <div className="how-it-works-popup origin-center ">
+            <Banner2 setShowHowItWork={setShowHowItWork} />
+          </div> : ""
       }
     </section>
   );
