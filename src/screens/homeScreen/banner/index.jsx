@@ -114,11 +114,13 @@ const Banner = () => {
             />
           </div>
 
-          <div className="refer-card text-white p-4 rounded-lg text-xl bg-red font-epilogue">
+          <h1 className="refer-heading text-2xl font-semibold text-center ">Referral Offers</h1>
+
+          <div className="refer-card text-white p-4 rounded-lg text-xl bg-green font-epilogue">
             <h1>Refer & Earn AED50</h1>
             <h4 className="text-xs">Refer a friend and get AED50 added in your and your friends RuDo Account!</h4>
             <div onClick={() => { showHowItWork ? setShowHowItWork(false) : setShowHowItWork(true) }}
-                 className="work-butn font-bold transition-all rounded-lg  text-white text-xs p-2 pt-3 bg-cyan cursor-pointer">
+              className="work-butn font-bold transition-all rounded-lg  text-white text-xs p-2 pt-3 bg-cyan cursor-pointer">
               How it works?
               <p className="btn-back"></p>
             </div>
@@ -137,7 +139,7 @@ const Banner = () => {
       }
       {
         showHowItWork ?
-          <div className="how-it-works-popup origin-center ">
+          <div className="how-it-works-popup origin-center bg-cream">
             <Banner2 setShowHowItWork={setShowHowItWork} />
           </div> : ""
       }
