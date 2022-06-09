@@ -16,6 +16,7 @@ const Banner2 = ({setShowHowItWork}) => {
               <div className="circle text-2xl flex justify-center items-center bg-white">1</div>
               <h4 className="text-lg mt-2">Refer</h4>
             </div>
+            <span></span>
             <div className="wrapper">
               <div className="circle text-2xl flex justify-center items-center bg-white">2</div>
               <h4 className="text-lg mt-2">Reach a milestones</h4>
