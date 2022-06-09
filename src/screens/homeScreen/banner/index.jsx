@@ -102,7 +102,7 @@ const Banner = () => {
 
   return (
     <section className=" bg-cream">
-      <div className="px-3 md:w-11/12 mx-auto flex items-center justify-around gap-y-10 gap-x-4 lg:flex-row flex-col min-h-[45rem]  py-16 bg-cream">
+      <div className="px-3 md:w-11/12 mx-auto flex  justify-around gap-y-10 gap-x-4 lg:flex-row flex-col min-h-[45rem]  py-16 bg-cream">
         <div className=" grow-[3] shrink flex flex-col gap-4  justify-center max-w-screen-lg  lg:px-3 ">
           <h1 className=" text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
             Got Spare Change? <br />
@@ -165,7 +165,7 @@ const Banner = () => {
 
           </div>
         </div>
-        <div className="grow-[2] shrink hidden place-content-center xl:grid basis-96 ">
+        <div className="grow-[2] shrink hidden  xl:grid basis-96 ">
           <ReactPlayer
             url="https://youtu.be/fE-2h3stIhw"
             muted={true}
