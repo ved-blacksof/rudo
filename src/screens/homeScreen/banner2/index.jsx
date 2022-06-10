@@ -3,14 +3,15 @@ import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import "./style.css"
 
-const Banner2 = ({setShowHowItWork}) => {
+const Banner2 = ({ setShowHowItWork }) => {
 
 
   return (
     <section className="">
       <div className="px-3 md:w-11/12 mx-auto flex justify-around gap-y-10 gap-x-4 lg:flex-row flex-col py-16 ">
-        <div className="how-it-works-banner text-white p-8 rounded-lg text-xl border-2 ">
+        <div className="how-it-works-banner text-white p-8 rounded-lg text-xl border-2 bg-green">
           <h1 className="text-2xl">How it works?  </h1>
+          <p onClick={()=>setShowHowItWork(false)}>X</p>
           <div className="how-works flex justify-around p-5">
             <div className="wrapper">
               <div className="circle text-2xl flex justify-center items-center bg-white">1</div>
