@@ -73,14 +73,14 @@ const Banner = () => {
             rewarding way.
           </div>
 
-          <div className="bg-orange bg-opacity-10 font-epilogue">
+          <div className="bg-orange bg-opacity-10 font-epilogue max-w-screen-md">
             {/* <div className="tabs-wrapper">
               <h4 className={tabs === 0 ? "tab active " : "tab"} onClick={() => setTabs(0)}>Signup</h4>
               <h4 className={tabs === 1 ? "tab active " : "tab"} onClick={() => setTabs(1)}>Milestones</h4>
               <h4 className={tabs === 2 ? "tab active " : "tab"} onClick={() => setTabs(2)}>Referral Counts</h4>
             </div> */}
 
-            <div className="viral-loops-wrapper ">
+            <div className="viral-loops-wrapper flex  ">
               <div
                 className={
                   tabs === 0 ? "embed-form height-100" : "embed-form height-0 "
