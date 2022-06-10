@@ -182,3 +182,37 @@
 .refer-heading::after img {
     width: 100%;
 }
+
+.terms-popup-wrapper{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+}
+
+.terms-popup{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    background: #f9f1e2;
+}
+
+@media (max-width:700px){
+    .terms-popup{
+        width: 100%;
+        height: 100vh;        
+    }
+    
+}
+
+.terms-popup p{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scaleX(1.2);
+}
+

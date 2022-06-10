@@ -12,10 +12,31 @@ const Banner = () => {
   const [status, setStatus] = useState(0);
   const [tabs, setTabs] = useState(0);
   const [showHowItWork, setShowHowItWork] = useState(false);
+  const [popupTerms, setPopupTerms] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
+  };
+
+  const Terms = () => {
+    return (
+      <div className="terms-popup-wrapper z-10 bg-white flex justify-center items-center">
+        <div className="terms-popup overflow-scroll px-14 py-8 sm:py-5 sm:px-10  flex justify-center items-center">
+          <p className="text-black hover:text-red" onClick={() => setPopupTerms(false)}>X</p>
+
+          <ul className="list-disc font-epilogue text-sm text-black"><span className="text-lg font-semibold">Terms and Conditions</span>
+            <li>Every time your family/ friends sign up with your shared referral link and becomes a new RuDo member by
+              setting up a RuDo Wealth account in accordance with the below eligibility criteria, you and your friend will get AED50 in your RuDo Wealth accounts. Eligibility</li>
+            <li>Referral codes must be used during the early sign up and on-boarding process, and cannot be added retroactively.</li>
+            <li>Only when your friend funds his/her account with the minimum investment of AED20 into their portfolio, the referral amount will be added to both of your accounts within 30 days.</li>
+            <li>Clients who receive a referral bonus must keep it in their account for 90 days, otherwise it may be deducted from their final withdrawal amount.</li>
+            <li>The referral program is available exclusively to those who are residing in the UAE.</li>
+          </ul>
+
+        </div>
+      </div>
+    )
   };
 
   const PopupFun = ({ title, subtitle }) => {
@@ -69,26 +90,13 @@ const Banner = () => {
           </div>
 
           <div className="bg-orange bg-opacity-10 py-4 px-6 font-epilogue ">
-
-            {/* <div className="tabs-wrapper">
-              <h4 className={tabs === 0 ? "tab active " : "tab"} onClick={() => setTabs(0)}>Signup</h4>
-              <h4 className={tabs === 1 ? "tab active " : "tab"} onClick={() => setTabs(1)}>Milestones</h4>
-              <h4 className={tabs === 2 ? "tab active " : "tab"} onClick={() => setTabs(2)}>Referral Counts</h4>
-            </div> */}
-
             <div className="viral-loops-wrapper">
-              <div className={tabs === 0 ? "embed-form height-100" : "embed-form height-0 "}>
-                <div data-vl-widget="embedForm"></div>
-              </div>
-              <div className={tabs === 1 ? " height-100" : "embed-form height-0 "}>
-                <div data-vl-widget="milestoneWidget"></div>
-              </div>
-              <div className={tabs === 2 ? " height-100" : "embed-form height-0 "}>
-                <div data-vl-widget="referralCountWidget"></div>
-              </div>
-
+              <div data-vl-widget="embedForm"></div>
             </div>
+          </div>
 
+          <div className="font-epilogue">
+            <h3 className="cursor-pointer hover:text-red inline transition-all text-sm " onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >Terms and Conditions</h3>
           </div>
         </div>
 
@@ -116,20 +124,15 @@ const Banner = () => {
             />
           </div>
 
-          {/*  <h1 className="refer-heading text-2xl font-semibold text-center ">Referral Offers</h1>
-            <div className="refer-card text-white p-6 rounded-lg text-xl bg-green font-epilogue">
-            <h1 className="font-vanio  text-2xl">Refer & Earn AED50</h1>
-            <h4 className="text-sm  pr-5">Refer a friend and get AED50 added in your and your friends RuDo Account!</h4>
-            <div onClick={() => { showHowItWork ? setShowHowItWork(false) : setShowHowItWork(true) }}
-              className="work-butn bg-red font-bold transition-all text-white text-xs p-2 px-5 pt-3 mt-10 bg-cyan cursor-pointer">How it works?<p className="btn-back"></p>
-            </div>
-          </div> */}
-
-
-
         </div>
       </div>
-      <div className="" data-vl-widget="milestoneWidget"></div>
+
+      <div className="mt-10 mb-10">
+        <h1 className="text-center text-2xl font-vanio-bold" >Invite Friends, Give AED 50 and Get AED 50</h1>
+        <h1 className="text-center text-lg  " >Get more rewards with every milestone you reach upto AED7,500 by inviting more friends when they start investing with RuDo.</h1>
+      </div>
+
+      <div data-vl-widget="milestoneWidget"></div>
       {
         popup ?
           status === 200 ?
@@ -145,6 +148,10 @@ const Banner = () => {
           <div className="how-it-works-popup origin-center bg-cream">
             <Banner2 setShowHowItWork={setShowHowItWork} />
           </div> : ""
+      }
+
+      {
+        popupTerms ? <Terms /> : ""
       }
     </section>
   );
