@@ -13,18 +13,32 @@
 }
 
 .wrapper .circle {
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
     border-radius: 50%;
     color: #e65552;
     margin: 0 auto;
 }
 
 .how-works span {
-    width: 25% !important;
+    width: 16vw !important;
     height: 2px;
     background-color: #fff;
-    margin-top: 50px;
+    margin-top: 5vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .how-works span {
+      
+    }
+    .wrapper .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: #e65552;
+        margin: 0 auto;
+        font-size: 15px;
+    }
 }
 
 .how-it-works-popup {
@@ -38,7 +52,7 @@
 }
 
 .how-it-works-banner h1 {
-    text-align: center; 
+    text-align: center;
     font-weight: bold;
 }
 
@@ -51,15 +65,15 @@
 .work-butn {
     display: inline-block;
     position: relative;
-    border: 2px solid white;
     overflow: hidden;
     z-index: 1;
-    margin-top: 1rem;
     transition: all 1s ease;
-
+    border-radius: 35px;
+    border: 2px solid #fff;
 }
+
 .work-butn:hover {
-    color: #2e9fa3;
+    color: #e65552;
 }
 
 .btn-back {
@@ -77,12 +91,16 @@
     width: 100%;
 }
 
-.refer-heading{
-    margin-top: 1.5rem;
+.refer-heading {
+    position: relative;
+    background-image: url(../../../assets/icons/star.svg), url(../../../assets/icons/circle_rope.svg);
+    background-position: 28%, 75%;
+    background-size: 10%, 20%, 10%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    padding: 1rem 0rem;
 }
-.refer-heading::after{
-    content: url();
-    position: absolute;
 
 
+.refer-heading::after img {
+    width: 100%;
 }

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import Banner2 from "../banner2";
+// import second from '../../../assets/icons/'
 import "./style.css"
 
 const Banner = () => {
@@ -117,12 +118,12 @@ const Banner = () => {
           <h1 className="refer-heading text-2xl font-semibold text-center ">Referral Offers</h1>
 
           <div className="refer-card text-white p-4 rounded-lg text-xl bg-green font-epilogue">
-            <h1>Refer & Earn AED50</h1>
-            <h4 className="text-xs">Refer a friend and get AED50 added in your and your friends RuDo Account!</h4>
+            <h1 className="font-vanio  text-2xl">Refer & Earn AED50</h1>
+
+            <h4 className="text-sm  pr-5">Refer a friend and get AED50 added in your and your friends RuDo Account!</h4>
+
             <div onClick={() => { showHowItWork ? setShowHowItWork(false) : setShowHowItWork(true) }}
-              className="work-butn font-bold transition-all rounded-lg  text-white text-xs p-2 pt-3 bg-cyan cursor-pointer">
-              How it works?
-              <p className="btn-back"></p>
+                 className="work-butn bg-red font-bold transition-all text-white text-xs p-2 px-5 pt-3 mt-10 bg-cyan cursor-pointer">How it works?<p className="btn-back"></p>
             </div>
           </div>
 
@@ -137,6 +138,7 @@ const Banner = () => {
               <PopupFun title="Oops! something went wrong" subtitle="Please try after some time" />
           : ""
       }
+
       {
         showHowItWork ?
           <div className="how-it-works-popup origin-center bg-cream">
