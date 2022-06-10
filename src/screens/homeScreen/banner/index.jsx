@@ -22,7 +22,7 @@ const Banner = () => {
   const Terms = () => {
     return (
       <div className="terms-popup-wrapper z-10 bg-white flex justify-center items-center">
-        <div className="terms-popup overflow-scroll px-14 py-8 sm:py-5 sm:px-10  flex justify-center items-center">
+        <div className="terms-popup  px-14 py-8 sm:py-5 sm:px-10  flex justify-center items-center">
           <p className="text-black hover:text-red" onClick={() => setPopupTerms(false)}>X</p>
 
           <ul className="list-disc font-epilogue text-sm text-black"><span className="text-lg font-semibold">Terms and Conditions</span>
@@ -75,10 +75,10 @@ const Banner = () => {
 
 
   return (
-    <section className=" bg-cream">
-      <div className="px-3 md:w-11/12 mx-auto flex  justify-around gap-y-10 gap-x-4 lg:flex-row flex-col   py-16 bg-cream">
-        <div className=" grow-[3] shrink flex flex-col gap-4  justify-center max-w-screen-lg  lg:px-3 ">
-          <h1 className=" text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
+    <section className=" bg-cream ">
+      <div className="px-3 md:w-11/12 mx-auto flex  justify-around gap-y-10 gap-x-6 lg:flex-row flex-col py-16 bg-cream">
+        <div className=" grow-[3] shrink flex flex-col gap-4  justify-center max-w-screen-lg  lg:px-3  ">
+          <h1 className="text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
             Got Spare Change? <br />
             Let&apos;s grow it{" "}
             <span className=" text-red "> automatically! </span>
@@ -89,9 +89,10 @@ const Banner = () => {
             rewarding way.
           </div>
 
-          <div className="bg-orange bg-opacity-10 py-4 px-6 font-epilogue ">
-            <div className="viral-loops-wrapper">
-              <div data-vl-widget="embedForm"></div>
+          <div className="bg-orange bg-opacity-10 font-epilogue max-w-screen-md">
+            <div className="viral-loops-wrapper mt-4">
+              <h1 className="font-epilogue text-center ">Signup now to join our waitlist and get AED50</h1>
+              <div data-vl-widget="embedForm" ></div>
             </div>
           </div>
 
@@ -101,7 +102,7 @@ const Banner = () => {
         </div>
 
         <div className="flex items-center">
-          <div className="grow-[2] place-content-center shrink hidden xl:grid basis-96 ">
+          <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
             <ReactPlayer
               url="https://youtu.be/fE-2h3stIhw"
               muted={true}
@@ -112,7 +113,7 @@ const Banner = () => {
               width={480}
             />
           </div>
-          <div className=" grow-[2]  shrink  place-content-center grid xl:hidden shrink-1 basis-96">
+          <div className=" grow-[2]  shrink  place-content-center grid xl:hidden shrink-1 basis-[410px]">
             <ReactPlayer
               url="https://youtu.be/fE-2h3stIhw"
               muted={true}
