@@ -3,7 +3,7 @@
 }
 
 .viral-loops-wrapper {
-    min-height: 200px;
+    min-height: 150px;
 }
 
 .tabs-wrapper {
@@ -92,15 +92,15 @@
 }
 
 @media only screen and (max-width: 600px) {
-   
+
     .wrapper .circle {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        color: #e65552;
         margin: 0 auto;
         font-size: 15px;
     }
+
 }
 
 .how-it-works-popup {
@@ -123,10 +123,12 @@
     top: 20px;
     right: 30px;
     cursor: pointer;
+    transform: scaleX(1.3);
     transition: all .3s ease;
 }
+
 .how-it-works-banner p:hover {
-    transform:scale(1.1);
+    transform: scaleX(1.4);
     color: #fff;
 
 }

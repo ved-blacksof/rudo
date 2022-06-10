@@ -55,7 +55,7 @@ const Banner = () => {
 
   return (
     <section className=" bg-cream">
-      <div className="px-3 md:w-11/12 mx-auto flex  justify-around gap-y-10 gap-x-4 lg:flex-row flex-col min-h-[45rem]  py-16 bg-cream">
+      <div className="px-3 md:w-11/12 mx-auto flex  justify-around gap-y-10 gap-x-4 lg:flex-row flex-col   py-16 bg-cream">
         <div className=" grow-[3] shrink flex flex-col gap-4  justify-center max-w-screen-lg  lg:px-3 ">
           <h1 className=" text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
             Got Spare Change? <br />
@@ -70,11 +70,11 @@ const Banner = () => {
 
           <div className="bg-orange bg-opacity-10 py-4 px-6 font-epilogue ">
 
-            <div className="tabs-wrapper">
+            {/* <div className="tabs-wrapper">
               <h4 className={tabs === 0 ? "tab active " : "tab"} onClick={() => setTabs(0)}>Signup</h4>
               <h4 className={tabs === 1 ? "tab active " : "tab"} onClick={() => setTabs(1)}>Milestones</h4>
               <h4 className={tabs === 2 ? "tab active " : "tab"} onClick={() => setTabs(2)}>Referral Counts</h4>
-            </div>
+            </div> */}
 
             <div className="viral-loops-wrapper">
               <div className={tabs === 0 ? "embed-form height-100" : "embed-form height-0 "}>
@@ -91,8 +91,9 @@ const Banner = () => {
 
           </div>
         </div>
-        <div>
-          <div className="grow-[2] shrink hidden xl:grid basis-96 ">
+
+        <div className="flex items-center">
+          <div className="grow-[2] place-content-center shrink hidden xl:grid basis-96 ">
             <ReactPlayer
               url="https://youtu.be/fE-2h3stIhw"
               muted={true}
@@ -115,20 +116,20 @@ const Banner = () => {
             />
           </div>
 
-          <h1 className="refer-heading text-2xl font-semibold text-center ">Referral Offers</h1>
-
-          <div className="refer-card text-white p-4 rounded-lg text-xl bg-green font-epilogue">
+          {/*  <h1 className="refer-heading text-2xl font-semibold text-center ">Referral Offers</h1>
+            <div className="refer-card text-white p-6 rounded-lg text-xl bg-green font-epilogue">
             <h1 className="font-vanio  text-2xl">Refer & Earn AED50</h1>
-
             <h4 className="text-sm  pr-5">Refer a friend and get AED50 added in your and your friends RuDo Account!</h4>
-
             <div onClick={() => { showHowItWork ? setShowHowItWork(false) : setShowHowItWork(true) }}
-                 className="work-butn bg-red font-bold transition-all text-white text-xs p-2 px-5 pt-3 mt-10 bg-cyan cursor-pointer">How it works?<p className="btn-back"></p>
+              className="work-butn bg-red font-bold transition-all text-white text-xs p-2 px-5 pt-3 mt-10 bg-cyan cursor-pointer">How it works?<p className="btn-back"></p>
             </div>
-          </div>
+          </div> */}
+
+
 
         </div>
       </div>
+      <div className="" data-vl-widget="milestoneWidget"></div>
       {
         popup ?
           status === 200 ?

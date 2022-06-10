@@ -10,6 +10,7 @@ const HomePage = () => {
   return (
     <>
       <Banner />
+      {/* <Banner2 /> */}
       <StepIntoFuture />
       <CardStack />
       <HomeCardAnim />
