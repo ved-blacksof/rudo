@@ -76,8 +76,8 @@ const Banner = () => {
 
   return (
     <section className=" bg-cream ">
-      <div className="px-3 md:w-11/12 mx-auto flex  justify-around gap-y-10 gap-x-6 lg:flex-row flex-col py-16 bg-cream">
-        <div className=" grow-[3] shrink flex flex-col gap-4  justify-center max-w-screen-lg  lg:px-3  ">
+      <div className="px-3 md:w-11/12 mx-auto flex justify-around gap-y-10 gap-x-6 lg:flex-row flex-col py-16 bg-cream">
+        <div className=" grow-[3] shrink flex flex-col gap-4  justify-center max-w-screen-lg lg:px-3">
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
             Got Spare Change? <br />
             Let&apos;s grow it{" "}
@@ -91,20 +91,20 @@ const Banner = () => {
 
           <div className="bg-orange bg-opacity-10 font-epilogue max-w-screen-md">
             <div className="viral-loops-wrapper mt-4">
-            <h1 className="font-epilogue text-center px-2">Signup now to join our waitlist and get AED50</h1>
+              <h1 className="font-epilogue  pr-5 pl-3">Signup now to join our waitlist and get AED 50</h1>
               <div data-vl-widget="embedForm" ></div>
             </div>
           </div>
 
           <div className="font-epilogue">
-            <h3 className="cursor-pointer hover:text-red inline transition-all text-sm " onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >Terms and Conditions</h3>
+            <h3 className="cursor-pointer hover:text-red inline transition-all text-sm " onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >*Terms and Conditions</h3>
           </div>
         </div>
 
         <div className="flex items-center">
           <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
             <ReactPlayer
-              url="https://youtu.be/fE-2h3stIhw"
+              url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
               muted={true}
               loop={true}
               playing={true}
@@ -113,9 +113,9 @@ const Banner = () => {
               width={480}
             />
           </div>
-          <div className=" grow-[2]  shrink  place-content-center grid xl:hidden shrink-1 basis-[410px]">
+          {/* <div className=" grow-[2]  shrink  place-content-center grid xl:hidden shrink-1 basis-[410px]">
             <ReactPlayer
-              url="https://youtu.be/fE-2h3stIhw"
+              url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
               muted={true}
               loop={true}
               playing={true}
@@ -123,17 +123,31 @@ const Banner = () => {
               height={330}
               width={330}
             />
-          </div>
+          </div> */}
 
         </div>
       </div>
 
       <div className="mt-10 mb-10">
         <h1 className="text-center text-2xl font-vanio-bold" >Invite Friends, Give AED 50 and Get AED 50</h1>
-        <h1 className="text-center text-lg  " >Get more rewards with every milestone you reach upto AED7,500 by inviting more friends when they start investing with RuDo.</h1>
+        <h1 className="text-center text-lg  " >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
       </div>
 
       <div data-vl-widget="milestoneWidget"></div>
+
+      <div className=" grow-[2]  shrink  place-content-center grid xl:hidden shrink-1 basis-[410px]">
+        <ReactPlayer
+          url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
+          muted={true}
+          loop={true}
+          playing={true}
+          controls={true}
+          height={330}
+          width={330}
+        />
+      </div>
+
+
       {
         popup ?
           status === 200 ?
