@@ -89,15 +89,16 @@ const Banner = () => {
             rewarding way.
           </div>
 
-          <div className="bg-orange bg-opacity-10 font-epilogue max-w-screen-md">
+          <div className="bg-orange bg-opacity-10 font-epilogue max-w-screen-sm  ">
             <div className="viral-loops-wrapper mt-4">
-              <h1 className="font-epilogue pr-5 pl-3 font-semibold">Signup now to join our waitlist and get AED 50</h1>
+              <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1>
               <div data-vl-widget="embedForm" ></div>
             </div>
           </div>
 
           <div className="font-epilogue">
-            <h3 className="cursor-pointer hover:text-red inline transition-all text-sm " onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >*Terms and Conditions</h3>
+            <h3 className="cursor-pointer hover:text-red inline transition-all text-sm underline  underline-offset-1"
+             onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >Terms and Conditions</h3>
           </div>
         </div>
 
@@ -128,14 +129,14 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="mt-10 mb-10">
+      <div className="mb-10">
         <h1 className="text-center text-2xl font-vanio-bold" >Invite Friends, Give AED 50 and Get AED 50</h1>
-        <h1 className="text-center text-lg  " >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
+        <h1 className="text-center text-lg" >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
       </div>
 
       <div data-vl-widget="milestoneWidget"></div>
 
-      <div className=" grow-[2]  shrink  place-content-center grid xl:hidden shrink-1 basis-[410px]">
+      <div className="grow-[2] shrink place-content-center grid xl:hidden shrink-1 basis-[410px]">
         <ReactPlayer
           url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
           muted={true}

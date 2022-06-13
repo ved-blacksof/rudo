@@ -14,7 +14,7 @@ const HomePage = () => {
       <StepIntoFuture />
       <CardStack />
       <HomeCardAnim />
-      <LaunchingSoon />
+      {/* <LaunchingSoon /> */}
       <FooterBlade />
     </>
   );
