@@ -10,7 +10,7 @@ const Ribbon = () => {
         } flex flex-nowrap items-center justify-center lg:w-11/12 mx-auto  gap-3 transition-all durtion-300 ease-in-out`}
       >
         <div className="flex-1 overflow-x-hidden">
-          <div className="  animate-marquee whitespace-nowrap divide-x-2 divide-dark text-lg lg:text-2xl ">
+          <div className="animate-marquee whitespace-nowrap divide-x-2 divide-dark text-lg lg:text-2xl ">
             <span className="px-3">
               First 1000 Members Get 12 Months Of Free Subscription And 50%
               Lifetime Discount Thereon!

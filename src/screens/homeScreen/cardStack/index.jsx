@@ -7,7 +7,7 @@ const btnCb = () => {
 const CardStack = () => {
   useEffect(() => {
     // to be  deprecated in following builds
-    let sliderImagesBox = document.querySelectorAll(".cards-box ");
+    let sliderImagesBox = document.querySelectorAll(".cards-box");
     sliderImagesBox.forEach((el) => {
       let imageNodes = el.querySelectorAll(".card:not(.hide)");
       let arrIndexes = [];
@@ -31,14 +31,17 @@ const CardStack = () => {
         if (event.target.classList.contains("btn")) {
           return btnCb();
         }
+      });
+
+      setInterval(() => {
         arrIndexes.unshift(arrIndexes.pop());
         setIndex(arrIndexes);
-      });
+      }, 3000);
     });
   }, []);
 
   return (
-    <div className="cards-box md:w-11/12 min-h-[38rem] mx-auto flex items-center justify-center  my-32  ">
+    <div className="cards-box md:w-11/12 min-h-[38rem] mx-auto flex items-center justify-center  my-32 ">
       <div className="card item-1  md:w-[40rem] w-full md:min-h-[35rem] rounded-xl mx-auto">
         <div className=" px-8 py-8 xl:px-20 xl:py-20 flex  flex-col flex-nowrap items-start justify-start gap-4">
           <h1 className=" text-3xl text-white font-vanio  md:text-4xl xl:text-5xl max-w-screen-sm">
