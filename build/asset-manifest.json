@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.518920fd.css",
-    "main.js": "/static/js/main.8b8471b6.js",
+    "main.css": "/static/css/main.95314476.css",
+    "main.js": "/static/js/main.d3e10448.js",
+    "static/media/Rudo_Logo.jpg": "/static/media/Rudo_Logo.a5ff22dbe659ff62c0fb.jpg",
     "static/media/3.svg": "/static/media/3.d3a83263288910150254.svg",
     "static/media/2.svg": "/static/media/2.97acafb544d122edd0ca.svg",
     "static/media/vanio.woff": "/static/media/vanio.59079c2e5512bb59c58c.woff",
@@ -15,13 +16,15 @@
     "static/media/Vector2.svg": "/static/media/Vector2.45b1912f2599e0f454a4d61bd4312041.svg",
     "static/media/Vector.svg": "/static/media/Vector.d13d7ca3610ed362af9926a639a8e1cd.svg",
     "static/media/Vector1.svg": "/static/media/Vector1.03ee36ae69b8fbbbd27a37ff30701e3a.svg",
-    "static/media/chevronDesktop.svg": "/static/media/chevronDesktop.39372522e15c2c6342f984f4bafe2672.svg",
     "index.html": "/index.html",
-    "main.518920fd.css.map": "/static/css/main.518920fd.css.map",
-    "main.8b8471b6.js.map": "/static/js/main.8b8471b6.js.map"
+    "static/media/chevronDesktop.svg": "/static/media/chevronDesktop.39372522e15c2c6342f984f4bafe2672.svg",
+    "static/media/star.svg": "/static/media/star.e661df007e5292e086f7.svg",
+    "static/media/circle_rope.svg": "/static/media/circle_rope.095333063cba861c54f5.svg",
+    "main.95314476.css.map": "/static/css/main.95314476.css.map",
+    "main.d3e10448.js.map": "/static/js/main.d3e10448.js.map"
   },
   "entrypoints": [
-    "static/css/main.518920fd.css",
-    "static/js/main.8b8471b6.js"
+    "static/css/main.95314476.css",
+    "static/js/main.d3e10448.js"
   ]
 }

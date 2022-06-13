@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoIcon from "../../../assets/icons/logo.svg";
+import logoIcon from "../../../assets/icons/Rudo_Logo.jpg";
 import { useReducer } from "react";
 import MobileModal from "./mobileNav";
 import "./index.css";

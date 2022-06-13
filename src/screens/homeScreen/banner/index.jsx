@@ -106,25 +106,14 @@ const Banner = () => {
           <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
             <ReactPlayer
               url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
-              muted={true}
               loop={true}
               playing={true}
               controls={true}
+              muted={true}
               height={480}
               width={480}
             />
           </div>
-          {/* <div className=" grow-[2]  shrink  place-content-center grid xl:hidden shrink-1 basis-[410px]">
-            <ReactPlayer
-              url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
-              muted={true}
-              loop={true}
-              playing={true}
-              controls={true}
-              height={330}
-              width={330}
-            />
-          </div> */}
 
         </div>
       </div>
@@ -140,8 +129,9 @@ const Banner = () => {
         <ReactPlayer
           url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
           muted={true}
+
           loop={true}
-          playing={true}
+          playing={true}          
           controls={true}
           height={330}
           width={330}
