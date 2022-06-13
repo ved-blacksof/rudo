@@ -1,14 +1,26 @@
 {
+<<<<<<< HEAD
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
+=======
+  "short_name": "RuDo",
+  "name": "RuDo Wealth",
+  "icons": [
+    {
+      "src": "favicon1.ico",
+>>>>>>> cce52e9198ceac4abbdc8863ed47232fd6879385
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
+<<<<<<< HEAD
       "src": "apple.png",
+=======
+      "src": "favicon1.ico",
+>>>>>>> cce52e9198ceac4abbdc8863ed47232fd6879385
       "type": "image/png",
       "sizes": "192x192"
     },

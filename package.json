@@ -7,8 +7,15 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
+=======
+    "axios": "^0.27.2",
+    "emailjs-com": "^3.2.0",
+    "formik": "^2.2.9",
+    "gsap": "^3.10.4",
+>>>>>>> cce52e9198ceac4abbdc8863ed47232fd6879385
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-lottie": "^1.2.3",
