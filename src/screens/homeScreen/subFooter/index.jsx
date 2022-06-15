@@ -6,7 +6,7 @@ const FooterBlade = ({ openModel }) => {
     <div className="main_footerBlade">
       <div className="footerBlade_flex">
         <h2 className=" font-vanio-light">
-          Changing the World's Outlook
+          Changing the World's Outlook&nbsp;
           <br className="br_hide" />
            Towards Saving and Investing.
         </h2>

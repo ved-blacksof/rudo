@@ -8,6 +8,7 @@
   top: 0;
   transform: translate(0px, 0px);
   width: 80%;
+  transition: all 1s ease;
 }
 
 .cards-box .card.hide {
@@ -25,19 +26,19 @@
 }
 
 .cards-box .card:not(.hide)[data-slide="1"] {
-  transform: translate(0px, 20px);
+  transform: translate(0px, 25px);
   z-index: 5;
   opacity: 0.9;
 }
 
 .cards-box .card:not(.hide)[data-slide="2"] {
-  transform: translate(0px, 40px);
+  transform: translate(0px, 45px);
   z-index: 4;
   opacity: 0.8;
 }
 
 .cards-box .card:not(.hide)[data-slide="3"] {
-  transform: translate(0px, 60px);
+  transform: translate(0px, 65px);
   z-index: 3;
   opacity: 0.7;
 }

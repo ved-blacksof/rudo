@@ -77,33 +77,33 @@ const CardStack = () => {
   const submitHandler = async (values, { resetForm }) => {
     toggleLoading(true);
     try {
-      emailjs.init("user_YW47ZYWhszMIdjdqUtsPJ");
-      emailjs
-        .send(
-          "rudo-email",
-          "template_62pl0id",
-          values,
-          "user_YW47ZYWhszMIdjdqUtsPJ"
-        )
-        .then(
-          (result) => {
-            console.log(result.text, "asdfdf");
-            swal({
-              title: "Congratulations",
-              text: "We will get back to you soon.",
-              icon: "success",
-              confirm: {
-                text: "OK"
-              }
-            })
-            setPopup(false)
+      // emailjs.init("user_YW47ZYWhszMIdjdqUtsPJ");
+      // emailjs
+      //   .send(
+      //     "rudo-email",
+      //     "template_62pl0id",
+      //     values,
+      //     "user_YW47ZYWhszMIdjdqUtsPJ"
+      //   )
+      //   .then(
+      //     (result) => {
+      //       console.log(result.text, "asdfdf");
+      //       swal({
+      //         title: "Congratulations",
+      //         text: "We will get back to you soon.",
+      //         icon: "success",
+      //         confirm: {
+      //           text: "OK"
+      //         }
+      //       })
+      //       setPopup(false)
 
-          },
-          (error) => {
-            swal("Something went wrong!");
-            console.log(error.text);
-          }
-        );
+      //     },
+      //     (error) => {
+      //       swal("Something went wrong!");
+      //       console.log(error.text);
+      //     }
+      //   );
       console.log(values, "dddd");
     } catch (err) {
       console.log(err);
@@ -153,7 +153,7 @@ const CardStack = () => {
                       noValidate
                       className="flex flex-col p-3 gap-3 relative"
                     >
-                      <p onClick={() => setPopup(false)} className="font-epilogue font-semibold text-xl cursor-pointer absolute top-2 right-2 text-right text-red hover:text-gray">x</p>
+                      <p onClick={() => { setPopup(false) }} className="font-epilogue font-semibold text-xl cursor-pointer absolute top-2 right-2 text-right text-gray hover:text-red">x</p>
 
                       <h1 className="text-xl font-semibold text-center text-black font-epilogue">Join Waitlist</h1>
                       <input
@@ -234,7 +234,7 @@ const CardStack = () => {
       }, [2000])
     });
 
-  }, [popup]);
+  }, []);
 
   return (
     <>
