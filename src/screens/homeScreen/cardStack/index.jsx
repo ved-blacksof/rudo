@@ -231,7 +231,7 @@ const CardStack = () => {
       setInterval(() => {
         arrIndexes.unshift(arrIndexes.pop());
         setIndex(arrIndexes);
-      }, [3000])
+      }, [2000])
     });
 
   }, [popup]);
