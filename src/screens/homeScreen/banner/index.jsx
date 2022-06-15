@@ -103,7 +103,7 @@ const Banner = () => {
         </div>
 
         <div className="flex items-center">
-          {/* <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
+          <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
             <ReactPlayer
               url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
               loop={true}
@@ -113,7 +113,7 @@ const Banner = () => {
               height={480}
               width={480}
             />
-          </div> */}
+          </div>
 
         </div>
       </div>
@@ -126,7 +126,7 @@ const Banner = () => {
       <div data-vl-widget="milestoneWidget"></div>
 
       <div className="grow-[2] shrink place-content-center grid xl:hidden shrink-1 basis-[410px]">
-        {/* <ReactPlayer
+        <ReactPlayer
           url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
           muted={true}
 
@@ -135,7 +135,7 @@ const Banner = () => {
           controls={true}
           height={330}
           width={330}
-        /> */}
+        />
       </div>
 
 
