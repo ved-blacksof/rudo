@@ -57,6 +57,7 @@
 .cards-box .card:not(.hide)[data-slide="0"] {
   transition: all 0.32s cubic-bezier(0.18, 0.98, 0.45, 1);
 }
+
 .item-1 {
   background-color: #173588;
   background-image: url(./bgImgs/1.svg);
@@ -64,6 +65,7 @@
   background-size: auto 60%;
   background-repeat: no-repeat;
 }
+
 .item-2 {
   background-color: #4abe9b;
   background-image: url(./bgImgs/2.svg);
@@ -71,6 +73,7 @@
   background-size: auto 60%;
   background-repeat: no-repeat;
 }
+
 .item-3 {
   background-color: #f87f7f;
   background-image: url(./bgImgs/3.svg);
@@ -78,9 +81,96 @@
   background-size: auto 60%;
   background-repeat: no-repeat;
 }
+
 @media screen and (max-width: 768px) {
   .cards-box .card {
     width: 95%;
     background-image: none;
   }
+}
+
+.cardStack__popup {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999999999999;
+  transition: opacity 1s ease;
+}
+
+.form_section {
+  background-image: linear-gradient(#f87f7f, rgba(255, 0, 0, 0.498));
+  padding: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  transition: all .3s ease;
+  position: relative;
+}
+
+.form_section input {
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 5px 8px;
+}
+
+.form_section button {
+  background-color: #f87f7f;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 5px 8px;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: all .3s ease;
+}
+
+.form_section button:hover {
+  background: #fff;
+  border: 2px solid #fff;
+  color: #f87f7f;
+}
+
+.form_section p {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: #ffffff;
+}
+
+.form_section p:hover {
+  color: grey;
+}
+
+.swal-overlay {
+  z-index: 999999999999;
+}
+
+.swal-icon--success__line--tip {
+  width: 25px !important;
+  left: 18px !important;
+  background-color: #f87f7f;
+}
+
+.swal-icon--success__line--long {
+  background-color: #f87f7f;
+
+}
+
+.swal-icon--success:before {
+  top: -16px;
+}
+
+.swal-icon--success {
+  border-color: #f87f7f;
+}
+
+.swal-button {
+  background-color: #f87f7f;
+  transition: all .3s ease;
+}
+
+.swal-button:hover {
+  background-color: #f87f7f !important;
+  opacity: .6;
 }

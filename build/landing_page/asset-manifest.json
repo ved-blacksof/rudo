@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.276cf61f.css",
+    "main.js": "/static/js/main.fdd01e99.js",
+    "static/media/3.svg": "/static/media/3.d3a83263288910150254.svg",
+    "static/media/2.svg": "/static/media/2.97acafb544d122edd0ca.svg",
+    "static/media/vanio.woff": "/static/media/vanio.59079c2e5512bb59c58c.woff",
+    "static/media/1.svg": "/static/media/1.f5dc100d3708ee5d2580.svg",
+    "static/media/Asset 8.png": "/static/media/Asset 8.2e293503c8450d182c8e.png",
+    "static/media/feature1.png": "/static/media/feature1.aae9b72c7118cc988219.png",
+    "static/media/feature2.png": "/static/media/feature2.fa6681caaf3082e464f5.png",
+    "static/media/trophyBg.png": "/static/media/trophyBg.ee0aad3983e68531d46e.png",
+    "static/media/feature3.png": "/static/media/feature3.b07744859e7590e19797.png",
+    "static/media/logo.svg": "/static/media/logo.0d106077f7d5e736ec5a63e191e95ea9.svg",
+    "static/media/Vector2.svg": "/static/media/Vector2.45b1912f2599e0f454a4d61bd4312041.svg",
+    "static/media/Vector.svg": "/static/media/Vector.d13d7ca3610ed362af9926a639a8e1cd.svg",
+    "static/media/Vector1.svg": "/static/media/Vector1.03ee36ae69b8fbbbd27a37ff30701e3a.svg",
+    "static/media/chevronDesktop.svg": "/static/media/chevronDesktop.39372522e15c2c6342f984f4bafe2672.svg",
+    "index.html": "/index.html",
+    "main.276cf61f.css.map": "/static/css/main.276cf61f.css.map",
+    "main.fdd01e99.js.map": "/static/js/main.fdd01e99.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.276cf61f.css",
+    "static/js/main.fdd01e99.js"
+  ]
+}

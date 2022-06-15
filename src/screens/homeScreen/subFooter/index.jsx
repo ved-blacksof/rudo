@@ -8,7 +8,7 @@ const FooterBlade = ({ openModel }) => {
         <h2 className=" font-vanio-light">
           Changing the World's Outlook
           <br className="br_hide" />
-          Towards Saving and Investing.
+           Towards Saving and Investing.
         </h2>
         <p className="font-epilogue">
           Cuz this time it's

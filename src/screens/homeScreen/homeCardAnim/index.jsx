@@ -11,7 +11,7 @@ import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 
 const CardStack = () => {
   return (
-    <div className="Home_container  md:w-11/12 mt-16 mb-32 px-3  mx-auto">
+    <div className="Home_container  md:w-11/12 mt-16 mb-32 px-3  mx-auto ">
       <div className="feature-section mx-auto">
         <img src={feature4} className="top-bg" alt="img4" />
         <img src={feature4} className="bottom-bg" alt="img4" />

@@ -54,7 +54,7 @@ const Banner = () => {
                       <p className="text-sm font-epilogue text-white">{subtitle}</p>
                     </div>
                   </div>
-                </div>
+                </div>  
               </div>
               <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse ">
                 <button type="button" onClick={() => setPopup(false)}
@@ -98,7 +98,7 @@ const Banner = () => {
 
           <div className="font-epilogue">
             <h3 className="cursor-pointer hover:text-red inline transition-all text-sm underline  underline-offset-1"
-             onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >Terms and Conditions</h3>
+              onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >Terms and Conditions</h3>
           </div>
         </div>
 
@@ -131,7 +131,7 @@ const Banner = () => {
           muted={true}
 
           loop={true}
-          playing={true}          
+          playing={true}
           controls={true}
           height={330}
           width={330}

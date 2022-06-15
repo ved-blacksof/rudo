@@ -134,6 +134,7 @@
 }
 
 @media (max-width: 991px) {
+
   .feature-section ul li:hover,
   .page-load-hover {
     width: 250px;
@@ -200,4 +201,8 @@
 
 .splide__pagination li button {
   background-color: white !important;
+}
+
+.br {
+  border: 2px solid red;
 }

@@ -13,21 +13,21 @@ const Footer = () => {
           <img src={logoIcon} alt="" loading="lazy" decoding="async" />
         </Link>
         <div className="flex flex-none gap-6 items-center justify-center px-3  mt-10">
-          <a href="https://www.blacksof.com/" rel="noreferrer" target="_blank">
+          <a href="https://twitter.com/RudoWealth" rel="noreferrer" target="_blank">
             <img src={twitter} alt="" />
           </a>
           <a
-            href="https://www.instagram.com/accounts/login/?next=/rudowealth/"
+            href="https://www.instagram.com/rudowealth/"
             rel="noreferrer"
             target="_blank"
           >
             <img src={instagram} alt="" />
           </a>
-          <a href="https://www.blacksof.com/" rel="noreferrer" target="_blank">
+          <a href="https://www.facebook.com/RuDoWealth" rel="noreferrer" target="_blank">
             <img src={fb} alt="" />
           </a>
           <a
-            href="https://www.linkedin.com/company/rudo-wealth-financial-services-and-investment/about/"
+            href="https://www.linkedin.com/company/rudo-wealth-financial-services-and-investment"
             rel="noreferrer"
             target="_blank"
           >
