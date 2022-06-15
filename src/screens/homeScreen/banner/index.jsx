@@ -91,7 +91,7 @@ const Banner = () => {
 
           <div className="bg-orange bg-opacity-10 font-epilogue max-w-screen-sm  ">
             <div className="viral-loops-wrapper mt-4">
-              <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1>
+              {/* <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1> */}
               <div data-vl-widget="embedForm" ></div>
             </div>
           </div>
