@@ -125,11 +125,6 @@ const CardStack = () => {
   };
 
 
-
-  useEffect(() => {
-
-  }, [name, email])
-
   const PopupFun = () => {
     return (
       <div className={popup ? "cardStack__popup bg-cream opacity-100" : "cardStack__popup bg-cream opacity-0"}>
@@ -230,9 +225,11 @@ const CardStack = () => {
         }
         arrIndexes.unshift(arrIndexes.pop());
         setIndex(arrIndexes);
-        setInterval(() => {
-        }, [2000])
       });
+      setInterval(() => {
+        arrIndexes.unshift(arrIndexes.pop());
+        setIndex(arrIndexes);
+      }, [3000])
     });
 
   }, [popup]);
