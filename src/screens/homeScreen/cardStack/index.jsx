@@ -151,8 +151,10 @@ const CardStack = () => {
                       ref={formRef}
                       onSubmit={handleSubmit}
                       noValidate
-                      className="flex flex-col p-3 gap-3 "
+                      className="flex flex-col p-3 gap-3 relative"
                     >
+                      <p onClick={() => setPopup(false)} className="font-epilogue font-semibold text-xl cursor-pointer absolute top-2 right-2 text-right text-red hover:text-gray">x</p>
+
                       <h1 className="text-xl font-semibold text-center text-black font-epilogue">Join Waitlist</h1>
                       <input
                         type="text"
