@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoIcon from "../../../assets/icons/Rudo_Logo.jpg";
+import logoIcon from "../../../assets/icons/logo.svg";
 import { useReducer } from "react";
 import MobileModal from "./mobileNav";
 import "./index.css";
@@ -8,8 +8,8 @@ const Nav = () => {
 
   const BurgerBtn = () => {
     return (
-      <button onClick={toggleModal} className=" flex md:hidden">
-        <label htmlFor="check" className=" flex md:hidden">
+      <button onClick={toggleModal} className="flex md:hidden">
+        <label htmlFor="check" className="flex md:hidden">
           <input type="checkbox" id="check" />
           <span className="bg-red"></span>
           <span className="bg-red"></span>

@@ -228,10 +228,10 @@ const CardStack = () => {
         arrIndexes.unshift(arrIndexes.pop());
         setIndex(arrIndexes);
       });
-      setInterval(() => {
-        arrIndexes.unshift(arrIndexes.pop());
-        setIndex(arrIndexes);
-      }, [2000])
+      // setInterval(() => {
+      //   arrIndexes.unshift(arrIndexes.pop());
+      //   setIndex(arrIndexes);
+      // }, [2000])
     });
 
   }, []);
@@ -248,13 +248,13 @@ const CardStack = () => {
           <EmailFormScreen /> : ""
       } */}
 
-      <div className="cards-box md:w-11/12 min-h-[38rem] mx-auto flex items-center justify-center  my-32  ">
-        <div className="card item-1  md:w-[40rem] w-full md:min-h-[35rem] rounded-xl mx-auto">
+      <div className="cards-box md:w-11/12  mx-auto flex items-center justify-center  py-48 md:py-80 lg:py-80 xl:py-80  ">
+        <div className="card item-1  md:w-[40rem] w-full md:min-h-[35rem] rounded-xl mx-auto ">
           <div className=" px-8 py-8 xl:px-20 xl:py-20 flex  flex-col flex-nowrap items-start justify-start gap-4">
             <h1 className=" text-3xl text-white font-vanio  md:text-4xl xl:text-5xl max-w-screen-sm">
               Saving and investing was never so fun and breeeezyyyy!
             </h1>
-            <p className="text-lg text-white font-epilogue  md:text-xl xl:text-2xl max-w-screen-sm ">
+            <p className="text-lg text-white font-epilogue md:text-xl xl:text-2xl max-w-screen-sm ">
               Invest to load your treasure chest in a fun way!
             </p>
             <button className=" btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">

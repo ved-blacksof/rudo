@@ -103,7 +103,7 @@ const Banner = () => {
         </div>
 
         <div className="flex items-center">
-          <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
+          {/* <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
             <ReactPlayer
               url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
               loop={true}
@@ -113,20 +113,20 @@ const Banner = () => {
               height={480}
               width={480}
             />
-          </div>
+          </div> */}
 
         </div>
       </div>
 
       <div className="mb-10">
-        <h1 className="text-center text-2xl font-vanio-bold" >Invite Friends, Give AED 50 and Get AED 50</h1>
-        <h1 className="text-center text-lg" >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
+        <h1 className="text-center text-3xl font-semibold font-epilogue" >Invite Friends, Give AED 50 and Get AED 50</h1>
+        <h1 className="text-center text-lg  mt-4 mb-3" >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
       </div>
 
       <div data-vl-widget="milestoneWidget"></div>
 
       <div className="grow-[2] shrink place-content-center grid xl:hidden shrink-1 basis-[410px]">
-        <ReactPlayer
+        {/* <ReactPlayer
           url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
           muted={true}
 
@@ -135,7 +135,7 @@ const Banner = () => {
           controls={true}
           height={330}
           width={330}
-        />
+        /> */}
       </div>
 
 

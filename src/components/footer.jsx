@@ -7,8 +7,8 @@ import fb from "../assets/social/facebook.png";
 
 const Footer = () => {
   return (
-    <footer className=" bg-footerBg">
-      <div className=" px-3 flex items-center justify-center flex-nowrap flex-col text-center lg:w-11/12 gap-6 h-96 ">
+    <footer className=" bg-footerBg  flex justify-center">
+      <div className=" px-3 flex items-center  justify-center flex-nowrap flex-col text-center lg:w-11/12 gap-6 h-96 ">
         <Link to="/">
           <img src={logoIcon} alt="" loading="lazy" decoding="async" />
         </Link>

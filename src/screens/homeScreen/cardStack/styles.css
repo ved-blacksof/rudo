@@ -1,11 +1,14 @@
 .cards-box {
   position: relative;
+  /* padding: 30% 0%; */
 }
 
 .cards-box .card {
   cursor: pointer;
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
   transform: translate(0px, 0px);
   width: 80%;
   transition: all 1s ease;
