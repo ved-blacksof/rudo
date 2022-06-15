@@ -228,10 +228,10 @@ const CardStack = () => {
         arrIndexes.unshift(arrIndexes.pop());
         setIndex(arrIndexes);
       });
-      // setInterval(() => {
-      //   arrIndexes.unshift(arrIndexes.pop());
-      //   setIndex(arrIndexes);
-      // }, [2000])
+      setInterval(() => {
+        arrIndexes.unshift(arrIndexes.pop());
+        setIndex(arrIndexes);
+      }, [2000])
     });
 
   }, []);
