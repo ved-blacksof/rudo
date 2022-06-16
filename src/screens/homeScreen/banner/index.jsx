@@ -129,12 +129,12 @@ const Banner = () => {
         <ReactPlayer
           url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
           muted={true}
-
-          loop={true}
           playing={true}
+          loop={true}
           controls={true}
           height={330}
           width={330}
+          playsinline={true}
         />
       </div>
 
