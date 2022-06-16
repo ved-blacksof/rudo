@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import Banner2 from "../banner2";
+import spareVideo from '../../../assets/Spare_Change_Investment.mp4'
 // import second from '../../../assets/icons/'
 import "./style.css"
 
@@ -13,6 +14,7 @@ const Banner = () => {
   const [tabs, setTabs] = useState(0);
   const [showHowItWork, setShowHowItWork] = useState(false);
   const [popupTerms, setPopupTerms] = useState(false);
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -105,7 +107,7 @@ const Banner = () => {
         <div className="flex items-center">
           <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
             <ReactPlayer
-              url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
+              url={spareVideo}
               loop={true}
               playing={true}
               controls={true}
@@ -127,7 +129,7 @@ const Banner = () => {
 
       <div className="grow-[2] shrink place-content-center grid xl:hidden shrink-1 basis-[410px]">
         <ReactPlayer
-          url="https://www.dropbox.com/s/zptldk4pcotquq2/Spare%20Change%20Investment.mp4?dl=0"
+          url={spareVideo}
           muted={true}
           playing={true}
           loop={true}
