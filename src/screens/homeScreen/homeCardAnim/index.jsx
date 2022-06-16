@@ -85,8 +85,8 @@ const CardStack = () => {
               className="home_card_slider_inner"
               style={{ backgroundColor: "#FDE4B6" }}
             >
-              <h4>Keep that change. No, literally! </h4>
-              <p>As they say, “starting small helps you gain big”</p>
+              <h4 className="font-vanio-light">Keep that change. No, literally! </h4>
+              <p className="font-epilogue">As they say, “starting small helps you gain big”</p>
               <img src={feature1} className="img-fluid" alt="img" />
             </div>
           </SplideSlide>
@@ -96,8 +96,8 @@ const CardStack = () => {
               className="home_card_slider_inner"
               style={{ backgroundColor: "#F17E7E" }}
             >
-              <h4>Invest Smart!</h4>
-              <p>
+              <h4 className="font-vanio-light">Invest Smart!</h4>
+              <p className="font-epilogue">
                 Your money, our brains! Choose a portfolio strategy tailored
                 just for you!
               </p>
@@ -110,12 +110,12 @@ const CardStack = () => {
               className="home_card_slider_inner"
               style={{ backgroundColor: "#7CC8C2" }}
             >
-              <h4>
+              <h4 className="font-vanio-light">
                 Salary Credited! <br />
                 Salary Debited!
               </h4>
 
-              <p>That was fast! Wondering what happened to all that money?</p>
+              <p className="font-epilogue">That was fast! Wondering what happened to all that money?</p>
               <img src={feature3} className="img-fluid" alt="img2" />
             </div>
           </SplideSlide>
