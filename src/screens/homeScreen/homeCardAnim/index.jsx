@@ -27,7 +27,7 @@ const CardStack = () => {
                     <span className="arrow-vertical" style={{ left: "120px" }}>
                       ↑
                     </span>
-                    <p>As they say, “starting small helps you gain big”</p>
+                    <p className="font-epilogue">As they say, “starting small helps you gain big”</p>
                     <img src={feature1} className="img-fluid" alt="img" />
                   </li>
                 </ul>
@@ -39,7 +39,7 @@ const CardStack = () => {
                     <span className="arrow-vertical" style={{ left: "80px" }}>
                       ↑
                     </span>
-                    <p>
+                    <p className="font-epilogue">
                       Your money, our brains! Choose a portfolio strategy
                       tailored just for you!
                     </p>
@@ -57,7 +57,7 @@ const CardStack = () => {
                     <span className="arrow-vertical" style={{ left: "120px" }}>
                       ↑
                     </span>
-                    <p>
+                    <p className="font-epilogue">
                       That was fast! Wondering what happened to all that money?
                     </p>
                     <img src={feature3} className="img-fluid" alt="img2" />

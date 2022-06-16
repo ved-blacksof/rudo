@@ -120,7 +120,7 @@ const Banner = () => {
 
       <div className="mb-10">
         <h1 className="text-center text-3xl font-semibold font-epilogue" >Invite Friends, Give AED 50 and Get AED 50</h1>
-        <h1 className="text-center text-lg  mt-4 mb-3" >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
+        <h1 className="text-center text-lg  mt-4 mb-3 font-epilogue" >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
       </div>
 
       <div data-vl-widget="milestoneWidget"></div>
