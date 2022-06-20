@@ -27,7 +27,7 @@ const ReportDetail = () => {
           style={{
             backgroundImage: `linear-gradient( to right  , #4ABE9A 0% , #4ABE9A ${data}% , #fff ${data}%   , #fff  100%)`,
           }}
-          className="max-w-screen-md bg-white rounded-3xl pb-1 font-bold text-white items-center flex-nowrap h-12 mx-auto lg:w-9/12 text-xl lg:text-3xl grid place-content-center d "
+          className="max-w-screen-md bg-white rounded-3xl pb-1 font-bold text-white items-center flex-nowrap h-12 mx-auto lg:w-9/12 text-xl lg:text-3xl grid place-content-center "
         >
           {data < 50 ? "Sour" : "Sweet"}
         </div>
