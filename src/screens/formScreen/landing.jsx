@@ -12,12 +12,12 @@ const LandingPage = () => {
   return (
     <>
       <FormHeader />
-      <section className="flex flex-wrap  gap-10 justify-center  max-w-screen-2xl mx-auto pt-20 pb-16 ">
+      <section className="flex flex-wrap  gap-10 justify-center  max-w-screen-2xl mx-auto pt-20 pb-16 md:w-11/12 ">
         <div className="basis-96 grow shrink px-3">
           <h1 className=" text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug max-w-screen-md ">
             When life gives you lemons, make lemonade.
           </h1>
-          <h1 className=" text-xl md:text-2xl xl:text-3xl font-epilogue md:leading-relaxed xl:leading-snug max-w-screen-md pt-2">
+          <h1 className="  text-gray text-xl md:text-xl xl:text-xl font-epilogue max-w-screen-md  ">
             Understanding where you are in your financial wellness often lets
             you know what steps you can take to become financially
           </h1>
