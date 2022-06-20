@@ -12,7 +12,7 @@ const LandingPage = () => {
   return (
     <>
       <FormHeader />
-      <section className="flex flex-wrap  gap-10 justify-center  max-w-screen-2xl mx-auto pt-20 pb-16 md:w-11/12 ">
+      <section className="flex flex-wrap  gap-10 justify-center items-center  max-w-screen-2xl mx-auto pt-20 pb-16 md:w-11/12 ">
         <div className="basis-96 grow shrink px-3">
           <h1 className=" text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-tight max-w-screen-md ">
             When life gives you lemons, make lemonade.
