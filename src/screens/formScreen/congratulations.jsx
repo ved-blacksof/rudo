@@ -29,7 +29,7 @@ const Congratulations = () => {
           <div className="flex flex-nowrap items-center justify-center">
             <img src={trophy} alt="trophy" className="mb-1" />
             <h1 className=" text-green font-epilogue lg:text-4xl text-xl font-bold  capitalize ">
-              1 year free subscription
+              Give AED 50 and Get AED 50
             </h1>
           </div>
           <div className="grid place-content-center ">

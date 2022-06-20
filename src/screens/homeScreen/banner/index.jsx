@@ -78,8 +78,8 @@ const Banner = () => {
 
   return (
     <section className=" bg-cream ">
-      <div className="px-3 md:w-11/12 mx-auto flex justify-around gap-y-10 gap-x-6 lg:flex-row flex-col py-16 bg-cream">
-        <div className=" grow-[3] shrink flex flex-col gap-4  justify-center max-w-screen-lg lg:px-3">
+      <div className="px-3 md:w-11/12 mx-auto flex justify-around lg:justify-between gap-y-10 gap-x-6  lg:flex-row flex-col py-16 bg-cream">
+        <div className=" grow-[3] shrink flex flex-col gap-4 justify-center max-w-screen-lg lg:px-3">
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
             Got Spare Change? <br />
             Let&apos;s grow it{" "}
@@ -91,7 +91,7 @@ const Banner = () => {
             rewarding way.
           </div>
 
-          <div className="bg-orange bg-opacity-10 font-epilogue max-w-screen-sm  ">
+          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-5 ">
             <div className="viral-loops-wrapper mt-4">
               {/* <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1> */}
               <div data-vl-widget="embedForm" ></div>
@@ -120,14 +120,14 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="mb-10">
+      <div className="mb-10 sm:mt-24 mt-0 ">
         <h1 className="text-center text-3xl font-semibold font-epilogue" >Invite Friends, Give AED 50 and Get AED 50</h1>
-        <h1 className="text-center text-lg  mt-4 mb-3 font-epilogue" >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
+        <h1 className="text-center text-lg  mt-4 mb-3 font-epilogue max-w-md mx-auto" >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
       </div>
 
-      <div data-vl-widget="milestoneWidget"></div>
+      <div className=" " data-vl-widget="milestoneWidget"></div>
 
-      <div className="grow-[2] shrink place-content-center grid xl:hidden shrink-1 basis-[410px]">
+      <div className="grow-[2] shrink place-content-center grid xl:hidden shrink-1 basis-[410px] mt-20 sm:mt-0">
         <ReactPlayer
           url={spareVideo}
           muted={true}
