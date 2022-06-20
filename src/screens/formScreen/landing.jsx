@@ -99,10 +99,10 @@ const LandingPage = () => {
         </div>
         <div className="place-content-center pb-10 pt-20 grid ">
           <button
-            className=" hidden md:grid  bg-gradient-to-r from-btnLeft to-btnRight hover:shadow-lg  py-2  md:py-4  px-4 lg:px-10 rounded-lg xl:mt-10 mt-6  place-content-center place-items-center"
+            className="hidden md:grid  bg-gradient-to-r from-btnLeft to-btnRight hover:shadow-lg py-2  md:py-4  px-6 lg:px-10 rounded-lg mt-1 "
             onClick={moveNext}
           >
-            <span className="min-w-[9rem] text-xl xl:text-2xl text-white font-epilogue whitespace-nowrap mt-1">
+            <span className=" w-full text-2xl xl:text-3xl text-white font-epilogue whitespace-nowrap mt-1">
               Find Out Now
             </span>
           </button>
