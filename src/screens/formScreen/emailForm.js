@@ -91,11 +91,12 @@ const EmailFormScreen = () => {
       <FormHeader />
       <div
         style={{
-          minHeight: "calc(100vh - 64px)",
+          height: "calc(100vh - 64px)",
+          minHeight: "750px",
         }}
         className="flex flex-col bg-formBg relative"
       >
-        <div className="py-2 xl:py-6  max-w-screen-sm  text-center  grid place-content-center px-2 gap-2 mx-auto my-4 xl:mt-6">
+        <div className="py-3 xl:py-10  max-w-screen-sm   text-center  grid place-content-center px-2 gap-2 mx-auto my-4 xl:mt-6 overflow-auto">
           <h3 className=" font-epilogue text-dark lg:text-2xl text-lg">
             Almost there!
           </h3>
@@ -103,9 +104,9 @@ const EmailFormScreen = () => {
             Submit your Name and Email for the result and to get
           </h1>
           <div className="flex flex-nowrap items-center justify-center">
-            <img src={trophy} alt="trophy" className="mb-1" />
+            {/* <img src={trophy} alt="trophy" className="mb-1" /> */}
             <h1 className=" text-green font-epilogue lg:text-4xl text-xl font-bold  capitalize ">
-              1 year free subscription
+              Give AED 50 and Get AED 50
             </h1>
           </div>
 
@@ -120,7 +121,7 @@ const EmailFormScreen = () => {
                 ref={formRef}
                 onSubmit={handleSubmit}
                 noValidate
-                className="flex flex-col px-3 gap-3  "
+                className="flex flex-col px-3 gap-3"
               >
                 <input
                   type="text"

@@ -5,7 +5,7 @@ import { useFormContext } from "../../context/index";
 const FormProgress = ({ prevHandler, elemRef }) => {
   const { ansData, stage } = useFormContext();
   return (
-    <div className=" progress-indicator gap-3 z-[15] mt-auto absolute bottom-0 left-0 right-0">
+    <div className="fixed bottom-0 left-0 right-0  progress-indicator gap-3 z-[15] mt-auto">
       {stage === 2 && Object.keys(ansData).length > 0 && (
         <div className="bg-formBg  px-3 xl:py-4 hidden lg:block">
           <div className=" z-[20] w-full px-2 pt-1 pb-2 md:w-10/12  max-w-screen-xl mx-auto">
@@ -15,7 +15,7 @@ const FormProgress = ({ prevHandler, elemRef }) => {
           </div>
         </div>
       )}
-      <div className=" bg-white  py-2 xl:py-4">
+      <div className=" bg-white py-2 xl:py-4">
         <div className=" bg-white flex flex-wrap justify-between px-2 items-end  md:w-10/12  max-w-screen-lg mx-auto">
           <div className=" grid place-content-start font-epilogue ">
             <span className="xl:text-lg  uppercase text-sm  min-w-full">
@@ -25,19 +25,19 @@ const FormProgress = ({ prevHandler, elemRef }) => {
               {"0" + Object.keys(ansData).length} /09 Completed
             </span>
           </div>
-          <div className="flex flex-nowrap items-center gap-1  ">
+          {/* <div className="flex flex-nowrap items-center gap-1  ">
             <img src={trophy} alt="" className="mr-2" />
             <span className=" text font-semibold pt-2 pb-1  whitespace-nowrap xl:text-xl font-epilogue capitalize">
               1 year free subscription
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className=" bg-white py-3 xl:py-7 px-3">
-        <div className=" relative md:w-10/12  max-w-screen-lg mx-auto xl:h-7 h-4 rounded-full bg-gradient-to-r from-green to-footerBg flex  items-center">
+      <div className=" bg-white py-3 px-3">
+        <div className=" relative md:w-10/12  max-w-screen-lg mx-auto xl:h-6 h-4 rounded-full bg-gradient-to-r from-green to-footerBg flex items-center">
           <svg
             style={{ left: (Object.keys(ansData).length / 9) * 100 + "%" }}
-            className="xl:h-20 xl:w-20 h-12 w-12 -mt-4 absolute transition-all duration-200"
+            className="xl:h-16 xl:w-16 h-12 w-12 -mt-4 absolute transition-all duration-200"
             viewBox="0 0 52 66"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

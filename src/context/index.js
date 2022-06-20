@@ -3,7 +3,7 @@ import { useContext, createContext, useReducer } from "react";
 const stateContext = createContext();
 const dispatchContext = createContext();
 const initState = {
-  stage: 0,
+  stage: 4,
   ansData: {},
 };
 const reducer = (state, { type, payload }) => {
