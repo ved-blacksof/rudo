@@ -3,7 +3,7 @@ import "./index.css";
 
 const FooterBlade = ({ openModel }) => {
   return (
-    <div className="main_footerBlade">
+    <div className="main_footerBlade  sm:mb-0 mb-24 mx-auto">
       <div className="footerBlade_flex">
         <h2 className="font-vanio-light">
           Changing the World's Outlook&nbsp;

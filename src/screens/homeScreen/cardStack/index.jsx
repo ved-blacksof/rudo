@@ -248,8 +248,8 @@ const CardStack = () => {
           <EmailFormScreen /> : ""
       } */}
 
-      <div className="cards-box md:w-11/12  mx-auto flex items-center justify-center mt-32 py-48 md:py-80 lg:py-80 xl:py-80  ">
-        <div className="card item-1  md:w-[40rem] w-full md:min-h-[35rem] rounded-xl mx-auto ">
+      <div className="cards-box md:w-11/12  mx-auto flex items-center justify-center mt-32 py-48 md:py-80 lg:py-80 xl:py-80">
+        <div className="card item-1  md:w-[40rem] w-full md:min-h-[35rem] min-h-[20rem]  rounded-xl mx-auto ">
           <div className=" px-8 py-8 xl:px-20 xl:py-20 flex  flex-col flex-nowrap items-start justify-start gap-4">
             <h1 className=" text-3xl text-white font-vanio  md:text-4xl xl:text-5xl max-w-screen-sm">
               Saving and investing was never so fun and breeeezyyyy!
@@ -263,7 +263,7 @@ const CardStack = () => {
           </div>
         </div>
 
-        <div className="card item-2  md:w-[40rem] w-full md:min-h-[35rem] rounded-xl mx-auto ">
+        <div className="card item-2  md:w-[40rem] w-full md:min-h-[35rem] min-h-[20rem] rounded-xl mx-auto ">
           <div className=" px-8 py-8 xl:px-20 xl:py-20 flex  flex-col flex-nowrap items-start justify-start gap-4">
             <h1 className=" text-3xl text-white font-vanio  md:text-4xl xl:text-5xl max-w-screen-sm ">
               Invest small, earn big!
@@ -279,7 +279,7 @@ const CardStack = () => {
           </div>
         </div>
 
-        <div className="card item-3 md:w-[40rem] w-full xl:w-[75rem] md:min-h-[35rem] rounded-xl mx-auto">
+        <div className="card item-3 md:w-[40rem] w-full xl:w-[75rem] md:min-h-[35rem] min-h-[20rem] rounded-xl mx-auto">
           <div className=" px-8 py-8 xl:px-20 xl:py-20 flex  flex-col flex-nowrap items-start justify-start gap-4">
             <h1 className=" text-3xl text-white font-vanio  md:text-4xl xl:text-5xl max-w-screen-sm">
               Binge-investing! <br />

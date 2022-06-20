@@ -1,14 +1,14 @@
 {
-  "short_name": "Rudo",
-  "name": "RudoWealth | Start small but steady! With RuDo",
+  "short_name": "RuDo",
+  "name": "RuDo Wealth",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "128x128 64x64 32x32 24x24 16x16",
+      "src": "favicon1.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "apple.png",
+      "src": "favicon1.ico",
       "type": "image/png",
       "sizes": "192x192"
     },
