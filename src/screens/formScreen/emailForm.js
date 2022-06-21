@@ -147,10 +147,10 @@ const EmailFormScreen = () => {
                 />
                 {renderError(errors)}
 
-                <div className="flex justify-end px-3  ">
+                <div className="flex justify-end  ">
                   <button
                     type="submit"
-                    className="  font-epilogue px-20 pt-5 pb-3 text-white bg-dark text-xl xl:text-2xl rounded-lg hover:bg-opacity-80"
+                    className="font-epilogue px-20 pt-5 pb-3 text-white bg-dark text-xl xl:text-2xl rounded-lg hover:bg-opacity-80"
                   >
                     Submit
                   </button>
