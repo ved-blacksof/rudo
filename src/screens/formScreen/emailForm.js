@@ -121,14 +121,14 @@ const EmailFormScreen = () => {
                 ref={formRef}
                 onSubmit={handleSubmit}
                 noValidate
-                className="flex flex-col px-3 gap-3"
+                className="flex flex-col px-3 pt-2 gap-3"
               >
                 <input
                   type="text"
                   placeholder="First Name"
                   className={` ${
                     errors.name ? "border-red" : "border-gray border-opacity-50"
-                  }  bg-hover border-2  focus:border-green outline-none font-epilogue pt-4 pb-3 mb-4 px-3  text-base  rounded-lg xl:text-lg`}
+                  }  bg-hover border-2  focus:border-green outline-none font-epilogue pt-4 pb-3  px-3  text-base  rounded-lg xl:text-lg`}
                   value={values.name}
                   name="name"
                   onChange={handleChange}
@@ -147,7 +147,7 @@ const EmailFormScreen = () => {
                 />
                 {renderError(errors)}
 
-                <div className=" flex justify-end px-3 mt-4 ">
+                <div className="flex justify-end px-3  ">
                   <button
                     type="submit"
                     className="  font-epilogue px-20 pt-5 pb-3 text-white bg-dark text-xl xl:text-2xl rounded-lg hover:bg-opacity-80"
