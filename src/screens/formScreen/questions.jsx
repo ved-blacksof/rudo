@@ -75,7 +75,8 @@ const QuestionsScreen = () => {
       <FormHeader prevHandler={handleCustomPrev} elemRef={customBtn} />
       <div
         style={{
-          minHeight: "calc(100vh - 64px)",
+          height: "calc(100vh - 64px)",
+          minHeight: "400px",
         }}
         className="flex flex-col bg-formBg relative "
       >

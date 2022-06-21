@@ -16,12 +16,15 @@ const ReportScreen = () => {
     <>
       <FormHeader />
       <div
-        style={{
-          minHeight: "calc(100vh - 64px)",
-        }}
-        className=" flex-col bg-formBg relative py-20"
+        style={{ height: "calc(100vh - 64px)" }}
+        className=" flex-col bg-formBg relative py-20 "
       >
-        <div className=" h-[65vh]  bg-white max-w-screen-md  py-10 mx-auto rounded-3xl">
+        <div
+          style={{
+            minHeight: "400px",
+          }}
+          className="  bg-white max-w-screen-md  py-10 rounded-3xl w-11/12 mx-auto "
+        >
           <div className="flex flex-nowrap items-center justify-center gap-2">
             <h1 className=" text-green font-epilogue lg:text-3xl text-xl  leading-7 pt-2 font-bold  capitalize ">
               CONGRATULATIONS
@@ -880,10 +883,10 @@ const ReportScreen = () => {
             <h1 className="z-10">{data + "%"}</h1>
           </div>
           <div className=" grid place-content-center text-center gap-2 mt-8">
-            <h3 className=" font-epilogue text-dark lg:text-xl text-lg">
+            <h3 className=" font-epilogue text-dark lg:text-xl text-lg px-2 ">
               Sweet, sour and minty! Just as you like it!
             </h3>
-            <h1 className=" font-epilogue font-bold lg:text-3xl text-xl text-dark  px-4 lg:w-9/12 mx-auto  ">
+            <h1 className=" font-epilogue font-bold lg:text-3xl text-xl text-dark  px-4 lg:w-9/12 mx-auto ">
               Suggestion: Keep the course and you’ll be fine!
             </h1>
           </div>

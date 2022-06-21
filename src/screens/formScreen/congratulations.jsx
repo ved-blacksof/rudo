@@ -24,11 +24,18 @@ const Congratulations = () => {
         }}
         className=" flex-col bg-formBg relative py-20 "
       >
-        <div className=" h-[60vh]  bg-white max-w-screen-md rounded-2xl mx-auto">
-          <Lottie options={defaultOptions} height={250} width={400} />
+        <div
+          style={{
+            minHeight: "450px",
+          }}
+          className=" bg-white max-w-screen-md rounded-2xl mx-auto w-11/12"
+        >
+          <div className="grid place-content-center place-items-center ">
+            <Lottie options={defaultOptions} height={250} width={350} />
+          </div>
           <div className="flex flex-nowrap items-center justify-center">
-            <img src={trophy} alt="trophy" className="mb-1" />
-            <h1 className=" text-green font-epilogue lg:text-4xl text-xl font-bold  capitalize ">
+            {/* <img src={trophy} alt="trophy" className="mb-1" /> */}
+            <h1 className=" text-green font-epilogue lg:text-4xl text-xl font-bold mb-4  capitalize ">
               Give AED 50 and Get AED 50
             </h1>
           </div>
