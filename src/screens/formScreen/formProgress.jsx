@@ -25,12 +25,12 @@ const FormProgress = ({ prevHandler, elemRef }) => {
               {"0" + Object.keys(ansData).length} /09 Completed
             </span>
           </div>
-          <div className="flex flex-nowrap items-center gap-1  ">
+          {/* <div className="flex flex-nowrap items-center gap-1  ">
             <img src={trophy} alt="" className="mr-2" />
             <span className=" text font-semibold pt-2 pb-1  whitespace-nowrap xl:text-xl font-epilogue capitalize">
               1 year free subscription
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className=" bg-white py-3 xl:py-7 px-3">

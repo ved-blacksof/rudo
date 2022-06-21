@@ -77,9 +77,9 @@ const Banner = () => {
 
 
   return (
-    <section className=" bg-cream ">
+    <section className="bg-cream ">
       <div className="px-3 md:w-11/12 mx-auto flex justify-around lg:justify-between gap-y-10 gap-x-6  lg:flex-row flex-col py-16 bg-cream">
-        <div className=" grow-[3] shrink flex flex-col gap-4 justify-center max-w-screen-lg lg:px-3">
+        <div className="grow-[3] shrink flex flex-col gap-4 justify-center max-w-screen-lg lg:px-3 ">
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
             Got Spare Change? <br />
             Let&apos;s grow it{" "}
@@ -101,11 +101,11 @@ const Banner = () => {
           <div className="font-epilogue">
             <h3 className="cursor-pointer hover:text-red inline transition-all text-sm underline  underline-offset-1"
               onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >Terms and Conditions</h3>
-          </div>
+          </div>          
         </div>
 
         <div className="flex items-center">
-          <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
+          <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] 2xl:pr-40 pr-0 ">
             <ReactPlayer
               url={spareVideo}
               loop={true}
