@@ -7,14 +7,10 @@ import spareVideo from '../../../assets/Spare_Change_Investment.mp4'
 import "./style.css"
 
 const Banner = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [popup, setPopup] = useState(false);
   const [status, setStatus] = useState(0);
-  const [tabs, setTabs] = useState(0);
   const [showHowItWork, setShowHowItWork] = useState(false);
   const [popupTerms, setPopupTerms] = useState(false);
-
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -56,7 +52,7 @@ const Banner = () => {
                       <p className="text-sm font-epilogue text-white">{subtitle}</p>
                     </div>
                   </div>
-                </div>  
+                </div>
               </div>
               <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse ">
                 <button type="button" onClick={() => setPopup(false)}
@@ -71,14 +67,11 @@ const Banner = () => {
   }
 
 
-  useEffect(() => {
-
-  }, [tabs])
 
 
   return (
-    <section className="bg-cream ">
-      <div className="px-3 md:w-11/12 mx-auto flex justify-around lg:justify-between gap-y-10 gap-x-6  lg:flex-row flex-col py-16 bg-cream">
+    <section >
+      <div className="px-3 md:w-11/12 mx-auto flex justify-around lg:justify-between gap-y-10 gap-x-6  lg:flex-row flex-col py-16 ">
         <div className="grow-[3] shrink flex flex-col gap-4 justify-center max-w-screen-lg lg:px-3 ">
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
             Got Spare Change? <br />
@@ -101,7 +94,7 @@ const Banner = () => {
           <div className="font-epilogue">
             <h3 className="cursor-pointer hover:text-red inline transition-all text-sm underline  underline-offset-1"
               onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >Terms and Conditions</h3>
-          </div>          
+          </div>
         </div>
 
         <div className="flex items-center">
