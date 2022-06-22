@@ -71,7 +71,7 @@ const Banner = () => {
 
   return (
     <section >
-      <div className="px-3 md:w-11/12 mx-auto flex justify-around lg:justify-between gap-y-10 gap-x-6  lg:flex-row flex-col py-16 ">
+      <div className="px-3 md:w-11/12 mx-auto flex justify-between lg:justify-around gap-y-10 gap-x-6  lg:flex-row flex-col py-16 ">
         <div className="grow-[3] shrink flex flex-col gap-4 justify-center max-w-screen-lg lg:px-3 ">
           <h1 className="text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
             Got Spare Change? <br />
@@ -97,8 +97,8 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="flex items-center">
-          <div className="grow-[2] place-content-center shrink hidden xl:grid basis-[410px] 2xl:pr-40 pr-0 ">
+        <div className="flex items-center video-wrapper">
+          <div className=" grow-[2] place-content-center shrink hidden xl:grid basis-[410px]">
             <ReactPlayer
               url={spareVideo}
               loop={true}
@@ -118,9 +118,9 @@ const Banner = () => {
         <h1 className="text-center text-lg  mt-4 mb-3 font-epilogue max-w-md mx-auto" >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
       </div>
 
-      <div className=" " data-vl-widget="milestoneWidget"></div>
+      <div data-vl-widget="milestoneWidget"></div>
 
-      <div className="grow-[2] shrink place-content-center grid xl:hidden shrink-1 basis-[410px] mt-20 sm:mt-0">
+      <div className="grow-[2] shrink place-content-center grid xl:hidden shrink-1 basis-[410px] mt-20 sm:mt-0 ">
         <ReactPlayer
           url={spareVideo}
           muted={true}

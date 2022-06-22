@@ -26,11 +26,9 @@ const Nav = () => {
     const currOffest = window.pageYOffset;
     if (currOffest > 100) {
       setScrolled(true)
-      console.log("going down");
     }
     else {
       setScrolled(false)
-      console.log("going top")
     }
   }
 
@@ -39,7 +37,7 @@ const Nav = () => {
   }, [])
 
   return (
-    <header className={` ${scrolled ? "bg-white shadow" : "bg-transparent"} header sticky top-0 left-0 right-0 z-[10]`}>
+    <header className={` ${scrolled ? "bg-white shadow" : "bg-transparent"} transition header sticky top-0 left-0 right-0 z-[10]`}>
       <nav className=" h-[4.5rem] py-2 px-3 lg:w-11/12 mx-auto  flex flex-nowrap items-center justify-between gap-y-10 gap-x-6  ">
         <Link to="/">
           <img src={logoIcon} alt="" loading="eager" className=" h-12 " />
