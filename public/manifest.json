@@ -9,8 +9,7 @@
       "type": "image/ico",
       "sizes": "438x438"
     },
-    { 
-
+    {
       "src": "/favicon1.ico",
       "type": "image/ico",
       "sizes": "48x48"
@@ -19,8 +18,11 @@
   "screenshots": [
     {
       "src": "/screenshot.png",
+      "sizes": "1127x701",
       "type": "image/png",
-      "sizes": "1767x701"
+      "platform": "wide",
+      "label": "Rudo Wealth"
     }
+  
   ]
 }
