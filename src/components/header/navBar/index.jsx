@@ -5,7 +5,7 @@ import MobileModal from "./mobileNav";
 import "./index.css";
 const Nav = () => {
   const [isModalOpen, toggleModal] = useReducer((s) => !s, false);
-  const [scrolled, setScrolled] = useState(true)
+  const [scrolled, setScrolled] = useState(false)
 
   const BurgerBtn = () => {
     return (
@@ -24,7 +24,7 @@ const Nav = () => {
 
   const handleScroll = () => {
     const currOffest = window.pageYOffset;
-    if (currOffest > 100) {
+    if (currOffest > 150) {
       setScrolled(true)
     }
     else {
