@@ -22,9 +22,9 @@
   ],
   "screenshots": [
     {
-      "src": "/screenshot.png",
+      "src": "/screenshot.webp",
       "sizes": "1127x701",
-      "type": "image/png",
+      "type": "image/webp",
       "platform": "wide",
       "label": "Rudo Wealth"
     }
