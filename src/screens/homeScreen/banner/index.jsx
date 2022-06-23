@@ -97,8 +97,8 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="flex items-center video-wrapper">
-          <div className=" grow-[2] place-content-center shrink hidden xl:grid basis-[410px]">
+        <div className="flex items-center ">
+          <div className="video-wrapper grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
             <ReactPlayer
               url={spareVideo}
               loop={true}
