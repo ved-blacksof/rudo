@@ -1,7 +1,7 @@
 {
   "short_name": "Rudo",
   "name": "Rudo Wealth",
-  "start_url": ".",
+  "start_url": "./",
   "display": "standalone",
   "icons": [
     {
@@ -28,6 +28,5 @@
       "platform": "wide",
       "label": "Rudo Wealth"
     }
-  
   ]
 }
