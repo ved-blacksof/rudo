@@ -1,4 +1,3 @@
-import trophy from "./svgs/trophy.png";
 import chevronLeft from "./svgs/chevronDesktop.svg";
 import { useFormContext } from "../../context/index";
 
@@ -6,7 +5,7 @@ const FormProgress = ({ prevHandler, elemRef }) => {
   const { ansData, stage } = useFormContext();
   return (
     <div className="fixed bottom-0 left-0 right-0  progress-indicator gap-3 z-[15] mt-auto">
-      {stage === 2 && Object.keys(ansData).length > 0 && (
+      {stage === 1 && Object.keys(ansData).length > 0 && (
         <div className="bg-formBg  px-3 xl:py-4 hidden lg:block">
           <div className=" z-[20] w-full px-2 pt-1 pb-2 md:w-10/12  max-w-screen-xl mx-auto">
             <button onClick={prevHandler} ref={elemRef}>

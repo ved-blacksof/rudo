@@ -1,77 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/rudo.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/rudo.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/rudo_shortcut.ico" />
 
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon1.ico">
-  
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
 
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-
-    <title> RuDo | Get rewards for saving & investing</title>
+    <title>RuDo | Get rewards for saving & investing</title>
     <meta property="og:title" content="Get rewards for saving & investing" />
-  <meta name="description"
-    content="Build your wealth using spare change investment with games, rewards, and much more!" />
-  <meta property="og:url" content="https://www.rudowealth.com" />
-  <meta property="og:description"
-    content="Build your wealth using spare change investment with games, rewards, and much more!" />
-  <meta property="og:image" content="%PUBLIC_URL%/favicon1.ico" />
+    <meta
+      name="description"
+      content="Build your wealth using spare change investment with games, rewards, and much more!"
+    />
+    <meta property="og:url" content="https://www.rudowealth.com" />
+    <meta
+      property="og:description"
+      content="Build your wealth using spare change investment with games, rewards, and much more!"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/favicon1.ico" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8G3GGGDTS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-S8G3GGGDTS');
-  </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S8G3GGGDTS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-S8G3GGGDTS");
+    </script>
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T22VTRF");
+    </script>
+    <!-- End Google Tag Manager -->
 
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="ayIXgF0oqV6M_G05gyreOWG6B4Xiz6082Knn_RNfNO8"
+    />
+  </head>
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-T22VTRF');</script>
-  <!-- End Google Tag Manager -->
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T22VTRF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-
-
-  <!-- Google Site Verification -->
-  <meta name="google-site-verification" content="ayIXgF0oqV6M_G05gyreOWG6B4Xiz6082Knn_RNfNO8" />
-
-
-
-  
-
-</head>
-
-<body>
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T22VTRF" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <div id="root"></div>
-  <script>!function () { var a = window.VL = window.VL || {}; return a.instances = a.instances || {}, a.invoked ? void (window.console && console.error && console.error("VL snippet loaded twice.")) : (a.invoked = !0, void (a.load = function (b, c, d) { var e = {}; e.publicToken = b, e.config = c || {}; var f = document.createElement("script"); f.type = "text/javascript", f.id = "vrlps-js", f.defer = !0, f.src = "https://app.viral-loops.com/client/vl/vl.min.js"; var g = document.getElementsByTagName("script")[0]; return g.parentNode.insertBefore(f, g), f.onload = function () { a.setup(e), a.instances[b] = e }, e.identify = e.identify || function (a, b) { e.afterLoad = { identify: { userData: a, cb: b } } }, e.pendingEvents = [], e.track = e.track || function (a, b) { e.pendingEvents.push({ event: a, cb: b }) }, e.pendingHooks = [], e.addHook = e.addHook || function (a, b) { e.pendingHooks.push({ name: a, cb: b }) }, e.$ = e.$ || function (a) { e.pendingHooks.push({ name: "ready", cb: a }) }, e })) }(); var campaign = VL.load("O9IEEdQ8EgxuoqTO2MoSKwvtlOE", { autoLoadWidgets: !0 });</script>
-
-</body>
-
+    <div id="root"></div>
+    <script>
+      !(function () {
+        var a = (window.VL = window.VL || {});
+        return (
+          (a.instances = a.instances || {}),
+          a.invoked
+            ? void (
+                window.console &&
+                console.error &&
+                console.error("VL snippet loaded twice.")
+              )
+            : ((a.invoked = !0),
+              void (a.load = function (b, c, d) {
+                var e = {};
+                (e.publicToken = b), (e.config = c || {});
+                var f = document.createElement("script");
+                (f.type = "text/javascript"),
+                  (f.id = "vrlps-js"),
+                  (f.defer = !0),
+                  (f.src = "https://app.viral-loops.com/client/vl/vl.min.js");
+                var g = document.getElementsByTagName("script")[0];
+                return (
+                  g.parentNode.insertBefore(f, g),
+                  (f.onload = function () {
+                    a.setup(e), (a.instances[b] = e);
+                  }),
+                  (e.identify =
+                    e.identify ||
+                    function (a, b) {
+                      e.afterLoad = { identify: { userData: a, cb: b } };
+                    }),
+                  (e.pendingEvents = []),
+                  (e.track =
+                    e.track ||
+                    function (a, b) {
+                      e.pendingEvents.push({ event: a, cb: b });
+                    }),
+                  (e.pendingHooks = []),
+                  (e.addHook =
+                    e.addHook ||
+                    function (a, b) {
+                      e.pendingHooks.push({ name: a, cb: b });
+                    }),
+                  (e.$ =
+                    e.$ ||
+                    function (a) {
+                      e.pendingHooks.push({ name: "ready", cb: a });
+                    }),
+                  e
+                );
+              }))
+        );
+      })();
+      var campaign = VL.load("O9IEEdQ8EgxuoqTO2MoSKwvtlOE", {
+        autoLoadWidgets: !0,
+      });
+    </script>
+  </body>
 </html>
