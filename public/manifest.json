@@ -5,14 +5,19 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "/favicon1.ico",
+      "src": "/favicon.ico",
       "type": "image/ico",
-      "sizes": "438x438"
+      "sizes": "256x99"
     },
     {
-      "src": "/favicon1.ico",
-      "type": "image/ico",
-      "sizes": "48x48"
+      "src": "/apple.png",
+      "type": "image/png",
+      "sizes": "1081x417"
+    },
+    {
+      "src": "/apple.jpg",
+      "type": "image/jpg",
+      "sizes": "1081x417"
     }
   ],
   "screenshots": [
