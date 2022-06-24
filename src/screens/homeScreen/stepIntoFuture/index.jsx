@@ -23,7 +23,7 @@ const StepIntoFuture = () => {
               fill="#F9BE19"
             />
           </svg>
-          <div className=" text-green  text-xl md:text-2xl xl:text-3xl font-epilogue px-3 text-center">
+          <div className=" text-green  text-xl md:text-2xl xl:text-3xl font-epilogue px-3 text-center pr-16">
             Step into the future of Saving and Investing with RuDo!
           </div>
         </div>
