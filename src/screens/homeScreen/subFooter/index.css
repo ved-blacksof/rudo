@@ -2,10 +2,11 @@
   width: 100%;
   background-color: #ed8663;
   padding: 80px 0;
-  background-image: url(./bg/Asset\ 8.png);
-  background-position: bottom right 20px;
+  background-image: url(./bg/Asset\ 8.svg);
+  background-position: bottom right 3vw;
   background-size: min(80%, 850px) auto;
   background-repeat: no-repeat;
+  
 }
 
 .footerBlade_flex {
