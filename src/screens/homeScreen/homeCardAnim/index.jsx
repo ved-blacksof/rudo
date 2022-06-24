@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
-import feature1 from "../../../assets/homepage/cardAnim/feature1.png";
-import feature2 from "../../../assets/homepage/cardAnim/feature2.png";
-import feature3 from "../../../assets/homepage/cardAnim/feature3.png";
+import feature1 from "../../../assets/homepage/cardAnim/feature1.svg";
+import feature2 from "../../../assets/homepage/cardAnim/feature2.svg";
+import feature3 from "../../../assets/homepage/cardAnim/feature3.svg";
 import feature4 from "../../../assets/homepage/cardAnim/featurebg1.png";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
