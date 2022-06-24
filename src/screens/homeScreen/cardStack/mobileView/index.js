@@ -34,8 +34,7 @@ export default function MobileCarousel() {
             Invest small, earn big!
           </h1>
           <p className="text-[12px]  text-white  font-epilogue">
-            Invest smartly in your best-fit portfolios and earn exciting rewards
-            for it!
+            Invest smartly in your best-fit portfolios and earn exciting rewards for it!
           </p>
         </div>
       </SplideSlide>

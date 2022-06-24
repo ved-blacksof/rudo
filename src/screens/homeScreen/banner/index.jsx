@@ -102,7 +102,7 @@ const Banner = () => {
           </div>
 
           <div className="font-epilogue">
-            <h3 className="cursor-pointer hover:text-red inline transition-all text-sm underline  underline-offset-1"
+            <h3 className="cursor-pointer hover:text-red inline transition-all sm:text-sm text-xs underline  underline-offset-1"
               onClick={() => popupTerms ? setPopupTerms(false) : setPopupTerms(true)} >Terms and Conditions</h3>
           </div>
         </div>
@@ -140,16 +140,18 @@ const Banner = () => {
           : ""
       }
 
-      {
+      {/* {
         showHowItWork ?
           <div className="how-it-works-popup origin-center bg-cream">
             <Banner2 setShowHowItWork={setShowHowItWork} />
           </div> : ""
-      }
+      } */}
 
       {
         popupTerms ? <Terms /> : ""
       }
+
+
     </section>
   );
 };

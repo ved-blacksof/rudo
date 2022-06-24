@@ -8,6 +8,8 @@ import FooterBlade from "./subFooter";
 import "./banner/style.css";
 
 const HomePage = () => {
+  
+
   return (
     <>
       <div className="banner__wrapper">
