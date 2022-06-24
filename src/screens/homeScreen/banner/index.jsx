@@ -11,6 +11,7 @@ const Banner = () => {
   const [status, setStatus] = useState(0);
   const [showHowItWork, setShowHowItWork] = useState(false);
   const [popupTerms, setPopupTerms] = useState(false);
+  const [bottomJoinBtn, setBottomJoinBtn] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -65,6 +66,22 @@ const Banner = () => {
       </div >
     )
   }
+
+  const handleScroll = () => {
+    const currOffest = window.pageYOffset;
+    const currHeight = window.innerHeight;
+
+    if (currOffest > currHeight) {
+      setBottomJoinBtn(true)
+    }
+    else {
+      setBottomJoinBtn(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <section >
@@ -151,6 +168,9 @@ const Banner = () => {
         popupTerms ? <Terms /> : ""
       }
 
+      {
+        bottomJoinBtn ? <div> <button className="bottomJoinBtn text-white font-epilogue text-xl font-bold transition">Join waitlist get AED50</button> </div> : ""
+      }
 
     </section>
   );
