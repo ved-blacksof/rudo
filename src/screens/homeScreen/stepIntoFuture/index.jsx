@@ -35,7 +35,7 @@ const StepIntoFuture = () => {
               viewBox="0 0 90 90"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="sm:w-auto w-14 "
+              className="sm:w-auto w-14 sm:h-auto h-20"
             >
               <path
                 d="M53.788 41.3193H43.691V52.6085H53.788V41.3193Z"
@@ -151,6 +151,7 @@ const StepIntoFuture = () => {
               viewBox="0 0 59 59"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="sm:w-auto w-14 sm:h-auto h-20"
             >
               <path
                 d="M23.1794 52.331C35.9808 52.331 46.3585 41.9534 46.3585 29.1519C46.3585 16.3504 35.9808 5.97278 23.1794 5.97278C10.3779 5.97278 0.000244141 16.3504 0.000244141 29.1519C0.000244141 41.9534 10.3779 52.331 23.1794 52.331Z"
@@ -195,7 +196,7 @@ const StepIntoFuture = () => {
             </svg>
 
             <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
-              Start investing as small as AED 20
+              Start investing as small as AED20
             </p>
           </div>
           <div className=" flex lg:flex-row flex-col flex-1  flex-nowrap gap-2 items-center justify-start px-3 ">
@@ -205,7 +206,7 @@ const StepIntoFuture = () => {
               viewBox="0 0 102 103"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="sm:w-auto w-14"
+              className="sm:w-auto w-14 sm:h-auto h-20"
             >
               <g clipPath="url(#clip0_943_8620)">
                 <path
@@ -249,7 +250,7 @@ const StepIntoFuture = () => {
               </defs>
             </svg>
             <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
-              Withdraw as and <br /> when you like
+              Withdraw as and when you like
             </p>
           </div>
         </div>

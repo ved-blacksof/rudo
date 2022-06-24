@@ -32,7 +32,7 @@ const CardStack = () => {
                     </p>
                     <img src={feature1} className="img-fluid" alt="img" />
                   </li>
-                </ul>
+                </ul> 
               </div>
               <div className="feature-card card-two">
                 <ul className="p-0">

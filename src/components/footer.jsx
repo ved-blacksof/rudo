@@ -7,8 +7,8 @@ import fb from "../assets/social/facebook.svg";
 
 const Footer = () => {
   return (
-    <footer className=" bg-footerBg  flex justify-center">
-      <div className=" px-3 flex items-center justify-center flex-nowrap flex-col text-center lg:w-11/12 gap-6  py-10 sm:py-16 ">
+    <footer className=" bg-footerBg  flex justify-center ">
+      <div className="px-3 flex items-center justify-center flex-nowrap flex-col text-center lg:w-11/12 gap-6 py-14 sm:py-16 sm:mb-0 mb-7">
         <Link to="/">
           <img
             src={logoIcon}

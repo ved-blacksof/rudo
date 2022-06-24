@@ -11,6 +11,7 @@ const Banner = () => {
   const [status, setStatus] = useState(0);
   const [showHowItWork, setShowHowItWork] = useState(false);
   const [popupTerms, setPopupTerms] = useState(false);
+  const [bottomJoinBtn, setBottomJoinBtn] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -99,6 +100,22 @@ const Banner = () => {
     );
   };
 
+  const handleScroll = () => {
+    const currOffest = window.pageYOffset;
+    const currHeight = window.innerHeight;
+
+    if (currOffest > currHeight) {
+      setBottomJoinBtn(true)
+    }
+    else {
+      setBottomJoinBtn(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+  }, [])
+
   return (
     <section>
       <div className="px-3 md:w-11/12 mx-auto flex justify-between lg:justify-around gap-y-10 gap-x-6 lg:flex-row flex-col py-5 sm:py-16">
@@ -114,20 +131,22 @@ const Banner = () => {
             rewarding way.
           </div>
 
-          <div className="grow-[2] shrink place-content-center grid lg:hidden shrink-1 mt-7 sm:mt-20">
-            <ReactPlayer
-              url={spareVideo}
-              muted={true}
-              playing={true}
-              loop={true}
-              controls={true}
-              height={300}
-              width={300}
-              playsinline={true}
-            />
+          <div className=" grow-[2] shrink place-content-center grid lg:hidden shrink-1 mt-7 sm:mt-20" >
+            <div className="video-wrapper" id="signUpForm">
+              <ReactPlayer
+                url={spareVideo}
+                muted={true}
+                playing={true}
+                loop={true}
+                controls={true}
+                height={300}
+                width={300}
+                playsinline={true}
+              />
+            </div>
           </div>
 
-          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5">
+          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5 " >
             <div className="viral-loops-wrapper mt-4">
               {/* <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1> */}
               <div data-vl-widget="embedForm"></div>
@@ -136,7 +155,7 @@ const Banner = () => {
 
           <div className="font-epilogue">
             <h3
-              className="cursor-pointer hover:text-red inline transition-all text-sm underline  underline-offset-1"
+              className="cursor-pointer hover:text-red inline transition-all text-xs underline  underline-offset-1"
               onClick={() =>
                 popupTerms ? setPopupTerms(false) : setPopupTerms(true)
               }
@@ -191,15 +210,21 @@ const Banner = () => {
         ""
       )}
 
-      {showHowItWork ? (
-        <div className="how-it-works-popup origin-center bg-cream">
-          <Banner2 setShowHowItWork={setShowHowItWork} />
-        </div>
-      ) : (
-        ""
-      )}
+      {/* {
+        showHowItWork ?
+          <div className="how-it-works-popup origin-center bg-cream">
+            <Banner2 setShowHowItWork={setShowHowItWork} />
+          </div> : ""
+      } */}
 
-      {popupTerms ? <Terms /> : ""}
+      {
+        popupTerms ? <Terms /> : ""
+      }
+
+      {
+        bottomJoinBtn ? <div className="bottomJoinBtn"> <a className="text-white font-epilogue text-xl font-bold transition" href="#signUpForm">Join waitlist get AED50</a> </div> : ""
+      }
+
     </section>
   );
 };

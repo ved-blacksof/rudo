@@ -9,16 +9,18 @@ import FooterBlade from "./subFooter";
 import "./banner/style.css";
 
 const HomePage = () => {
+
+
   return (
     <>
       <div className="banner__wrapper">
         <Banner />
-        <StepIntoFuture />
       </div>
+      <StepIntoFuture />
       <div className="hidden sm:block">
         <HomeCardAnim />
       </div>
-      <div className="block sm:hidden lg:mt-32 mt-10">
+      <div className="block sm:hidden lg:mt-32 sm:mt-10">
         <HomeCardAnimMobile />
       </div>
 
