@@ -11,7 +11,7 @@ import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 
 const CardStack = () => {
   return (
-    <div className="Home_container  md:w-11/12 mt-24 mb-32 mx-auto ">
+    <div className="Home_container  md:w-11/12 sm:mt-24 mt-10 sm:mb-32 mb-10 mx-auto">
       <div className="feature-section mx-auto">
         <img src={feature4} className="top-bg" alt="img4" />
         <img src={feature4} className="bottom-bg" alt="img4" />
@@ -21,13 +21,15 @@ const CardStack = () => {
               <div className="feature-card card-one">
                 <ul className="p-0">
                   <li>
-                    <h4 className="font-vanio-light">
+                    <h4 className="font-vanio-light text-sm">
                       Keep that change. <br /> No, literally!
                     </h4>
                     <span className="arrow-vertical" style={{ left: "120px" }}>
                       ↑
                     </span>
-                    <p className="font-epilogue">As they say, “starting small helps you gain big”</p>
+                    <p className="font-epilogue">
+                      As they say, “starting small helps you gain big”
+                    </p>
                     <img src={feature1} className="img-fluid" alt="img" />
                   </li>
                 </ul>
@@ -35,7 +37,7 @@ const CardStack = () => {
               <div className="feature-card card-two">
                 <ul className="p-0">
                   <li>
-                    <h4 className="font-vanio-light">Invest Smart!</h4>
+                    <h4 className="font-vanio-light text-sm">Invest Smart!</h4>
                     <span className="arrow-vertical" style={{ left: "80px" }}>
                       ↑
                     </span>
@@ -50,7 +52,7 @@ const CardStack = () => {
               <div className="feature-card card-three">
                 <ul className="p-0">
                   <li>
-                    <h4 className="font-vanio-light">
+                    <h4 className="font-vanio-light text-sm ">
                       Salary Credited! <br />
                       Salary Debited!
                     </h4>
@@ -72,7 +74,7 @@ const CardStack = () => {
       <div className="home_card_slider">
         <Splide
           options={{
-            height: "50vh",
+            height: 280,
             rewind: true,
             wheel: true,
             pagination: true,
@@ -85,8 +87,12 @@ const CardStack = () => {
               className="home_card_slider_inner"
               style={{ backgroundColor: "#FDE4B6" }}
             >
-              <h4 className="font-vanio-light">Keep that change. No, literally! </h4>
-              <p className="font-epilogue">As they say, “starting small helps you gain big”</p>
+              <h4 className="font-vanio-light text-sm">
+                Keep that change. No, literally!{" "}
+              </h4>
+              <p className="font-epilogue">
+                As they say, “starting small helps you gain big”
+              </p>
               <img src={feature1} className="img-fluid" alt="img" />
             </div>
           </SplideSlide>
@@ -96,7 +102,7 @@ const CardStack = () => {
               className="home_card_slider_inner"
               style={{ backgroundColor: "#F17E7E" }}
             >
-              <h4 className="font-vanio-light">Invest Smart!</h4>
+              <h4 className="font-vanio-light text-sm">Invest Smart!</h4>
               <p className="font-epilogue">
                 Your money, our brains! Choose a portfolio strategy tailored
                 just for you!
@@ -110,12 +116,14 @@ const CardStack = () => {
               className="home_card_slider_inner"
               style={{ backgroundColor: "#7CC8C2" }}
             >
-              <h4 className="font-vanio-light">
+              <h4 className="font-vanio-light text-sm">
                 Salary Credited! <br />
                 Salary Debited!
               </h4>
 
-              <p className="font-epilogue">That was fast! Wondering what happened to all that money?</p>
+              <p className="font-epilogue">
+                That was fast! Wondering what happened to all that money?
+              </p>
               <img src={feature3} className="img-fluid" alt="img2" />
             </div>
           </SplideSlide>

@@ -3,13 +3,13 @@
   background-color: #ed8663;
   padding: 80px 0;
   background-image: url(./bg/Asset\ 8.png);
-  background-position: bottom right;
-  background-size: 650px;
+  background-position: bottom right 20px;
+  background-size: min(80%, 850px) auto;
   background-repeat: no-repeat;
 }
 
 .footerBlade_flex {
-  width: 70%;
+  width: min(85%, 1400px);
   margin: 0 auto;
   color: #fff;
 }
@@ -30,10 +30,7 @@
 
 @media screen and (max-width: 768px) {
   .main_footerBlade {
-    padding-top: 50px;
-    border-radius: 20px;
-    background-image: none;
-    width: 95%;
+    padding-top: 10px;
   }
 
   .br_hide {
@@ -53,5 +50,31 @@
 
   .footerBlade_flex p {
     font-size: 25px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_footerBlade {
+    padding-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .br_hide {
+    display: none;
+  }
+
+  .footerBlade_flex {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerBlade_flex h2 {
+    font-size: 1.25rem;
+    background: none;
+    font-family: vanio;
+  }
+
+  .footerBlade_flex p {
+    font-size: 0.8rem;
   }
 }

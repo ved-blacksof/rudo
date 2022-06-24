@@ -134,7 +134,6 @@
 }
 
 @media (max-width: 991px) {
-
   .feature-section ul li:hover,
   .page-load-hover {
     width: 250px;
@@ -151,7 +150,7 @@
 
 @media (max-width: 768px) {
   .Home_container {
-    width: 95%;
+    width: 85%;
   }
 
   .feature-section {
@@ -160,7 +159,6 @@
 
   .home_card_slider {
     width: 100%;
-    margin: 10% auto;
     display: block;
     border-radius: 20px;
     overflow: hidden;
