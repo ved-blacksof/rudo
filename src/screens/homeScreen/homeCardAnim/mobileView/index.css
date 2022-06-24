@@ -1,0 +1,33 @@
+.animation .animation-item-1 {
+  background-color: #ffe4b6 !important;
+  background-image: url(../../../../assets/homepage/cardAnim/feature1.png);
+  background-position: center bottom;
+  background-size: auto 45%;
+  background-repeat: no-repeat;
+}
+
+.animation .animation-item-2 {
+  background-color: #f87f7f !important;
+  background-image: url(../../../../assets/homepage/cardAnim/feature2.png);
+  background-position: center bottom;
+  background-size: auto 45%;
+  background-repeat: no-repeat;
+}
+
+.animation .animation-item-3 {
+  background-color: #7cc8c2 !important;
+  background-image: url(../../../../assets/homepage/cardAnim/feature3.png);
+  background-position: center bottom;
+  background-size: auto 45%;
+  background-repeat: no-repeat;
+}
+
+.animation .splide__pagination {
+  transform: translateY(40px);
+}
+.animation .splide__pagination button.is-active {
+  background-color: #ed8663 !important;
+}
+.animation .splide__pagination button {
+  background-color: #757575 !important;
+}
