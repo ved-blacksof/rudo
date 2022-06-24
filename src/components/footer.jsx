@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import logoIcon from "../assets/icons/logo.svg";
-import twitter from "../assets/social/twitter.png";
-import instagram from "../assets/social/insta.png";
-import linkedin from "../assets/social/linkedin.png";
-import fb from "../assets/social/facebook.png";
+import twitter from "../assets/social/twitter.svg";
+import instagram from "../assets/social/insta.svg";
+import linkedin from "../assets/social/linkedin.svg";
+import fb from "../assets/social/facebook.svg";
 
 const Footer = () => {
   return (
@@ -34,34 +34,36 @@ const Footer = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <img src={twitter} alt="" />
+            <img src={twitter} alt="" className="sm:h-5 h-4" />
           </a>
           <a
             href="https://www.instagram.com/rudowealth/"
             rel="noreferrer"
             target="_blank"
           >
-            <img src={instagram} alt="" />
+            <img src={instagram} alt="" className="sm:h-5 h-4" />
           </a>
           <a
             href="https://www.facebook.com/RuDoWealth"
             rel="noreferrer"
             target="_blank"
           >
-            <img src={fb} alt="" />
+            <img src={fb} alt="" className="sm:h-5 h-4" />
           </a>
           <a
             href="https://www.linkedin.com/company/rudo-wealth-financial-services-and-investment"
             rel="noreferrer"
             target="_blank"
           >
-            <img src={linkedin} alt="" />
+            <img src={linkedin} alt="" className="sm:h-5 h-4" />
           </a>
         </div>
         <div className="font-epilogue text-dark min-w-full flex flex-wrap max-w-3xl text-center  gap-1 items-center justify-center">
-          <h3 className="text-xs sm:text-base">Copyright &copy; 2022.</h3>
-          <h3 className="text-xs sm:text-base">RuDo Digital Wealth Pvt Ltd.</h3>
-          <h3 className="text-xs sm:text-base">All rights reserved.</h3>
+          <h3 className="text-[9px] sm:text-base">Copyright &copy; 2022.</h3>
+          <h3 className="text-[9px] sm:text-base">
+            RuDo Digital Wealth Pvt Ltd.
+          </h3>
+          <h3 className="text-[9px] sm:text-base">All rights reserved.</h3>
         </div>
       </div>
     </footer>
