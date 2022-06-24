@@ -10,12 +10,40 @@ const Nav = () => {
   const BurgerBtn = () => {
     return (
       <button onClick={toggleModal} className="flex md:hidden">
-        <label htmlFor="check" className="flex md:hidden">
-          <input type="checkbox" id="check" />
-          <span className="bg-red"></span>
-          <span className="bg-red"></span>
-          <span className="bg-red"></span>
-        </label>
+        {isModalOpen ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#E75553"
+            height="32"
+            width="32"
+          >
+            <g data-name="Layer 2">
+              <g data-name="close">
+                <rect
+                  width="24"
+                  height="24"
+                  opacity="0"
+                  transform="rotate(180 12 12)"
+                />
+                <path
+                  fill="#E75553"
+                  d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"
+                />
+              </g>
+            </g>
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="#E75553"
+            viewBox="0 0 92 92"
+          >
+            <path d="M78 23.5H14c-3.6 0-6.5-2.9-6.5-6.5s2.9-6.5 6.5-6.5h64c3.6 0 6.5 2.9 6.5 6.5s-2.9 6.5-6.5 6.5zM84.5 46c0-3.6-2.9-6.5-6.5-6.5H14c-3.6 0-6.5 2.9-6.5 6.5s2.9 6.5 6.5 6.5h64c3.6 0 6.5-2.9 6.5-6.5zm0 29c0-3.6-2.9-6.5-6.5-6.5H14c-3.6 0-6.5 2.9-6.5 6.5s2.9 6.5 6.5 6.5h64c3.6 0 6.5-2.9 6.5-6.5z" />
+          </svg>
+        )}
       </button>
     );
   };
@@ -28,7 +56,6 @@ const Nav = () => {
 
     if (currOffest > 50) {
       setScrolled(true);
-      console.log("ds");
     }
     // if (currOffest > 50 && currwidth <= 600) {
     //   setScrolled(true)
