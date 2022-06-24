@@ -2,7 +2,7 @@ import "./index.css";
 
 export default function MobileCarousel() {
   return (
-    <div className="my-14">
+    <div className="mb-14 mt-20">
       <div className="mobile-item-3 h-[250px]  px-4 py-4 mx-4 rounded-xl my-6">
         <h1 className=" text-white font-vanio text-xl ">
           Saving and investing was <br /> never so fun and breezy!

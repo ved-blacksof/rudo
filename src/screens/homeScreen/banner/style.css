@@ -9,7 +9,7 @@
 
 .video-wrapper video {
     border-radius: 12px;
-    padding: 4px;
+    padding: 3px;
 }
 
 .banner__wrapper {
@@ -128,7 +128,9 @@
     }
 
     .bottomJoinBtn{
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         bottom: 0%;
         left: 0%;

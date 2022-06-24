@@ -131,20 +131,22 @@ const Banner = () => {
             rewarding way.
           </div>
 
-          <div className="grow-[2] shrink place-content-center grid lg:hidden shrink-1 mt-7 sm:mt-20">
-            <ReactPlayer
-              url={spareVideo}
-              muted={true}
-              playing={true}
-              loop={true}
-              controls={true}
-              height={300}
-              width={300}
-              playsinline={true}
-            />
+          <div className=" grow-[2] shrink place-content-center grid lg:hidden shrink-1 mt-7 sm:mt-20" >
+            <div className="video-wrapper">
+              <ReactPlayer
+                url={spareVideo}
+                muted={true}
+                playing={true}
+                loop={true}
+                controls={true}
+                height={300}
+                width={300}
+                playsinline={true}
+              />
+            </div>
           </div>
 
-          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5">
+          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5 " id="signUpForm">
             <div className="viral-loops-wrapper mt-4">
               {/* <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1> */}
               <div data-vl-widget="embedForm"></div>
@@ -153,7 +155,7 @@ const Banner = () => {
 
           <div className="font-epilogue">
             <h3
-              className="cursor-pointer hover:text-red inline transition-all text-sm underline  underline-offset-1"
+              className="cursor-pointer hover:text-red inline transition-all text-xs underline  underline-offset-1"
               onClick={() =>
                 popupTerms ? setPopupTerms(false) : setPopupTerms(true)
               }
@@ -220,7 +222,7 @@ const Banner = () => {
       }
 
       {
-        bottomJoinBtn ? <div> <button className="bottomJoinBtn text-white font-epilogue text-xl font-bold transition">Join waitlist get AED50</button> </div> : ""
+        bottomJoinBtn ? <div className="bottomJoinBtn"> <a className="text-white font-epilogue text-xl font-bold transition" href="#signUpForm">Join waitlist get AED50</a> </div> : ""
       }
 
     </section>

@@ -195,7 +195,7 @@ const StepIntoFuture = () => {
               </defs>
             </svg>
             <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
-              Start investing as  small as AED 20
+              Start investing as small as AED20
             </p>
           </div>
           <div className=" flex lg:flex-row flex-col flex-1  flex-nowrap gap-2 items-center justify-start px-3 ">
@@ -250,7 +250,7 @@ const StepIntoFuture = () => {
               </defs>
             </svg>
             <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
-              Withdraw as and <br /> when you like
+              Withdraw as and when you like
             </p>
           </div>
         </div>

@@ -20,7 +20,7 @@ const HomePage = () => {
       <div className="hidden sm:block">
         <HomeCardAnim />
       </div>
-      <div className="block sm:hidden lg:mt-32 mt-10">
+      <div className="block sm:hidden lg:mt-32 sm:mt-10">
         <HomeCardAnimMobile />
       </div>
 
