@@ -105,15 +105,16 @@ const Banner = () => {
     const currHeight = window.innerHeight;
 
     if (currOffest > currHeight) {
-      setBottomJoinBtn(true);
-    } else {
-      setBottomJoinBtn(false);
+      setBottomJoinBtn(true)
     }
-  };
+    else {
+      setBottomJoinBtn(false)
+    }
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <section>
@@ -125,11 +126,12 @@ const Banner = () => {
             <span className=" text-red "> automatically! </span>
           </h1>
           <div className=" text-gray text-sm md:text-xl xl:text-xl  font-epilogue max-w-screen-md text-center sm:text-left leading-5 mt-1">
-            Start small but steady! Build a global ETF portfolio and let us grow
-            your spare change into a million bucks in a fun and rewarding way.
+            Start small but steady! With RuDo, build a Global ETF portfolio and
+            let us grow your spare change into a million bucks in a fun and
+            rewarding way.
           </div>
 
-          <div className=" grow-[2] shrink place-content-center grid lg:hidden shrink-1 mt-7 sm:mt-20">
+          <div className=" grow-[2] shrink place-content-center grid lg:hidden shrink-1 mt-7 sm:mt-20" >
             <div className="video-wrapper" id="signUpForm">
               <ReactPlayer
                 url={spareVideo}
@@ -144,7 +146,7 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5 ">
+          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5 " >
             <div className="viral-loops-wrapper mt-4">
               {/* <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1> */}
               <div data-vl-widget="embedForm"></div>
@@ -215,21 +217,14 @@ const Banner = () => {
           </div> : ""
       } */}
 
-      {popupTerms ? <Terms /> : ""}
+      {
+        popupTerms ? <Terms /> : ""
+      }
 
-      {bottomJoinBtn ? (
-        <div className="bottomJoinBtn">
-          {" "}
-          <a
-            className="text-white font-epilogue text-xl font-bold transition"
-            href="#signUpForm"
-          >
-            Join waitlist get AED50
-          </a>{" "}
-        </div>
-      ) : (
-        ""
-      )}
+      {
+        bottomJoinBtn ? <div className="bottomJoinBtn"> <a className="text-white font-epilogue text-xl font-bold transition" href="#signUpForm">Join the waitlist get AED50 </a> </div> : ""
+      }
+
     </section>
   );
 };

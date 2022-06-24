@@ -33,6 +33,7 @@ const HomePage = () => {
 
       {/* <LaunchingSoon /> */}
       <FooterBlade />
+      
     </>
   );
 };
