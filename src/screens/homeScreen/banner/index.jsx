@@ -132,7 +132,7 @@ const Banner = () => {
           </div>
 
           <div className=" grow-[2] shrink place-content-center grid lg:hidden shrink-1 mt-7 sm:mt-20" >
-            <div className="video-wrapper">
+            <div className="video-wrapper" id="signUpForm">
               <ReactPlayer
                 url={spareVideo}
                 muted={true}
@@ -146,7 +146,7 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5 " id="signUpForm">
+          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5 " >
             <div className="viral-loops-wrapper mt-4">
               {/* <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1> */}
               <div data-vl-widget="embedForm"></div>
