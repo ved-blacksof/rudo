@@ -10,8 +10,7 @@ const FooterBlade = ({ openModel }) => {
           Towards Saving and Investing.
         </h2>
         <p className="font-epilogue">
-          Cuz this time it's
-          <br className="br_hide" />
+          Cuz this time it's <br className="br_hide" />
           Fun, Rewarding, and Simple.
         </p>
         {/* <Button color={"#e75553"} lable={"Sign Up Now"} handleOpen={openModel} /> */}
