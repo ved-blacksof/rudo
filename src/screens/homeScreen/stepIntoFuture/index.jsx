@@ -1,8 +1,8 @@
 const StepIntoFuture = () => {
   return (
     <section className="">
-      <div className="md:w-11/12 mx-auto px-3 flex items-center justify-center flex-col min-h-[25rem] gap-4 sm:py-16">
-        <div className="flex sm:flex-nowrap flex-wrap items-center sm:justify-center gap-4 w-full sm:pt-10">
+      <div className="md:w-11/12 mx-auto px-3 flex sm:items-center items-start justify-center flex-col min-h-[25rem] gap-4 sm:py-16">
+        <div className="flex sm:flex-nowrap self-stretch flex-wrap items-start sm:justify-center gap-4 w-full sm:pt-10">
           <svg
             width="30"
             height="37"
@@ -27,6 +27,7 @@ const StepIntoFuture = () => {
             Step into the future of Saving and Investing with RuDo!
           </div>
         </div>
+        
         <div className=" flex items-center lg:justify-around flex-nowrap sm:gap-8 max-w-screen-2xl ">
           <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:px-3 ">
             <svg
