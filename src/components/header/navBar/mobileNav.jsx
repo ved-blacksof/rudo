@@ -19,7 +19,7 @@ const MobileModal = ({ isOpen }) => {
         <div className="border-b border-[#EFBE97] border-opacity-40">
           <Link
             to="/wellness-test"
-            className=" text-darkGreen bg-opacity-20  text-2xl font-epilogue font-normal px-4 rounded-full hover:text-white leading-7 grid place-content-start py-5 transition-colors duration-300  whitespace-nowrap"
+            className=" text-darkGreen bg-opacity-20  text-2xl font-epilogue font-normal px-4 rounded-full hover:text-white leading-7 grid place-content-start py-5 transition-colors duration-300"
           >
             # Financial Wellness test
           </Link>
