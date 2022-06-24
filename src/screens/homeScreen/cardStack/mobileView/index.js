@@ -2,7 +2,7 @@ import "./index.css";
 
 export default function MobileCarousel() {
   return (
-    <>
+    <div className="my-14">
       <div className="mobile-item-3 h-[250px]  px-4 py-4 mx-4 rounded-xl my-6">
         <h1 className=" text-white font-vanio text-xl ">
           Saving and investing was <br /> never so fun and breezy!
@@ -16,7 +16,7 @@ export default function MobileCarousel() {
         <h1 className="text-white font-vanio text-xl ">
           Invest small, earn big!
         </h1>
-        <p className="text-[12px]  text-white  font-epilogue">
+        <p className="text-[12px]  text-white font-epilogue">
           Invest smartly in your best-fit <br /> portfolios and earn exciting
           rewards for it!
         </p>
@@ -26,11 +26,11 @@ export default function MobileCarousel() {
           Binge-investing! <br />
           Yes, we are making it a norm!
         </h1>
-        <p className="text-[12px]  text-white  font-epilogue">
+        <p className="text-[12px]  text-white font-epilogue">
           Explore fun experiences that set you out <br /> to start building your
           wealth!
         </p>
       </div>
-    </>
+    </div>
   );
 }

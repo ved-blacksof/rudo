@@ -1,7 +1,8 @@
 .animation .animation-item-1 {
   background-color: #ffe4b6 !important;
+
   background-image: url(../../../../assets/homepage/cardAnim/feature1.png);
-  background-position: center bottom;
+  background-position: right 30px bottom;
   background-size: auto 45%;
   background-repeat: no-repeat;
 }
@@ -9,7 +10,7 @@
 .animation .animation-item-2 {
   background-color: #f87f7f !important;
   background-image: url(../../../../assets/homepage/cardAnim/feature2.png);
-  background-position: center bottom;
+  background-position: right 30px bottom;
   background-size: auto 45%;
   background-repeat: no-repeat;
 }
@@ -17,7 +18,7 @@
 .animation .animation-item-3 {
   background-color: #7cc8c2 !important;
   background-image: url(../../../../assets/homepage/cardAnim/feature3.png);
-  background-position: center bottom;
+  background-position: right 30px bottom;
   background-size: auto 45%;
   background-repeat: no-repeat;
 }
