@@ -10,7 +10,6 @@ module.exports = {
         "vanio-light": ["vanio-light", "sans-serif"],
         vanio: ["vanio", "sans-serif"],
         "vanio-bold": ["vanio-bold", "sans-serif"],
-
         epilogue: ["epilogue", "sans-serif"],
       },
       animation: {
@@ -24,7 +23,7 @@ module.exports = {
       },
 
       colors: {
-        darkGreen: "#006445",
+        darkGreen: "#1C96A0",
         green: "#4ABE9A",
         red: "#E75553",
         darkRed: "#E75553",

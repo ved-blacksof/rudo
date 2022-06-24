@@ -24,9 +24,16 @@ const Nav = () => {
 
   const handleScroll = () => {
     const currOffest = window.pageYOffset;
-    if (currOffest > 150) {
+    const currwidth = window.innerWidth;
+
+    if (currOffest > 50 ) {
       setScrolled(true)
+      console.log("ds")
     }
+    // if (currOffest > 50 && currwidth <= 600) {
+    //   setScrolled(true)
+    //   console.log("mb")
+    // }
     else {
       setScrolled(false)
     }
@@ -40,7 +47,7 @@ const Nav = () => {
     <header className={` ${scrolled ? "bg-white shadow" : "bg-transparent"} transition header sticky top-0 left-0 right-0 z-[10]`}>
       <nav className=" h-[4.5rem] py-2 px-3 lg:w-11/12 mx-auto  flex flex-nowrap items-center justify-between gap-y-10 gap-x-6  ">
         <Link to="/">
-          <img src={logoIcon} alt="" loading="eager" className=" h-12 " />
+          <img src={logoIcon} alt="" loading="eager" className="h-9 sm:h-12" />
         </Link>
         {/* <div className="hidden md:flex items-center justify-center gap-4 flex-nowrap px-2 ">
           <Link

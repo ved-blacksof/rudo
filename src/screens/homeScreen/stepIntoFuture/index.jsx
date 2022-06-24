@@ -1,8 +1,8 @@
 const StepIntoFuture = () => {
   return (
     <section className="">
-      <div className="md:w-11/12  mx-auto px-3 flex items-center justify-center flex-col min-h-[25rem] gap-4 py-16">
-        <div className="flex flex-nowrap items-center justify-center gap-4 w-full pt-10">
+      <div className="md:w-11/12 mx-auto px-3 flex items-center justify-center flex-col min-h-[25rem] gap-4 sm:py-16">
+        <div className="flex sm:flex-nowrap flex-wrap items-center sm:justify-center gap-4 w-full sm:pt-10">
           <svg
             width="30"
             height="37"
@@ -23,18 +23,19 @@ const StepIntoFuture = () => {
               fill="#F9BE19"
             />
           </svg>
-          <div className=" text-green  text-xl md:text-2xl xl:text-3xl font-epilogue px-3 text-center">
+          <div className=" text-darkGreen text-xl sm:text-3xl xl:text-4xl font-semibold font-epilogue sm:text-center">
             Step into the future of Saving and Investing with RuDo!
           </div>
         </div>
-        <div className=" flex items-center justify-around  gap-8 max-w-screen-2xl flex-wrap">
-          <div className=" flex flex-1 flex-nowrap gap-2 items-center justify-start px-3 ">
+        <div className=" flex items-center lg:justify-around flex-nowrap sm:gap-8 max-w-screen-2xl ">
+          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:px-3 ">
             <svg
               width="90"
               height="90"
               viewBox="0 0 90 90"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="sm:w-auto w-14 "
             >
               <path
                 d="M53.788 41.3193H43.691V52.6085H53.788V41.3193Z"
@@ -139,17 +140,18 @@ const StepIntoFuture = () => {
                 strokeMiterlimit="10"
               />
             </svg>
-            <span className="basis-[20rem]  text-dark  text-xl md:text-2xl xl:text-3xl font-epilogue px-3">
+            <p className="sm:basis-[20rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
               No prior knowledge required
-            </span>
+            </p>
           </div>
-          <div className=" flex flex-1  flex-nowrap gap-2 items-center justify-start px-3 ">
+          <div className=" flex lg:flex-row flex-col flex-1  flex-nowrap gap-2  items-center justify-start px-3 ">
             <svg
               width="101"
               height="101"
               viewBox="0 0 101 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="sm:w-auto w-14 "
             >
               <g clipPath="url(#clip0_943_8613)">
                 <path
@@ -192,17 +194,19 @@ const StepIntoFuture = () => {
                 </clipPath>
               </defs>
             </svg>
-            <span className=" basis-[18rem] text-dark  text-xl md:text-2xl xl:text-3xl font-epilogue px-3">
-              Start investing as <br /> small as AED 20
-            </span>
+            <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
+              Start investing as  small as AED 20
+            </p>
           </div>
-          <div className=" flex flex-1  flex-nowrap gap-2 items-center justify-start px-3 ">
+          <div className=" flex lg:flex-row flex-col flex-1  flex-nowrap gap-2 items-center justify-start px-3 ">
             <svg
               width="102"
               height="103"
               viewBox="0 0 102 103"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="sm:w-auto w-14"
+
             >
               <g clipPath="url(#clip0_943_8620)">
                 <path
@@ -245,9 +249,9 @@ const StepIntoFuture = () => {
                 </clipPath>
               </defs>
             </svg>
-            <span className=" basis-[18rem] text-dark  text-xl md:text-2xl xl:text-3xl font-epilogue px-3">
+            <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
               Withdraw as and <br /> when you like
-            </span>
+            </p>
           </div>
         </div>
       </div>

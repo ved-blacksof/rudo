@@ -66,25 +66,35 @@ const Banner = () => {
     )
   }
 
-
-
-
   return (
     <section >
-      <div className="px-3 md:w-11/12 mx-auto flex justify-between lg:justify-around gap-y-10 gap-x-6  lg:flex-row flex-col py-16 ">
-        <div className="grow-[3] shrink flex flex-col gap-4 justify-center max-w-screen-lg lg:px-3 ">
-          <h1 className="text-3xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug">
+      <div className="px-3 md:w-11/12 mx-auto flex justify-between lg:justify-around gap-y-10 gap-x-6 lg:flex-row flex-col py-5 sm:py-16">
+        <div className="grow-[3] shrink flex flex-col  justify-center max-w-screen-lg lg:px-3 ">
+          <h1 className="text-2xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug leading-7 text-center sm:text-left">
             Got Spare Change? <br />
             Let&apos;s grow it{" "}
             <span className=" text-red "> automatically! </span>
           </h1>
-          <div className=" text-gray text-xl md:text-xl xl:text-xl font-epilogue max-w-screen-md  ">
+          <div className=" text-gray text-sm md:text-xl xl:text-xl  font-epilogue max-w-screen-md text-center sm:text-left leading-5 mt-1">
             Start small but steady! With RuDo, build a Global ETF portfolio and
             let us grow your spare change into a million bucks in a fun and
             rewarding way.
           </div>
 
-          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-5 ">
+          <div className="grow-[2] shrink place-content-center grid lg:hidden shrink-1 mt-7 sm:mt-20">
+            <ReactPlayer
+              url={spareVideo}
+              muted={true}
+              playing={true}
+              loop={true}
+              controls={true}
+              height={300}
+              width={300}
+              playsinline={true}
+            />
+          </div>
+
+          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5">
             <div className="viral-loops-wrapper mt-4">
               {/* <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1> */}
               <div data-vl-widget="embedForm" ></div>
@@ -98,7 +108,7 @@ const Banner = () => {
         </div>
 
         <div className="flex items-center ">
-          <div className="video-wrapper grow-[2] place-content-center shrink hidden xl:grid basis-[410px] ">
+          <div className="video-wrapper grow-[2] place-content-center shrink hidden lg:grid basis-[410px] ">
             <ReactPlayer
               url={spareVideo}
               loop={true}
@@ -113,26 +123,12 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="mb-10 sm:mt-24 mt-0 ">
-        <h1 className="text-center text-3xl font-semibold font-epilogue" >Invite Friends, Give AED 50 and Get AED 50</h1>
-        <h1 className="text-center text-lg  mt-4 mb-3 font-epilogue max-w-md mx-auto" >Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
+      <div className="mb-2 sm:mb-10 sm:mt-24 mt-0 px-3">
+        <h1 className="sm:text-center text-xl sm:text-3xl font-semibold font-epilogue text-darkGreen" >Give AED 50 and Get AED 50</h1>
+        <h1 className="sm:text-center text-sm sm:text-xl mt-0 sm:mt-5 font-epilogue max-w-lg mx-auto leading-5 sm:leading-7">Get more rewards with every milestone you reach upto AED 7,500 by inviting more friends when they start investing with RuDo.</h1>
       </div>
 
       <div data-vl-widget="milestoneWidget"></div>
-
-      <div className="grow-[2] shrink place-content-center grid xl:hidden shrink-1 basis-[410px] mt-20 sm:mt-0 ">
-        <ReactPlayer
-          url={spareVideo}
-          muted={true}
-          playing={true}
-          loop={true}
-          controls={true}
-          height={330}
-          width={330}
-          playsinline={true}
-        />
-      </div>
-
 
       {
         popup ?
