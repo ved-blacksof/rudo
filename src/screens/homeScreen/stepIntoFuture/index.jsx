@@ -1,7 +1,7 @@
 const StepIntoFuture = () => {
   return (
     <section className="">
-      <div className="md:w-11/12  mx-auto px-3 flex items-center justify-center flex-col min-h-[25rem] gap-4 py-16">
+      <div className="md:w-11/12 mx-auto px-3 flex items-center justify-center flex-col min-h-[25rem] gap-4 py-16">
         <div className="flex flex-nowrap items-center justify-center gap-4 w-full pt-10">
           <svg
             width="30"

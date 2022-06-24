@@ -3,20 +3,26 @@ import StepIntoFuture from "./stepIntoFuture";
 import CardStack from "./cardStack";
 import HomeCardAnim from "./homeCardAnim";
 import LaunchingSoon from "./launchingSoon";
+import CardStackMobile from "./cardStack/mobileView";
 import FooterBlade from "./subFooter";
-import './banner/style.css'
+import "./banner/style.css";
 
 const HomePage = () => {
   return (
     <>
-      <div className="banner__wrapper">
+      {/* <div className="banner__wrapper">
         <Banner />
         <StepIntoFuture />
+      </div> */}
+      {/* <div className="hidden sm:block">
+        <CardStack />
+      </div> */}
+      <div className="block sm:hidden mt-32">
+        <CardStackMobile />
       </div>
-      <CardStack />
-      <HomeCardAnim />
+      {/* <HomeCardAnim /> */}
       {/* <LaunchingSoon /> */}
-      <FooterBlade />
+      {/* <FooterBlade /> */}
     </>
   );
 };

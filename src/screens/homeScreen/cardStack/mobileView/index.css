@@ -1,0 +1,23 @@
+.mobile-item-1 {
+  background-color: #173588;
+  background-image: url(../bgImgs/1.svg);
+  background-position: center bottom;
+  background-size: 90% 40%;
+  background-repeat: no-repeat;
+}
+
+.mobile-item-2 {
+  background-color: #4abe9b;
+  background-image: url(../bgImgs/2.svg);
+  background-position: center bottom;
+  background-size: 85% auto;
+  background-repeat: no-repeat;
+}
+
+.mobile-item-3 {
+  background-color: #f87f7f;
+  background-image: url(../bgImgs/3.svg);
+  background-position: center bottom;
+  background-size: 85% auto;
+  background-repeat: no-repeat;
+}

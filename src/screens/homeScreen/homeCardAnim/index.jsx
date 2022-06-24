@@ -11,7 +11,7 @@ import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 
 const CardStack = () => {
   return (
-    <div className="Home_container  md:w-11/12 mt-24 mb-32 mx-auto ">
+    <div className="Home_container  md:w-11/12 mt-24 mb-32 mx-auto">
       <div className="feature-section mx-auto">
         <img src={feature4} className="top-bg" alt="img4" />
         <img src={feature4} className="bottom-bg" alt="img4" />
@@ -27,7 +27,9 @@ const CardStack = () => {
                     <span className="arrow-vertical" style={{ left: "120px" }}>
                       ↑
                     </span>
-                    <p className="font-epilogue">As they say, “starting small helps you gain big”</p>
+                    <p className="font-epilogue">
+                      As they say, “starting small helps you gain big”
+                    </p>
                     <img src={feature1} className="img-fluid" alt="img" />
                   </li>
                 </ul>
@@ -85,8 +87,12 @@ const CardStack = () => {
               className="home_card_slider_inner"
               style={{ backgroundColor: "#FDE4B6" }}
             >
-              <h4 className="font-vanio-light">Keep that change. No, literally! </h4>
-              <p className="font-epilogue">As they say, “starting small helps you gain big”</p>
+              <h4 className="font-vanio-light">
+                Keep that change. No, literally!{" "}
+              </h4>
+              <p className="font-epilogue">
+                As they say, “starting small helps you gain big”
+              </p>
               <img src={feature1} className="img-fluid" alt="img" />
             </div>
           </SplideSlide>
@@ -115,7 +121,9 @@ const CardStack = () => {
                 Salary Debited!
               </h4>
 
-              <p className="font-epilogue">That was fast! Wondering what happened to all that money?</p>
+              <p className="font-epilogue">
+                That was fast! Wondering what happened to all that money?
+              </p>
               <img src={feature3} className="img-fluid" alt="img2" />
             </div>
           </SplideSlide>
