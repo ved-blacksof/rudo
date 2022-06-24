@@ -11,7 +11,7 @@ const FooterBlade = ({ openModel }) => {
            Towards Saving and Investing.
         </h2>
         <p className="font-epilogue">
-          Cuz this time it's
+          Cuz this time it's {" "}
           <br />
           Fun, Rewarding, and Simple.
         </p>
