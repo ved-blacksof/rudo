@@ -5,7 +5,7 @@ import MobileModal from "./mobileNav";
 import "./index.css";
 const Nav = () => {
   const [isModalOpen, toggleModal] = useReducer((s) => !s, false);
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
 
   const BurgerBtn = () => {
     return (
@@ -26,25 +26,29 @@ const Nav = () => {
     const currOffest = window.pageYOffset;
     const currwidth = window.innerWidth;
 
-    if (currOffest > 50 ) {
-      setScrolled(true)
-      console.log("ds")
+    if (currOffest > 50) {
+      setScrolled(true);
+      console.log("ds");
     }
     // if (currOffest > 50 && currwidth <= 600) {
     //   setScrolled(true)
     //   console.log("mb")
     // }
     else {
-      setScrolled(false)
+      setScrolled(false);
     }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className={` ${scrolled ? "bg-white shadow" : "bg-transparent"} transition header sticky top-0 left-0 right-0 z-[10]`}>
+    <header
+      className={` ${
+        scrolled ? "bg-white shadow" : "bg-transparent"
+      } transition header sticky top-0 left-0 right-0 z-[10]`}
+    >
       <nav className=" h-[4.5rem] py-2 px-3 lg:w-11/12 mx-auto  flex flex-nowrap items-center justify-between gap-y-10 gap-x-6  ">
         <Link to="/">
           <img src={logoIcon} alt="" loading="eager" className="h-9 sm:h-12" />
@@ -60,12 +64,12 @@ const Nav = () => {
             target="_blank"
             rel="noopener noreferrer"
             to="/wellness-test"
-            className=" text-darkGreen  bg-green bg-opacity-20 hover:bg-green text-xl border-2 border-green font-epilogue font-normal pt-2 pb-1  px-4 rounded-full hover:text-white leading-7 grid place-content-center transition-colors duration-300"
+            className=" text-white   bg-green bg-opacity-20 hover:bg-green text-xl border-2 border-green font-epilogue font-normal pt-2 pb-1  px-4 rounded-full hover:text-white leading-7 grid place-content-center transition-colors duration-300"
           >
             # Financial Wellness test
           </Link>
         </div> */}
-        {/* <BurgerBtn /> */}
+        <BurgerBtn />
       </nav>
       <MobileModal isOpen={isModalOpen} />
     </header>

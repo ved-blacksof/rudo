@@ -16,7 +16,7 @@ export default function animationCarousel() {
         autoplay: true,
         padding: 35,
       }}
-      className="animation mt-20 mb-16  "
+      className="animation my-14"
     >
       <SplideSlide>
         <div className="animation-item-1 h-full px-4 py-4 mx-2 rounded-xl">
