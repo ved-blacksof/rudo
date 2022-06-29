@@ -72,9 +72,8 @@ const Nav = () => {
 
   return (
     <header
-      className={` ${
-        scrolled ? "bg-white shadow" : "bg-transparent"
-      } transition header sticky top-0 left-0 right-0 z-[10]`}
+      className={`${scrolled ? "bg-white shadow" : "bg-transparent"
+        } transition header sticky top-0 left-0 right-0 z-[10]`}
     >
       <nav className=" h-[4.5rem] py-2 px-3 lg:w-11/12 mx-auto  flex flex-nowrap items-center justify-between gap-y-10 gap-x-6  ">
         <Link to="/">
@@ -96,9 +95,9 @@ const Nav = () => {
             # Financial Wellness test
           </Link>
         </div> */}
-        <BurgerBtn />
+        {/* <BurgerBtn /> */}
       </nav>
-      <MobileModal isOpen={isModalOpen} />
+      {/* <MobileModal isOpen={isModalOpen} /> */}
     </header>
   );
 };

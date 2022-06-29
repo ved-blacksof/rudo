@@ -18,7 +18,7 @@ const Footer = () => {
             className="h-10 sm:h-auto"
           />
         </Link>
-        <div className="grid place-content-center place-items-center gap-1 md:hidden">
+        {/* <div className="grid place-content-center place-items-center gap-1 md:hidden">
           <Link to="/wellness-test">
             <span className="text-darkGreen text-sm">
               #Financial Wellness Test
@@ -27,7 +27,7 @@ const Footer = () => {
           <Link to="/blogs">
             <span className="text-dark text-sm hover:underline ">Blog</span>
           </Link>
-        </div>
+        </div> */}
         <div className="flex flex-none gap-6 items-center justify-center px-3 sm:mt-10">
           <a
             href="https://twitter.com/RudoWealth"

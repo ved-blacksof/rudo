@@ -180,7 +180,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="mb-2 sm:mb-10 sm:mt-24 mt-0 px-3">
+      <div className=" sm:mb-10 sm:mt-24 mt-0 sm:px-3 px-0">
         <h1 className="sm:text-center text-xl sm:text-3xl font-semibold font-epilogue text-darkGreen">
           Give AED 50 and Get AED 50
         </h1>

@@ -132,14 +132,7 @@ const CardStack = () => {
         <div className="fixed z-10 inset-0 overflow-y-auto">
           <div className="flex items-center sm:items-center justify-center min-h-full p-4 text-center sm:p-8 ">
             <div className="relative bg-opacity-10 rounded-lg text-left overflow-hidden transform transition-all sm:my-8 sm:max-w-lg sm:w-full ">
-              <div className="px-4 py-3 sm:px-6 flex flex-col shadow-2xl bg-red bg-opacity-10">
-                {/* <form className="form_section" onSubmit={handleSubmit}>
-                  <p onClick={() => setPopup(false)} className="font-epilogue font-semibold text-xl cursor-pointer">x</p>
-                  <h2 className="text-white text-center text-xl font-bold">Join the waitlist</h2>
-                  <input value={name} onChange={event => setName(event.target.value)} type="text" name="firstname" placeholder="Name" />
-                  <input value={email} onChange={event => setEmail(event.target.value)} type="email" name="email" placeholder="Email Address" />
-                  <button type="submit" >Submit</button>
-                </form> */}
+              <div className="px-4 py-3 sm:px-6 flex flex-col shadow-2xl bg-red bg-opacity-10">          
 
                 <Formik
                   initialValues={initalFormState}
