@@ -12,9 +12,15 @@ const Banner = () => {
   const [showHowItWork, setShowHowItWork] = useState(false);
   const [popupTerms, setPopupTerms] = useState(false);
   const [bottomJoinBtn, setBottomJoinBtn] = useState(false);
+  const [joinWaitlist, setJoinWaitlist] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+
+  
+  const JoinWaitlist = () => {
+    if (joinWaitlist) {
+      setJoinWaitlist(false)
+    }
+    else setJoinWaitlist(true)
   };
 
   const Terms = () => {
@@ -63,7 +69,7 @@ const Banner = () => {
 
   const PopupFun = ({ title, subtitle }) => {
     return (
-      <div className="banner__popup z-[1000000]">
+      <div className="banner__popup z-[1000000] d">
         <div className="fixed  z-10 inset-0 overflow-y-auto bg-white">
           <div className="flex items-end  sm:items-center justify-center min-h-full p-4 text-center sm:p-0 ">
             <div className="relative bg-red rounded-lg text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:max-w-lg sm:w-full ">
@@ -112,6 +118,10 @@ const Banner = () => {
     }
   }
 
+
+
+ 
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
   }, [])
@@ -146,10 +156,18 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="bg-orange rounded-md px-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5 " >
-            <div className="viral-loops-wrapper mt-4">
-              {/* <h1 className="font-epilogue px-5 text-center py-3 font-semibold">Signup now to join our waitlist and get AED 50</h1> */}
-              <div data-vl-widget="embedForm"></div>
+          <div className="viral-loops-wrapper rounded-md sm:p-4 p-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5 ">
+            <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-0 flex justify-center items-center w-screen h-screen z-50 bg-slate-600 bg-opacity-50 " : "sm:block hidden"}`}>
+              <div className="viral-loops-form  relative p-4 sm:p-0 ">
+                
+                <p className="absolute top-3 right-3 scale-x-125 sm:hidden block font-bold hover:text-red" onClick={JoinWaitlist}>X</p>
+                {/* VIRAL Loops */}
+                <div data-vl-widget="embedForm"></div>
+              </div>
+            </div>
+            <div className="sm:hidden flex justify-center flex-col items-center">
+              <h1 className="font-epilogue px-12 text-center py-1 font-semibold">Signup now to join our waitlist and get AED 50</h1>
+              <button onClick={JoinWaitlist} className="py-2 px-10 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full transition-colors duration-300 cursor-pointer  ">Join Waitlist</button>
             </div>
           </div>
 
@@ -180,7 +198,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className=" sm:mb-10 sm:mt-24 mt-0 sm:px-3 px-0">
+      <div className="sm:mb-10 sm:mt-24 mt-0 px-3 ">
         <h1 className="sm:text-center text-xl sm:text-3xl font-semibold font-epilogue text-darkGreen">
           Give AED 50 and Get AED 50
         </h1>
@@ -222,8 +240,12 @@ const Banner = () => {
       }
 
       {
-        bottomJoinBtn ? <div className="bottomJoinBtn"> <a className="text-white font-epilogue text-xl font-bold transition" href="#signUpForm">Join the waitlist get AED50 </a> </div> : ""
+        bottomJoinBtn ? <div className="bottomJoinBtn text-white font-epilogue text-xl font-bold transition " onClick={JoinWaitlist}> Join now and Get AED50 </div> : ""
       }
+
+      {/* {
+        joinWaitlist ? <SignupPopup /> : ""
+      } */}
 
     </section>
   );

@@ -12,6 +12,9 @@ const CardStack = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState(0);
+  const [joinWaitlist, setJoinWaitlist] = useState(false);
+
+
 
   const btnCb = () => {
     if (popup) {
@@ -120,89 +123,14 @@ const CardStack = () => {
     return errors;
   };
 
-  const PopupFun = () => {
-    return (
-      <div
-        className={
-          popup
-            ? "cardStack__popup bg-cream opacity-100"
-            : "cardStack__popup bg-cream opacity-0"
-        }
-      >
-        <div className="fixed z-10 inset-0 overflow-y-auto">
-          <div className="flex items-center sm:items-center justify-center min-h-full p-4 text-center sm:p-8 ">
-            <div className="relative bg-opacity-10 rounded-lg text-left overflow-hidden transform transition-all sm:my-8 sm:max-w-lg sm:w-full ">
-              <div className="px-4 py-3 sm:px-6 flex flex-col shadow-2xl bg-red bg-opacity-10">          
-
-                <Formik
-                  initialValues={initalFormState}
-                  validate={(values) => validator(values)}
-                  onSubmit={(values, actions) => submitHandler(values, actions)}
-                  validateOnChange={false}
-                >
-                  {({ values, errors, handleChange, handleSubmit }) => (
-                    <form
-                      ref={formRef}
-                      onSubmit={handleSubmit}
-                      noValidate
-                      className="flex flex-col p-3 gap-3 relative"
-                    >
-                      <p
-                        onClick={() => {
-                          setPopup(false);
-                        }}
-                        className="font-epilogue font-semibold text-xl cursor-pointer absolute top-2 right-2 text-right text-gray hover:text-red"
-                      >
-                        x
-                      </p>
-
-                      <h1 className="text-xl font-semibold text-center text-black font-epilogue">
-                        Join Waitlist
-                      </h1>
-                      <input
-                        type="text"
-                        placeholder="First Name"
-                        className={` ${
-                          errors.name
-                            ? "border-red"
-                            : "border-gray border-opacity-50"
-                        }  bg-hover border-2  focus:border-green outline-none font-epilogue pt-3 pb-2 mb-4 px-3  text-base  rounded-lg xl:text-lg`}
-                        value={values.name}
-                        name="name"
-                        onChange={handleChange}
-                      />
-                      <input
-                        type="text"
-                        placeholder="Email"
-                        className={` ${
-                          errors.email
-                            ? "border-red"
-                            : "border-gray border-opacity-50"
-                        }  bg-hover border-2  focus:border-green outline-none font-epilogue pt-3 pb-2  px-3  text-base  rounded-lg xl:text-lg`}
-                        value={values.email}
-                        name="email"
-                        onChange={handleChange}
-                      />
-                      {renderError(errors)}
-
-                      <div className=" flex justify-end  mt-4 ">
-                        <button
-                          type="submit"
-                          className="  font-epilogue px-20 pt-3 pb-2 text-white bg-red text-xl xl:text-xl rounded-lg hover:bg-opacity-80"
-                        >
-                          Submit
-                        </button>
-                      </div>
-                    </form>
-                  )}
-                </Formik>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+  const JoinWaitlist = () => {
+    if (joinWaitlist) {
+      setJoinWaitlist(false)
+    }
+    else setJoinWaitlist(true)
   };
+
+
 
   useEffect(() => {
     // to be  deprecated in following builds
@@ -225,14 +153,14 @@ const CardStack = () => {
       arrIndexes.unshift(arrIndexes.pop());
       setIndex(arrIndexes);
 
-      el.addEventListener("click", (event) => {
-        event.stopPropagation();
-        if (event.target.classList.contains("btn")) {
-          return btnCb();
-        }
-        arrIndexes.unshift(arrIndexes.pop());
-        setIndex(arrIndexes);
-      });
+      // el.addEventListener("click", (event) => {
+      //   event.stopPropagation();
+      //   if (event.target.classList.contains("btn")) {
+      //     return btnCb();
+      //   }
+      //   arrIndexes.unshift(arrIndexes.pop());
+      //   setIndex(arrIndexes);
+      // });
       setInterval(() => {
         arrIndexes.unshift(arrIndexes.pop());
         setIndex(arrIndexes);
@@ -242,7 +170,16 @@ const CardStack = () => {
 
   return (
     <>
-      {popup ? <PopupFun title="hi" /> : ""}
+      {/* {joinWaitlist ? <PopupFun title="hi" /> : ""} */}
+
+        <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50" : "hidden"}`}>
+          <div className="viral-loops-forms relative p-8 ">
+            <p className="absolute top-3 right-3 scale-x-125 block font-bold cursor-pointer hover:text-red" onClick={JoinWaitlist}>X</p>
+            {/* VIRAL Loops */}
+            <div data-vl-widget="embedForm"></div>
+          </div>
+        </div>
+    
 
       {/* {
         popup ?
@@ -258,7 +195,7 @@ const CardStack = () => {
             <p className="text-lg text-white font-epilogue md:text-xl xl:text-2xl max-w-screen-sm ">
               Invest to load your treasure chest in a fun way!
             </p>
-            <button className=" btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
+            <button onClick={JoinWaitlist} className="btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
               Join The Waitlist
             </button>
           </div>
@@ -273,7 +210,7 @@ const CardStack = () => {
               Invest smartly in your best-fit portfolios and earn exciting
               rewards for it!
             </p>
-            <button className=" btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
+            <button onClick={JoinWaitlist} className=" btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
               Join The Waitlist
             </button>
           </div>
@@ -290,7 +227,7 @@ const CardStack = () => {
               wealth!
             </p>
 
-            <button className=" btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
+            <button onClick={JoinWaitlist} className=" btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
               Join The Waitlist
             </button>
           </div>

@@ -6,6 +6,8 @@ import "./index.css";
 const Nav = () => {
   const [isModalOpen, toggleModal] = useReducer((s) => !s, false);
   const [scrolled, setScrolled] = useState(false);
+  const [joinWaitlist, setJoinWaitlist] = useState(false);
+
 
   const BurgerBtn = () => {
     return (
@@ -66,6 +68,13 @@ const Nav = () => {
     }
   };
 
+  const JoinWaitlist = () => {
+    if (joinWaitlist) {
+      setJoinWaitlist(false)
+    }
+    else setJoinWaitlist(true)
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -96,8 +105,18 @@ const Nav = () => {
           </Link>
         </div> */}
         {/* <BurgerBtn /> */}
+        <button onClick={JoinWaitlist} className=" btn sm:block hidden pt-3 pb-2 px-6 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
+          Join The Waitlist
+        </button>
       </nav>
       {/* <MobileModal isOpen={isModalOpen} /> */}
+      <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50" : "hidden"}`}>
+        <div className="viral-loops-formss relative p-8 ">
+          <p className="absolute top-3 right-3 scale-x-125 block font-bold cursor-pointer hover:text-red" onClick={JoinWaitlist}>X</p>
+          {/* VIRAL Loops */}
+          <div data-vl-widget="embedForm"></div>
+        </div>
+      </div>
     </header>
   );
 };

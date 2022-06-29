@@ -66,7 +66,7 @@
   background-color: #173588;
   background-image: url(./bgImgs/1.svg);
   background-position: right 15px bottom;
-  background-size: auto 60%;
+  background-size: 60% auto;
   background-repeat: no-repeat;
 }
 
@@ -74,7 +74,7 @@
   background-color: #4abe9b;
   background-image: url(./bgImgs/2.svg);
   background-position: right 15px bottom;
-  background-size: auto 60%;
+  background-size:  60% auto;
   background-repeat: no-repeat;
 }
 
@@ -82,7 +82,7 @@
   background-color: #f87f7f;
   background-image: url(./bgImgs/3.svg);
   background-position: right 15px bottom;
-  background-size: auto 60%;
+  background-size:  60% auto;
   background-repeat: no-repeat;
 }
 
@@ -177,4 +177,31 @@
 .swal-button:hover {
   background-color: #f87f7f !important;
   opacity: .6;
+}
+
+
+.viral-loops-wrappers {
+  width: 100%;
+  background-color: #FDEFE3;
+}
+
+.viral-loops-forms {
+  background-color: #FDEFE3;
+  border-radius: 12px;
+  min-width: 20vw;
+  min-height: 20vw;
+}
+
+@media screen and (max-width: 600px) {
+  .viral-loops-wrappers {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .viral-loops-forms {
+    background-color: #FDEFE3;
+    border-radius: 12px;
+    min-width: 200px;
+    min-height: 200px;
+  }
 }

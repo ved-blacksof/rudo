@@ -16,14 +16,13 @@ const HomePage = () => {
       <div className="banner__wrapper">
         <Banner />
       </div>
-      <StepIntoFuture />
+        <StepIntoFuture />
       <div className="hidden sm:block">
         <HomeCardAnim />
       </div>
       <div className="block sm:hidden lg:mt-32 sm:mt-10">
         <HomeCardAnimMobile />
       </div>
-
       <div className="hidden sm:block">
         <CardStack />
       </div>
@@ -33,7 +32,7 @@ const HomePage = () => {
 
       {/* <LaunchingSoon /> */}
       <FooterBlade />
-      
+
     </>
   );
 };

@@ -52,3 +52,29 @@ input[type="checkbox"]:checked~span:nth-of-type(3) {
   width: 50%;
   transform: translate(30px, -11px) rotatez(45deg);
 }
+
+.viral-loops-wrappers {
+  width: 100%;
+  background-color: #FDEFE3;
+}
+
+.viral-loops-formss {
+  background-color: #FDEFE3;
+  border-radius: 12px;
+  min-width: 20vw;
+  min-height: 20vw;
+}
+
+@media screen and (max-width: 600px) {
+  .viral-loops-wrapperss {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .viral-loops-formss {
+    background-color: #FDEFE3;
+    border-radius: 12px;
+    min-width: 200px;
+    min-height: 200px;
+  }
+}
