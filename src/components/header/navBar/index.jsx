@@ -103,6 +103,7 @@ const Nav = () => {
           >
             # Financial Wellness test
           </Link>
+          
         </div> */}
         {/* <BurgerBtn /> */}
         <button onClick={JoinWaitlist} className=" btn sm:block hidden pt-3 pb-2 px-6 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
