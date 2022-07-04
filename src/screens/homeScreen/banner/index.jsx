@@ -1,3 +1,4 @@
+import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
@@ -5,6 +6,7 @@ import Banner2 from "../banner2";
 import spareVideo from "../../../assets/Spare_Change_Investment.mp4";
 // import second from '../../../assets/icons/'
 import "./style.css";
+import { ImCross } from 'react-icons/im'
 
 const Banner = () => {
   const [popup, setPopup] = useState(false);
@@ -13,9 +15,10 @@ const Banner = () => {
   const [popupTerms, setPopupTerms] = useState(false);
   const [bottomJoinBtn, setBottomJoinBtn] = useState(false);
   const [joinWaitlist, setJoinWaitlist] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
 
-  
+
   const JoinWaitlist = () => {
     if (joinWaitlist) {
       setJoinWaitlist(false)
@@ -119,8 +122,11 @@ const Banner = () => {
   }
 
 
-
- 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
@@ -156,30 +162,71 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="viral-loops-wrapper rounded-md sm:p-4 p-2 bg-opacity-10 font-epilogue max-w-screen-sm mt-8 sm:mt-5 ">
-            <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-0 flex justify-center items-center w-screen h-screen z-50 bg-slate-600 bg-opacity-50 " : "sm:block hidden"}`}>
-              <div className="viral-loops-form  relative p-4 sm:p-0 ">
-                
-                <p className="absolute top-3 right-3 scale-x-125 sm:hidden block font-bold hover:text-red" onClick={JoinWaitlist}>X</p>
+          <div className="viral-loops-wrapper rounded-md sm:p-0 p-2 bg-opacity-10 font-epilogue max-w-screen-xs mt-8 sm:mt-5 ">
+            {/* POPUP */}
+            <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50" : "hidden"}`}>
+              <div className="viral-loops-formss relative p-8 flex items-center justify-center">
+
+                <ImCross className="absolute top-5 right-5 block font-bold cursor-pointer hover:text-black text-red" onClick={JoinWaitlist} />
+
                 {/* VIRAL Loops */}
-                <div data-vl-widget="embedForm"></div>
+
+                <div data-vl-widget="embedForm" className="z-[100]"></div>
+                <div class="absolute top-0 left-0 right-0 bottom-0 my-auto grid place-content-center z-[0] h-16">
+                  <svg
+                    style={{
+                      height: "50px",
+                      margin: "auto",
+                      background: "none",
+                      shapeRendering: "auto",
+                    }}
+                    width="200px"
+                    height="200px"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="xMidYMid"
+                  >
+                    <circle
+                      cx="50"
+                      cy="50"
+                      fill="none"
+                      stroke="#e75553"
+                      stroke-width="10"
+                      r="35"
+                      strokeDasharray="164.93361431346415 56.97787143782138"
+                    >
+                      <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        repeatCount="indefinite"
+                        dur="1s"
+                        values="0 50 50;360 50 50"
+                        keyTimes="0;1"
+                      ></animateTransform>
+                    </circle>
+                  </svg>
+                </div>
+
+
               </div>
             </div>
-            <div className="sm:hidden flex justify-center flex-col items-center">
-              <h1 className="font-epilogue px-12 text-center py-1 font-semibold">Signup now to join our waitlist and get AED 50</h1>
-              <button onClick={JoinWaitlist} className="py-2 px-10 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full transition-colors duration-300 cursor-pointer  ">Join Waitlist</button>
-            </div>
-          </div>
 
-          <div className="font-epilogue">
-            <h3
-              className="cursor-pointer hover:text-red inline transition-all text-xs underline  underline-offset-1"
-              onClick={() =>
-                popupTerms ? setPopupTerms(false) : setPopupTerms(true)
-              }
-            >
-              Terms and Conditions
-            </h3>
+            {/* <span className="rounded-2xl w-full h-[3px] bg-[#FFDF9E] sm:block hidden"></span> */}
+
+            <div className="inline-flex justify-center flex-col items-center sm:items-start mt-3 bg-[#FFECCB] rounded-md border-2 border-[#FED45D] p-4 ">
+              <h1 className="font-epilogue  text-center text-black py-1 sm:font-normal font-semibold sm:text-xl sm:px-0 px-8">Signup now to join our waitlist and get AED 50</h1>
+              <button onClick={JoinWaitlist} className="sm:pb-2 pb-1 sm:pt-3 pt-1 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer">
+                Join Waitlist</button>
+
+              <div className="font-epilogue mt-3 ">
+                <h3
+                  className="text-[9px] cursor-pointer sm:text-left text-center hover:text-red  transition-all sm:text-xs"
+                  onClick={() =>
+                    popupTerms ? setPopupTerms(false) : setPopupTerms(true)
+                  }>
+                  *Terms and Conditions
+                </h3>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -210,30 +257,25 @@ const Banner = () => {
 
       <div data-vl-widget="milestoneWidget"></div>
 
-      {popup ? (
-        status === 200 ? (
-          <PopupFun
-            title="You have submitted Successfully"
-            subtitle="Thankyou for joining us"
-          />
-        ) : status === 400 ? (
-          <PopupFun title="You are already registered" subtitle="Thankyou" />
+      {
+        popup ? (
+          status === 200 ? (
+            <PopupFun
+              title="You have submitted Successfully"
+              subtitle="Thankyou for joining us"
+            />
+          ) : status === 400 ? (
+            <PopupFun title="You are already registered" subtitle="Thankyou" />
+          ) : (
+            <PopupFun
+              title="Oops! something went wrong"
+              subtitle="Please try after some time"
+            />
+          )
         ) : (
-          <PopupFun
-            title="Oops! something went wrong"
-            subtitle="Please try after some time"
-          />
-        )
-      ) : (
-        ""
-      )}
+          ""
+        )}
 
-      {/* {
-        showHowItWork ?
-          <div className="how-it-works-popup origin-center bg-cream">
-            <Banner2 setShowHowItWork={setShowHowItWork} />
-          </div> : ""
-      } */}
 
       {
         popupTerms ? <Terms /> : ""
@@ -243,9 +285,6 @@ const Banner = () => {
         bottomJoinBtn ? <div className="bottomJoinBtn text-white font-epilogue text-xl font-bold transition " onClick={JoinWaitlist}> Join now and Get AED50 </div> : ""
       }
 
-      {/* {
-        joinWaitlist ? <SignupPopup /> : ""
-      } */}
 
     </section>
   );

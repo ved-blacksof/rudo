@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import logoIcon from "../assets/icons/logo.svg";
 import twitter from "../assets/social/twitter.svg";

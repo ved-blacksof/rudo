@@ -1,3 +1,4 @@
+import React  from "react";
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import EmailFormScreen from "../../formScreen/emailForm";
@@ -5,7 +6,7 @@ import { Formik } from "formik";
 import "./styles.css";
 import { useDispatchContext } from "../../../context";
 import emailjs from "emailjs-com";
-import swal from "sweetalert";
+import {ImCross} from 'react-icons/im'
 
 const CardStack = () => {
   const [popup, setPopup] = useState(false);
@@ -164,7 +165,7 @@ const CardStack = () => {
       setInterval(() => {
         arrIndexes.unshift(arrIndexes.pop());
         setIndex(arrIndexes);
-      }, [2000]);
+      }, [4000]);
     });
   }, []);
 
@@ -172,14 +173,52 @@ const CardStack = () => {
     <>
       {/* {joinWaitlist ? <PopupFun title="hi" /> : ""} */}
 
-        <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50" : "hidden"}`}>
-          <div className="viral-loops-forms relative p-8 ">
-            <p className="absolute top-3 right-3 scale-x-125 block font-bold cursor-pointer hover:text-red" onClick={JoinWaitlist}>X</p>
-            {/* VIRAL Loops */}
-            <div data-vl-widget="embedForm"></div>
+      <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50 opacity-[1]" : "hidden opacity-0 transition-all duration-100"}`}>
+        <div className="viral-loops-formss relative p-8 flex items-center justify-center">
+
+        <ImCross className="absolute top-5 right-5 block font-bold cursor-pointer hover:text-black text-red" onClick={JoinWaitlist} />
+         
+          
+          {/* VIRAL Loops */}
+          <div data-vl-widget="embedForm" className="z-[100]"></div>
+          <div class="absolute top-0 left-0 right-0 bottom-0 my-auto grid place-content-center z-[0] h-16 ">
+            <svg
+              style={{
+                height: "50px",
+                margin: "auto",
+                background: "none",
+                shapeRendering: "auto",
+              }}
+              width="200px"
+              height="200px"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="xMidYMid"
+            >
+              <circle
+                cx="50"
+                cy="50"
+                fill="none"
+                stroke="#e75553"
+                stroke-width="10"
+                r="35"
+                strokeDasharray="164.93361431346415 56.97787143782138"
+              >
+                <animateTransform
+                  attributeName="transform"
+                  type="rotate"
+                  repeatCount="indefinite"
+                  dur="1s"
+                  values="0 50 50;360 50 50"
+                  keyTimes="0;1"
+                ></animateTransform>
+              </circle>
+            </svg>
           </div>
+
+
         </div>
-    
+      </div>
+
 
       {/* {
         popup ?
@@ -195,9 +234,9 @@ const CardStack = () => {
             <p className="text-lg text-white font-epilogue md:text-xl xl:text-2xl max-w-screen-sm ">
               Invest to load your treasure chest in a fun way!
             </p>
-            <button onClick={JoinWaitlist} className="btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
-              Join The Waitlist
-            </button>
+
+            <button onClick={JoinWaitlist} className="sm:pb-2 pb-1 pt-1 sm:pt-3 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  ">
+              Join Waitlist</button>
           </div>
         </div>
 
@@ -210,9 +249,8 @@ const CardStack = () => {
               Invest smartly in your best-fit portfolios and earn exciting
               rewards for it!
             </p>
-            <button onClick={JoinWaitlist} className=" btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
-              Join The Waitlist
-            </button>
+            <button onClick={JoinWaitlist} className="sm:pb-2 pb-1 pt-1 sm:pt-3 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  ">
+              Join Waitlist</button>
           </div>
         </div>
 
@@ -227,9 +265,8 @@ const CardStack = () => {
               wealth!
             </p>
 
-            <button onClick={JoinWaitlist} className=" btn pt-4 pb-3 px-8 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
-              Join The Waitlist
-            </button>
+            <button onClick={JoinWaitlist} className="sm:pb-2 pb-1 pt-1 sm:pt-3 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  ">
+              Join Waitlist</button>
           </div>
         </div>
       </div>

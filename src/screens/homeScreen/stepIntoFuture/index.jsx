@@ -1,3 +1,5 @@
+import React  from "react";
+
 const StepIntoFuture = () => {
   return (
     <section className="">
@@ -23,12 +25,12 @@ const StepIntoFuture = () => {
               fill="#F9BE19"
             />
           </svg>
-          <div className=" text-darkGreen text-xl sm:text-3xl xl:text-4xl font-semibold font-epilogue sm:text-center pr-20  sm:pr-0 ">
+          <div className=" text-darkGreen text-xl sm:text-3xl xl:text-3xl font-semibold font-epilogue sm:text-center pr-5  sm:pr-0 ">
             Step into the future of Saving and Investing with RuDo!
           </div>
         </div>
         
-        <div className=" flex items-center lg:justify-around flex-nowrap sm:gap-8 max-w-screen-2xl ">
+        <div className="sm:mt-3 flex items-center lg:justify-around flex-nowrap sm:gap-8 max-w-screen-2xl ">
           <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:px-3 self-stretch ">
             <svg
               width="90"
@@ -141,7 +143,7 @@ const StepIntoFuture = () => {
                 strokeMiterlimit="10"
               />
             </svg>
-            <p className="sm:basis-[20rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
+            <p className="sm:basis-[20rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-2xl font-epilogue sm:px-3">
               No prior knowledge required
             </p>
           </div>
@@ -196,7 +198,7 @@ const StepIntoFuture = () => {
               />
             </svg>
 
-            <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
+            <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-2xl font-epilogue sm:px-3">
               Start investing as small as AED20
             </p>
           </div>
@@ -250,7 +252,7 @@ const StepIntoFuture = () => {
                 </clipPath>
               </defs>
             </svg>
-            <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-3xl font-epilogue sm:px-3">
+            <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-2xl font-epilogue sm:px-3">
               Withdraw as and when you like
             </p>
           </div>

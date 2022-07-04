@@ -1,5 +1,6 @@
 import logoIcon from "../../assets/icons/logo.svg";
 import chevronLeft from "./svgs/chevronDesktop.svg";
+import React  from "react";
 import { useFormContext } from '../../context'
 
 const FormHeader = ({ prevHandler, elemRef, moveNext, movePrev }) => {

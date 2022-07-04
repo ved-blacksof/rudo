@@ -1,3 +1,4 @@
+import React  from "react";
 import { useDispatchContext } from "../../context";
 import FormHeader from "./formHeader";
 const SubLandingPage = () => {

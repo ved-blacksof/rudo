@@ -1,4 +1,7 @@
+import React  from "react";
+
 const LoadingState = () => {
+
   return (
     <div className=" fixed top-0 left-0 right-0 bottom-0 bg-dark bg-opacity-30 z-[10000] grid place-content-center">
       <svg

@@ -1,3 +1,4 @@
+import React  from "react";
 import FormHeader from "./formHeader";
 import Lottie from "react-lottie";
 import * as animationData from "./svgs/gift.json";

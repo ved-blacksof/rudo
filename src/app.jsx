@@ -1,3 +1,4 @@
+import React  from "react";
 import { BrowserRouter, useRoutes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import routes from "./routes";
@@ -12,7 +13,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 500);
   }, []);
 
   return (

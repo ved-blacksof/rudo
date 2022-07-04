@@ -1,3 +1,5 @@
+import React  from "react";
+
 import Banner from "./banner";
 import StepIntoFuture from "./stepIntoFuture";
 import CardStack from "./cardStack";
@@ -16,7 +18,7 @@ const HomePage = () => {
       <div className="banner__wrapper">
         <Banner />
       </div>
-        <StepIntoFuture />
+       <StepIntoFuture />
       <div className="hidden sm:block">
         <HomeCardAnim />
       </div>

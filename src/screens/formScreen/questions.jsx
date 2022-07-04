@@ -1,6 +1,6 @@
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/css/core";
+import '@splidejs/react-splide/css';
 import FormProgress from "./formProgress";
 import formQues from "../../staticData/formData";
 import { useDispatchContext, useFormContext } from "../../context/index";

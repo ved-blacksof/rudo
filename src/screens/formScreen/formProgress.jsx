@@ -1,3 +1,4 @@
+import React  from "react";
 import trophy from "./svgs/trophy.png";
 import chevronLeft from "./svgs/chevronDesktop.svg";
 import { useFormContext } from "../../context/index";

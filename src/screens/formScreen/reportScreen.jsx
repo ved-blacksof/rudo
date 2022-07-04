@@ -1,4 +1,5 @@
 import FormHeader from "./formHeader";
+import React  from "react";
 // import reportBg from "./svgs/reportBg.svg";
 import { useFormContext, useDispatchContext } from "../../context";
 import { useState, useEffect } from "react";

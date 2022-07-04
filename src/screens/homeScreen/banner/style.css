@@ -21,7 +21,6 @@
 .viral-loops-wrapper {
     min-height: 100px;
     width: 100%;
-    background-color: #FDEFE3;
 }
 
 
@@ -31,7 +30,7 @@
     margin: 1rem 0rem;
 }
 
-.bottomJoinBtn{
+.bottomJoinBtn {
     display: none;
 }
 
@@ -41,7 +40,7 @@
         width: 100%;
     }
 
-    .viral-loops-form{
+    .viral-loops-form {
         background-color: #FDEFE3;
         border-radius: 12px;
         min-width: 200px;
@@ -140,7 +139,7 @@
         font-size: 15px;
     }
 
-    .bottomJoinBtn{
+    .bottomJoinBtn {
         display: flex;
         justify-content: center;
         align-items: center;

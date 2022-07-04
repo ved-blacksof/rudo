@@ -1,8 +1,13 @@
+import React  from "react";
 import { Link } from "react-router-dom";
+
 import logoIcon from "../../../assets/icons/logo.svg";
 import { useEffect, useReducer, useState } from "react";
 import MobileModal from "./mobileNav";
 import "./index.css";
+import { ImCross } from 'react-icons/im'
+
+
 const Nav = () => {
   const [isModalOpen, toggleModal] = useReducer((s) => !s, false);
   const [scrolled, setScrolled] = useState(false);
@@ -84,7 +89,7 @@ const Nav = () => {
       className={`${scrolled ? "bg-white shadow" : "bg-transparent"
         } transition header sticky top-0 left-0 right-0 z-[10]`}
     >
-      <nav className=" h-[4.5rem] py-2 px-3 lg:w-11/12 mx-auto  flex flex-nowrap items-center justify-between gap-y-10 gap-x-6  ">
+      <nav className="h-[4.5rem] py-2 px-3 lg:w-11/12 mx-auto  flex flex-nowrap items-center justify-between gap-y-10 gap-x-6  ">
         <Link to="/">
           <img src={logoIcon} alt="" loading="eager" className="h-9 sm:h-12" />
         </Link>
@@ -106,18 +111,59 @@ const Nav = () => {
           
         </div> */}
         {/* <BurgerBtn /> */}
-        <button onClick={JoinWaitlist} className=" btn sm:block hidden pt-3 pb-2 px-6 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
+        {/* <button onClick={JoinWaitlist} className=" btn sm:block hidden pt-3 pb-2 px-6 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
           Join The Waitlist
+        </button> */}
+        <button onClick={JoinWaitlist} className="sm:pb-2 pb-1 pt-2 sm:pt-3 sm:px-10 px-6 text-sm sm:text-lg xl:text-xl text-white whitespace-nowrap font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  ">
+          Join Waitlist
         </button>
       </nav>
       {/* <MobileModal isOpen={isModalOpen} /> */}
       <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50" : "hidden"}`}>
-        <div className="viral-loops-formss relative p-8 ">
-          <p className="absolute top-3 right-3 scale-x-125 block font-bold cursor-pointer hover:text-red" onClick={JoinWaitlist}>X</p>
+        <div className="viral-loops-formss relative p-8 flex items-center justify-center">
+
+          <ImCross className="absolute top-5 right-5 block font-bold cursor-pointer hover:text-black text-red " onClick={JoinWaitlist} />
+
           {/* VIRAL Loops */}
-          <div data-vl-widget="embedForm"></div>
+          <div data-vl-widget="embedForm" className="z-[100]"></div>
+          <div class="absolute top-0 left-0 right-0 bottom-0 my-auto grid place-content-center z-[0] h-16">
+            <svg
+              style={{
+                height: "50px",
+                margin: "auto",
+                background: "none",
+                shapeRendering: "auto",
+              }}
+              width="200px"
+              height="200px"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="xMidYMid"
+            >
+              <circle
+                cx="50"
+                cy="50"
+                fill="none"
+                stroke="#e75553"
+                stroke-width="10"
+                r="35"
+                strokeDasharray="164.93361431346415 56.97787143782138"
+              >
+                <animateTransform
+                  attributeName="transform"
+                  type="rotate"
+                  repeatCount="indefinite"
+                  dur="1s"
+                  values="0 50 50;360 50 50"
+                  keyTimes="0;1"
+                ></animateTransform>
+              </circle>
+            </svg>
+          </div>
+
+
         </div>
       </div>
+
     </header>
   );
 };

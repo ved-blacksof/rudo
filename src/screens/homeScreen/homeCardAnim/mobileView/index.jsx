@@ -1,8 +1,10 @@
 import "./index.css";
-
+import React  from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
+
+
 export default function animationCarousel() {
   return (
     <Splide
@@ -16,7 +18,7 @@ export default function animationCarousel() {
         autoplay: true,
         padding: 35,
       }}
-      className="animation sm:my-14"
+      className="animation sm:my-14 -z-10"
     >
       <SplideSlide>
         <div className="animation-item-1 h-full px-4 py-4 mx-2 rounded-xl">
