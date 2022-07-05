@@ -31,7 +31,7 @@ const StepIntoFuture = () => {
         </div>
         
         <div className="sm:mt-3 flex items-center lg:justify-around flex-nowrap sm:gap-20 max-w-screen-2xl ">
-          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 self-stretch bg-gradient rounded-lg">
+          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 self-stretch bg-gradient rounded-xl">
             <svg
               width="90"
               height="90"
