@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import EmailFormScreen from "../../formScreen/emailForm";
@@ -6,7 +6,7 @@ import { Formik } from "formik";
 import "./styles.css";
 import { useDispatchContext } from "../../../context";
 import emailjs from "emailjs-com";
-import {ImCross} from 'react-icons/im'
+import { ImCross } from 'react-icons/im'
 
 const CardStack = () => {
   const [popup, setPopup] = useState(false);
@@ -171,14 +171,12 @@ const CardStack = () => {
 
   return (
     <>
-      {/* {joinWaitlist ? <PopupFun title="hi" /> : ""} */}
-
       <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50 opacity-[1]" : "hidden opacity-0 transition-all duration-100"}`}>
         <div className="viral-loops-formss relative p-8 flex items-center justify-center">
 
-        <ImCross className="absolute top-5 right-5 block font-bold cursor-pointer hover:text-black text-red" onClick={JoinWaitlist} />
-         
-          
+          <ImCross className="absolute top-5 right-5 block font-bold cursor-pointer hover:text-black text-red" onClick={JoinWaitlist} />
+
+
           {/* VIRAL Loops */}
           <div data-vl-widget="embedForm" className="z-[100]"></div>
           <div class="absolute top-0 left-0 right-0 bottom-0 my-auto grid place-content-center z-[0] h-16 ">
@@ -219,15 +217,9 @@ const CardStack = () => {
         </div>
       </div>
 
-
-      {/* {
-        popup ?
-          <EmailFormScreen /> : ""
-      } */}
-
       <div className="cards-box md:w-11/12 px-4 mx-auto flex items-center justify-center mt-32 py-48 md:py-80 lg:py-80 xl:py-80 ">
         <div className="card item-1  md:w-[40rem] w-full md:min-h-[35rem] min-h-[20rem]  rounded-xl mx-auto ">
-          <div className=" px-8 py-8 xl:px-20 xl:py-20 flex  flex-col flex-nowrap items-start justify-start gap-4">
+          <div className=" px-8 py-8 xl:px-20 xl:py-20 flex  flex-col flex-nowrap items-start justify-start gap-4 ">
             <h1 className=" text-3xl text-white font-vanio  md:text-4xl xl:text-5xl max-w-screen-sm">
               Saving and investing was never so fun and breezy!
             </h1>

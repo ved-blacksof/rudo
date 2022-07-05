@@ -148,7 +148,7 @@ const Banner = () => {
           </div>
 
           <div className=" grow-[2] shrink place-content-center grid lg:hidden shrink-1 mt-7 sm:mt-20" >
-            <div className="video-wrapper" id="signUpForm">
+            <div className="video-wrapper">
               <ReactPlayer
                 url={spareVideo}
                 muted={true}
@@ -256,8 +256,8 @@ const Banner = () => {
         </h1>
       </div>
 
-      <div className="sm:container sm:mx-auto">
-        <div data-vl-widget="milestoneWidget"></div>
+      <div className="sm:mx-auto md:w-11/12 sm:mb-8 sm:px-0 px-5">
+        <div className="md:w-10/12 sm:mx-auto" data-vl-widget="milestoneWidget"></div>
       </div>
 
       {
