@@ -210,10 +210,11 @@ const Banner = () => {
               </div>
             </div>
 
-            {/* <span className="rounded-2xl w-full h-[3px] bg-[#FFDF9E] sm:block hidden"></span> */}
+            <span className="rounded-2xl w-full h-[3px] bg-[#FFDF9E] sm:block hidden"></span>
 
-            <div className="inline-flex justify-center flex-col items-center sm:items-start mt-3 bg-[#FFECCB] rounded-md border-2 border-[#FED45D] p-4 ">
-              <h1 className="font-epilogue  text-center text-black py-1 sm:font-normal font-semibold sm:text-xl sm:px-0 px-8">Signup now to join our waitlist and get AED 50</h1>
+            <div className="inline-flex justify-center flex-col items-center sm:items-start mt-3">
+              <h1 className="font-epilogue  text-center text-black py-1 sm:font-normal font-semibold sm:text-xl sm:px-0 px-8">
+                Signup now to join our waitlist and get AED 50</h1>
               <button onClick={JoinWaitlist} className="sm:pb-2 pb-1 sm:pt-3 pt-1 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer">
                 Join Waitlist</button>
 
@@ -255,7 +256,9 @@ const Banner = () => {
         </h1>
       </div>
 
-      <div data-vl-widget="milestoneWidget"></div>
+      <div className="sm:container sm:mx-auto">
+        <div data-vl-widget="milestoneWidget"></div>
+      </div>
 
       {
         popup ? (

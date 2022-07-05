@@ -3,8 +3,8 @@ import React  from "react";
 const StepIntoFuture = () => {
   return (
     <section className="">
-      <div className="md:w-11/12 mx-auto px-3 flex sm:items-center items-start justify-center flex-col min-h-[25rem] gap-4 sm:py-16">
-        <div className="flex sm:flex-nowrap self-stretch flex-wrap items-start sm:justify-center gap-4 w-full sm:pt-10">
+      <div className="md:w-11/12 mx-auto px-3 flex sm:items-center items-start justify-center flex-col min-h-[25rem] gap-4 sm:py-16 max">
+        <div className="flex  self-stretch flex-wrap items-start sm:justify-center gap-4 w-full sm:pt-10">
           <svg
             width="30"
             height="37"
@@ -25,13 +25,13 @@ const StepIntoFuture = () => {
               fill="#F9BE19"
             />
           </svg>
-          <div className=" text-darkGreen text-xl sm:text-3xl xl:text-3xl font-semibold font-epilogue sm:text-center pr-5  sm:pr-0 ">
+          <div className=" text-darkGreen text-xl sm:text-3xl xl:text-3xl font-semibold font-epilogue sm:text-center pr-5  sm:pr-0 max-w-lg">
             Step into the future of Saving and Investing with RuDo!
           </div>
         </div>
         
-        <div className="sm:mt-3 flex items-center lg:justify-around flex-nowrap sm:gap-8 max-w-screen-2xl ">
-          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:px-3 self-stretch ">
+        <div className="sm:mt-3 flex items-center lg:justify-around flex-nowrap sm:gap-20 max-w-screen-2xl ">
+          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 self-stretch bg-gradient rounded-lg">
             <svg
               width="90"
               height="90"
@@ -147,7 +147,7 @@ const StepIntoFuture = () => {
               No prior knowledge required
             </p>
           </div>
-          <div className=" flex lg:flex-row flex-col flex-1  flex-nowrap gap-2  items-center justify-start px-3  self-stretch ">
+          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 self-stretch bg-gradient rounded-lg">
             <svg
               width="59"
               height="59"
@@ -202,7 +202,7 @@ const StepIntoFuture = () => {
               Start investing as small as AED20
             </p>
           </div>
-          <div className=" flex lg:flex-row flex-col flex-1  flex-nowrap gap-2 items-center justify-start px-3  self-stretch ">
+          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 self-stretch bg-gradient rounded-lg ">
             <svg
               width="102"
               height="103"
