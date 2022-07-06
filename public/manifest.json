@@ -10,14 +10,9 @@
       "sizes": "256x99"
     },
     {
-      "src": "/apple.png",
+      "src": "/image.png",
       "type": "image/png",
-      "sizes": "1081x417"
-    },
-    {
-      "src": "/apple.jpg",
-      "type": "image/jpg",
-      "sizes": "1081x417"
+      "sizes": "1246x637"
     }
   ],
   "screenshots": [
