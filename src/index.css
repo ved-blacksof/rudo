@@ -29,6 +29,8 @@
   .d {
     @apply border border-rose-800;
   }
+
+ 
 }
 
 .bg-gradient {

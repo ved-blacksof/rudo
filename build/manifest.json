@@ -1,0 +1,32 @@
+{
+  "short_name": "Rudo",
+  "name": "Rudo Wealth",
+  "start_url": "./",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/ico",
+      "sizes": "256x99"
+    },
+    {
+      "src": "/apple.png",
+      "type": "image/png",
+      "sizes": "1081x417"
+    },
+    {
+      "src": "/apple.jpg",
+      "type": "image/jpg",
+      "sizes": "1081x417"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot.webp",
+      "sizes": "1127x701",
+      "type": "image/webp",
+      "platform": "wide",
+      "label": "Rudo Wealth"
+    }
+  ]
+}

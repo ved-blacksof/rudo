@@ -31,7 +31,7 @@ const StepIntoFuture = () => {
         </div>
         
         <div className="sm:mt-3 flex items-center lg:justify-around flex-nowrap sm:gap-20 max-w-screen-2xl ">
-          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 self-stretch sm:bg-gradient rounded-xl">
+          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 p-1 self-stretch sm:mr-0 mr-1 bg-gradient rounded-xl">
             <svg
               width="90"
               height="90"
@@ -147,7 +147,7 @@ const StepIntoFuture = () => {
               No prior knowledge required
             </p>
           </div>
-          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 self-stretch sm:bg-gradient rounded-lg">
+          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 p-1 self-stretch sm:mr-0 mr-1 bg-gradient rounded-lg">
             <svg
               width="59"
               height="59"
@@ -202,7 +202,7 @@ const StepIntoFuture = () => {
               Start investing as small as AED20
             </p>
           </div>
-          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 self-stretch sm:bg-gradient rounded-lg ">
+          <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 p-1 self-stretch sm:mr-0 mr-1 bg-gradient rounded-lg ">
             <svg
               width="102"
               height="103"
