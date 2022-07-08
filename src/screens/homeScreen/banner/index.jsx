@@ -7,6 +7,7 @@ import spareVideo from "../../../assets/Spare_Change_Investment.mp4";
 // import second from '../../../assets/icons/'
 import "./style.css";
 import { ImCross } from 'react-icons/im'
+import TermsAndCondition from "../../../components/TermsAndCondition";
 
 const Banner = () => {
   const [popup, setPopup] = useState(false);
@@ -28,45 +29,7 @@ const Banner = () => {
 
   const Terms = () => {
     return (
-      <div className="terms-popup-wrapper z-10 bg-white flex justify-center items-center">
-        <div className="terms-popup  px-14 py-8 sm:py-5 sm:px-10  flex justify-center items-center">
-          <p
-            className="text-black hover:text-red"
-            onClick={() => setPopupTerms(false)}
-          >
-            X
-          </p>
-
-          <ul className="list-disc font-epilogue text-sm text-black">
-            <span className="text-lg font-semibold">Terms and Conditions</span>
-            <li>
-              Every time your family/ friends sign up with your shared referral
-              link and becomes a new RuDo member by setting up a RuDo Wealth
-              account in accordance with the below eligibility criteria, you and
-              your friend will get AED50 in your RuDo Wealth accounts.
-              Eligibility
-            </li>
-            <li>
-              Referral codes must be used during the early sign up and
-              on-boarding process, and cannot be added retroactively.
-            </li>
-            <li>
-              Only when your friend funds his/her account with the minimum
-              investment of AED20 into their portfolio, the referral amount will
-              be added to both of your accounts within 30 days.
-            </li>
-            <li>
-              Clients who receive a referral bonus must keep it in their account
-              for 90 days, otherwise it may be deducted from their final
-              withdrawal amount.
-            </li>
-            <li>
-              The referral program is available exclusively to those who are
-              residing in the UAE.
-            </li>
-          </ul>
-        </div>
-      </div>
+      <TermsAndCondition setPopupTerms={setPopupTerms} JoinWaitlist={JoinWaitlist} />
     );
   };
 
@@ -165,7 +128,7 @@ const Banner = () => {
           <div className="viral-loops-wrapper rounded-md sm:p-0 p-2 bg-opacity-10 font-epilogue max-w-screen-xs mt-8 sm:mt-5 ">
             {/* POPUP */}
             <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50" : "hidden"}`}>
-              <div className="viral-loops-formss relative p-8 flex items-center justify-center">
+              <div className="viral-loops-formss relative p-5 flex items-center justify-center">
 
                 <ImCross className="absolute top-5 right-5 block font-bold cursor-pointer hover:text-black text-red" onClick={JoinWaitlist} />
 
@@ -205,8 +168,6 @@ const Banner = () => {
                     </circle>
                   </svg>
                 </div>
-
-
               </div>
             </div>
 

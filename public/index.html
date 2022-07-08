@@ -3,17 +3,19 @@
 
 <head>
   <link rel="icon" sizes="48x48" href="favicon.ico" /> <!-- tab icon -->
-  <link rel="apple-touch-icon" sizes="48x48" href="https://rudo-ved-blacksof.vercel.app/apple.png" /> <!-- tab icon -->
-  <link rel="image_src" sizes="1246x637" href="https://rudo-ved-blacksof.vercel.app/image.png" /> <!-- image with name -->
-  <meta property="og:image" content="https://rudo-ved-blacksof.vercel.app/image.png" /> <!-- Image with name -->
-  <meta property="twitter:image" content="https://rudo-ved-blacksof.vercel.app/image.png" /> <!-- Image with name -->
+  <link rel="apple-touch-icon" sizes="48x48" href="https://rudowealth.com/apple.png" /> <!-- tab icon -->
+  <link rel="image_src" sizes="1246x637" href="https://rudowealth.com/image.png" />
+  <!-- image with name -->
+  <meta property="og:image" content="https://rudowealth.com/image.png" /> <!-- Image with name -->
+  <meta property="twitter:image" content="https://rudowealth.com/image.png" /> <!-- Image with name -->
   <link rel="manifest" href="manifest.json" />
 
   <title>RuDo Wealth - Reinvent how you save & invest</title>
 
   <meta charset="utf-8" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Build your wealth using spare change investment with games, rewards, and much more!" />
+  <meta name="description"
+    content="Build your wealth using spare change investment with games, rewards, and much more!" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -56,7 +58,7 @@
 
   <div id="root"></div>
 
-  <script>
+  <!-- <script>
     !(function () {
       var a = (window.VL = window.VL || {});
       return (
@@ -112,6 +114,17 @@
     var campaign = VL.load("O9IEEdQ8EgxuoqTO2MoSKwvtlOE", {
       autoLoadWidgets: !0,
     });
+  </script> -->
+
+  <script type="module">
+    const maybeReload = () => {
+      let loaded = !!document.querySelector("[data-vl-widget=embedForm]>iframe");
+      if (loaded)
+        return console.debug("[VL Patcher] loaded");
+      console.debug("[VL Patcher] reloading");
+      VL.load("O9IEEdQ8EgxuoqTO2MoSKwvtlOE", { autoLoadWidgets: true })
+    }
+    window.onload = maybeReload();
   </script>
 </body>
 

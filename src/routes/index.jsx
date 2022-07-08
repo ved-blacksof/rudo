@@ -1,6 +1,6 @@
-import React  from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
-import { HomeScreen, ErrorScreen, FormScreen } from "../screens";
+import { HomeScreen, ErrorScreen, FormScreen, PrivacyScreen } from "../screens";
 import { Ribbon, NavBar, Footer } from "../components";
 import ContextProvider from "../context";
 
@@ -23,6 +23,11 @@ const routeTree = () => {
       children: [{ path: "", element: <HomeScreen /> }],
     },
     {
+      path: "/privacy",
+      element: <ViewWithNavAndFooter />,
+      children: [{ path: "", element: <PrivacyScreen /> }],
+    },
+    {
       path: "/wellness-test",
       element: (
         <ContextProvider>
@@ -34,6 +39,7 @@ const routeTree = () => {
       path: "*",
       element: <ErrorScreen />,
     },
+
   ];
 };
 export default routeTree;

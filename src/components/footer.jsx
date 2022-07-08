@@ -6,6 +6,8 @@ import instagram from "../assets/social/insta.svg";
 import linkedin from "../assets/social/linkedin.svg";
 import fb from "../assets/social/facebook.svg";
 
+
+
 const Footer = () => {
   return (
     <footer className=" bg-footerBg  flex justify-center ">
@@ -59,6 +61,9 @@ const Footer = () => {
             <img src={linkedin} alt="" className="sm:h-5 h-4" />
           </a>
         </div>
+
+        {/* <Link to="/privacy" className="text-[9px] sm:text-base font-epilogue mt-2">Privacy Policy</Link> */}
+
         <div className="font-epilogue text-dark min-w-full flex flex-wrap max-w-3xl text-center  gap-1 items-center justify-center">
           <h3 className="text-[9px] sm:text-base">Copyright &copy; 2022.</h3>
           <h3 className="text-[9px] sm:text-base">
