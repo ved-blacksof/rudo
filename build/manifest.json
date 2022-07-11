@@ -12,13 +12,13 @@
     {
       "src": "/image.png",
       "type": "image/png",
-      "sizes": "1246x637"
+      "sizes": "1281x720"
     }
   ],
   "screenshots": [
     {
       "src": "/image.png",
-      "sizes": "1246x637",
+      "sizes": "1281x720",
       "type": "image/png",
       "platform": "wide",
       "label": "Rudo Wealth"

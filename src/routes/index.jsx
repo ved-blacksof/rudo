@@ -23,7 +23,7 @@ const routeTree = () => {
       children: [{ path: "", element: <HomeScreen /> }],
     },
     {
-      path: "/privacy",
+      path: "/privacy-policy",
       element: <ViewWithNavAndFooter />,
       children: [{ path: "", element: <PrivacyScreen /> }],
     },
