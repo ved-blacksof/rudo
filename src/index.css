@@ -29,14 +29,21 @@
   .d {
     @apply border border-rose-800;
   }
-
- 
-}
-
-.bg-gradient {
-  background: linear-gradient(180deg, #FFECCB -30.84%, rgba(255, 236, 203, 0) 141%);
-}
-
-.bg-green {
-  background-color: #2e9fa3;
+  .bg-gradient {
+    background: linear-gradient(
+      180deg,
+      #ffeccb -30.84%,
+      rgba(255, 236, 203, 0) 141%
+    );
+  }
+  .formBgNew {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 226, 92, 0.1) 0%,
+      rgba(255, 231, 163, 0.056) 100%
+    );
+  }
+  .bg-green {
+    background-color: #2e9fa3;
+  }
 }

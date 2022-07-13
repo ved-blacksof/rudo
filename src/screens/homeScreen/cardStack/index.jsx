@@ -6,7 +6,7 @@ import { Formik } from "formik";
 import "./styles.css";
 import { useDispatchContext } from "../../../context";
 import emailjs from "emailjs-com";
-import { ImCross } from 'react-icons/im'
+import { ImCross } from "react-icons/im";
 
 const CardStack = () => {
   const [popup, setPopup] = useState(false);
@@ -14,8 +14,6 @@ const CardStack = () => {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState(0);
   const [joinWaitlist, setJoinWaitlist] = useState(false);
-
-
 
   const btnCb = () => {
     if (popup) {
@@ -126,12 +124,9 @@ const CardStack = () => {
 
   const JoinWaitlist = () => {
     if (joinWaitlist) {
-      setJoinWaitlist(false)
-    }
-    else setJoinWaitlist(true)
+      setJoinWaitlist(false);
+    } else setJoinWaitlist(true);
   };
-
-
 
   useEffect(() => {
     // to be  deprecated in following builds
@@ -171,15 +166,22 @@ const CardStack = () => {
 
   return (
     <>
-      <div className={`  ${joinWaitlist ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50 opacity-[1]" : "hidden opacity-0 transition-all duration-100"}`}>
+      <div
+        className={`  ${
+          joinWaitlist
+            ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50 opacity-[1]"
+            : "hidden opacity-0 transition-all duration-100"
+        }`}
+      >
         <div className="viral-loops-formss relative p-8 flex items-center justify-center">
-
-          <ImCross className="absolute top-5 right-5 block font-bold cursor-pointer hover:text-black text-red" onClick={JoinWaitlist} />
-
+          <ImCross
+            className="absolute top-5 right-5 block font-bold cursor-pointer hover:text-black text-red"
+            onClick={JoinWaitlist}
+          />
 
           {/* VIRAL Loops */}
           <div data-vl-widget="embedForm" className="z-[100]"></div>
-          <div class="absolute top-0 left-0 right-0 bottom-0 my-auto grid place-content-center z-[0] h-16 ">
+          <div className="absolute top-0 left-0 right-0 bottom-0 my-auto grid place-content-center z-[0] h-16 ">
             <svg
               style={{
                 height: "50px",
@@ -197,7 +199,7 @@ const CardStack = () => {
                 cy="50"
                 fill="none"
                 stroke="#e75553"
-                stroke-width="10"
+                strokeWidth="10"
                 r="35"
                 strokeDasharray="164.93361431346415 56.97787143782138"
               >
@@ -212,8 +214,6 @@ const CardStack = () => {
               </circle>
             </svg>
           </div>
-
-
         </div>
       </div>
 
@@ -227,8 +227,12 @@ const CardStack = () => {
               Invest to load your treasure chest in a fun way!
             </p>
 
-            <button onClick={JoinWaitlist} className="sm:pb-2 pb-1 pt-1 sm:pt-3 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  ">
-              Join Waitlist</button>
+            <button
+              onClick={JoinWaitlist}
+              className="sm:pb-2 pb-1 pt-1 sm:pt-3 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  "
+            >
+              Join Waitlist
+            </button>
           </div>
         </div>
 
@@ -241,8 +245,12 @@ const CardStack = () => {
               Invest smartly in your best-fit portfolios and earn exciting
               rewards for it!
             </p>
-            <button onClick={JoinWaitlist} className="sm:pb-2 pb-1 pt-1 sm:pt-3 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  ">
-              Join Waitlist</button>
+            <button
+              onClick={JoinWaitlist}
+              className="sm:pb-2 pb-1 pt-1 sm:pt-3 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  "
+            >
+              Join Waitlist
+            </button>
           </div>
         </div>
 
@@ -257,8 +265,12 @@ const CardStack = () => {
               wealth!
             </p>
 
-            <button onClick={JoinWaitlist} className="sm:pb-2 pb-1 pt-1 sm:pt-3 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  ">
-              Join Waitlist</button>
+            <button
+              onClick={JoinWaitlist}
+              className="sm:pb-2 pb-1 pt-1 sm:pt-3 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  "
+            >
+              Join Waitlist
+            </button>
           </div>
         </div>
       </div>

@@ -40,6 +40,7 @@ module.exports = {
         btnLeft: "#ed8663",
         btnRight: "#e75553",
         formBg: "#FFE4B6",
+        formBgNew: "#FFE25C",
       },
     },
   },
