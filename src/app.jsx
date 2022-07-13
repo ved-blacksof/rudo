@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, useRoutes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import routes from "./routes";
+import { ScrollTop } from "./components";
 
 const RenderRoutes = () => {
   let routeTree = useRoutes(routes());
@@ -19,7 +20,9 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <RenderRoutes />
+        <ScrollTop>
+          <RenderRoutes />
+        </ScrollTop>
       </BrowserRouter>
       {isLoading ? (
         <div className=" fixed top-0 left-0 right-0 bottom-0 z-[1000] bg-white h-screen w-screen grid place-content-center ">
