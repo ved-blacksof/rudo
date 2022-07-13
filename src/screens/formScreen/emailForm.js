@@ -1,5 +1,5 @@
 import React from "react";
-import FormProgress from "./formProgress";
+
 import { useState, useRef } from "react";
 import FormHeader from "./formHeader";
 import trophy from "../../assets/formPage/trophyBg.png";
@@ -163,7 +163,7 @@ const EmailFormScreen = () => {
           </Formik>
         </div>
       </div>
-      <FormProgress />
+      {/* <FormProgress /> */}
     </>
   );
 };

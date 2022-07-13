@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatchContext } from "../../context";
 
 import FormHeader from "./formHeader";
-import lemonBanner from "../../assets/formPage/landing.png";
+import lemonBanner from "../../assets/formPage/landing_revised.png";
 
 const LandingPage = () => {
   const { moveNext } = useDispatchContext();
@@ -11,9 +11,9 @@ const LandingPage = () => {
     <>
       <FormHeader moveNext={moveNext} />
       <div className="formBgNew">
-        <section className="flex flex-wrap md:gap-10 justify-between  items-start flex-col-reverse sm:flex-row max-w-screen-2xl mx-auto pt-8 md:pt-16 lg:pt-24 pb-24 sm:pb-5 md:w-11/12">
+        <section className="flex flex-wrap-reverse md:gap-10 justify-between  items-center flex-col-reverse sm:flex-row max-w-screen-2xl mx-auto pt-8 md:pt-16 lg:pt-24 pb-24 sm:pb-5 md:w-11/12 sm:text-left text-center   px-2 ">
           <div className="basis-96 grow max-w-screen-sm shrink px-3 py-10 grid items-start">
-            <h3 className="text-darkGreen  flex items-center  pt-3 rounded-xl bg-lightGreen  py-1 px-4  font-epilogue  text-base  sm:text-2xl font-bold  mr-auto mb-4 ">
+            <h3 className="text-darkGreen  flex items-center  pt-2 rounded-xl bg-lightGreen  px-4  font-epilogue text-base  sm:text-2xl font-bold mb-4 mr-auto ml-auto sm:ml-0">
               #Financial Wellness Test
             </h3>
             <h1 className="text-2xl md:text-4xl xl:text-4xl font-epilogue font-bold md:leading-relaxed xl:leading-tight max-w-screen-md ">
@@ -32,7 +32,7 @@ const LandingPage = () => {
               Let’s see how your lemonade tastes!
             </h1>
             <button
-              className="flex  bg-gradient-to-r from-btnLeft to-btnRight hover:shadow-lg py-2 md:py-1 md:px-3 px-2 rounded-lg xl:mt-10 mt-6  flex-nowrap items-center justify-center  mr-auto"
+              className="flex  bg-gradient-to-r from-btnLeft to-btnRight hover:shadow-lg py-2 md:py-1 md:px-3 px-2 rounded-lg xl:mt-10 mt-6  flex-nowrap items-center justify-center  mr-auto ml-auto sm:ml-0  "
               onClick={moveNext}
             >
               <span className="min-w-[9rem] mt-1 text-xl xl:text-2xl text-white font-epilogue  ">
@@ -52,8 +52,8 @@ const LandingPage = () => {
             </button>
           </div>
 
-          <div className="grow-0 shrink grid place-content-center">
-            <img src={lemonBanner} alt="lemon" />
+          <div className="grow-0 basis-96 shrink grid place-content-center">
+            <img src={lemonBanner} alt="lemon" className="sm:h-auto h-64" />
           </div>
         </section>
       </div>
