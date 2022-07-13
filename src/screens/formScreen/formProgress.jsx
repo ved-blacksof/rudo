@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import trophy from "./svgs/trophy.png";
 import chevronLeft from "./svgs/chevronDesktop.svg";
 import { useFormContext } from "../../context/index";
@@ -37,7 +37,7 @@ const FormProgress = ({ prevHandler, elemRef }) => {
       <div className=" bg-white py-3 px-3">
         <div className=" relative md:w-10/12  max-w-screen-lg mx-auto xl:h-6 h-4 rounded-full bg-gradient-to-r from-green to-footerBg flex items-center">
           <svg
-            style={{ left: (Object.keys(ansData).length / 9) * 100 + "%" }}
+            style={{ left: (Object.keys(ansData).length / 10) * 100 + "%" }}
             className="xl:h-16 xl:w-16 h-12 w-12 -mt-4 absolute transition-all duration-200"
             viewBox="0 0 52 66"
             fill="none"

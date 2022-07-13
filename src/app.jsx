@@ -25,7 +25,7 @@ const App = () => {
         </ScrollTop>
       </BrowserRouter>
       {isLoading ? (
-        <div class=" fixed top-0 left-0 right-0 bottom-0 z-[1000] bg-white h-screen w-screen grid place-content-center ">
+        <div className=" fixed top-0 left-0 right-0 bottom-0 z-[1000] bg-white h-screen w-screen grid place-content-center ">
           <svg
             style={{
               height: "50px",
@@ -44,7 +44,7 @@ const App = () => {
               cy="50"
               fill="none"
               stroke="#e75553"
-              stroke-width="10"
+              strokeWidth="10"
               r="35"
               strokeDasharray="164.93361431346415 56.97787143782138"
             >

@@ -1,8 +1,7 @@
 import React, { useRef } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import '@splidejs/react-splide/css';
+import "@splidejs/react-splide/css";
 import FormProgress from "./formProgress";
-import formQues from "../../staticData/formData";
 import { useDispatchContext, useFormContext } from "../../context/index";
 import FormHeader from "./formHeader";
 
@@ -10,9 +9,8 @@ const QuestionsScreen = () => {
   const customBtn = useRef("");
   const defaultPrev = useRef();
   const defaultNext = useRef();
-
   const { dispatchAns, moveNext } = useDispatchContext();
-  const { ansData } = useFormContext();
+  const { ansData, quesData } = useFormContext();
 
   const handleCustomPrev = () => {
     defaultPrev.current.click();
@@ -25,8 +23,7 @@ const QuestionsScreen = () => {
 
   const handleOptionSelect = (qIndex, marks) => {
     dispatchAns({ [qIndex]: marks });
-    console.log(ansData);
-    if (Object.keys(ansData).length === formQues.length - 1) moveNext();
+    if (Object.keys(ansData).length === quesData.length - 1) moveNext();
     else handleCustomNext();
   };
 
@@ -85,31 +82,40 @@ const QuestionsScreen = () => {
             options={splideOptions}
             className="mx-auto xl:px-3 max-w-screen-lg bg-formBg overflow-auto"
           >
-            {formQues.map((i, index) => {
-              const { title, category, options } = i;
+            {quesData.map((i, index) => {
+              const { icon, description, answers, slug, id: questionId } = i;
               return (
                 <SplideSlide
                   key={index}
-                  className="flex py-4 lg:py-8 xl:py-10 flex-nowrap px-3  flex-col w-full overflow-auto  "
+                  className="flex py-4 lg:py-8 xl:py-10 flex-nowrap px-3  flex-col w-full overflow-auto"
                 >
-                  <h1 className=" text-base font-epilogue font-normal text-dark lg:text-2xl ">
-                    <span className="font-normal font-epilogue">
-                      {"Que 0" + (+index + 1) + " / "}
-                    </span>
-                    {category}
-                  </h1>
-                  <h1 className=" text-2xl font-epilogue font-bold text-dark lg:text-4xl">
-                    {title}
-                  </h1>
-                  <div className="flex items-start justify-start h-min flex-wrap  gap-4   xl:mt-4  xl:mb-6 py-4  ">
-                    {options.map((i, qIndex) => {
+                  <div className="flex flex-nowrap gap-2 items-center max-w-screen-lg">
+                    <div className="flex-1  max-w-screen-md">
+                      <h2 className=" text-base font-epilogue font-normal text-dark lg:text-2xl">
+                        <span className="font-normal font-epilogue">
+                          {"Que 0" + (+index + 1) + " / "}
+                        </span>
+                        {slug}
+                      </h2>
+                      <h2 className=" text-2xl font-epilogue font-bold text-dark lg:text-4xl">
+                        {description}
+                      </h2>
+                    </div>
+                    <img
+                      src={icon}
+                      className="h-16 w-16 md:h-24 md:w-24 lg:w-40 lg:h-40"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex items-start justify-start h-min flex-wrap  gap-4   xl:mt-4  xl:mb-6 py-4">
+                    {answers.map((i) => {
                       return (
                         <OptionItem
-                          key={qIndex}
-                          questionIndex={index}
-                          optionIndex={qIndex}
-                          text={i[0]}
-                          marks={i[1]}
+                          key={i.id}
+                          questionIndex={questionId}
+                          optionIndex={i.id}
+                          text={i.title}
+                          marks={i.id}
                         />
                       );
                     })}

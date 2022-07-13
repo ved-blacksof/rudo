@@ -33,12 +33,14 @@ html {
   .d {
     @apply border border-rose-800;
   }
-
-
 }
 
 .bg-gradient {
-  background: linear-gradient(180deg, #FFECCB -30.84%, rgba(255, 236, 203, 0) 141%);
+  background: linear-gradient(
+    180deg,
+    #ffeccb -30.84%,
+    rgba(255, 236, 203, 0) 141%
+  );
 }
 
 .bg-green {

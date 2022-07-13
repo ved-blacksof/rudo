@@ -1,5 +1,5 @@
 import FormHeader from "./formHeader";
-import React  from "react";
+import React from "react";
 // import reportBg from "./svgs/reportBg.svg";
 import { useFormContext, useDispatchContext } from "../../context";
 import { useState, useEffect } from "react";
@@ -168,7 +168,7 @@ const ReportScreen = () => {
                     y2="222.116"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="-5.43999"
@@ -177,7 +177,7 @@ const ReportScreen = () => {
                     y2="220.54"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="0.442818"
@@ -186,7 +186,7 @@ const ReportScreen = () => {
                     y2="218.964"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="6.32563"
@@ -195,7 +195,7 @@ const ReportScreen = () => {
                     y2="217.387"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="12.2084"
@@ -204,7 +204,7 @@ const ReportScreen = () => {
                     y2="215.81"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="18.0913"
@@ -213,7 +213,7 @@ const ReportScreen = () => {
                     y2="214.234"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="23.9741"
@@ -222,7 +222,7 @@ const ReportScreen = () => {
                     y2="212.659"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="29.8549"
@@ -231,7 +231,7 @@ const ReportScreen = () => {
                     y2="211.081"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="35.7377"
@@ -240,7 +240,7 @@ const ReportScreen = () => {
                     y2="209.505"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="41.6206"
@@ -249,7 +249,7 @@ const ReportScreen = () => {
                     y2="207.929"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="47.5034"
@@ -258,7 +258,7 @@ const ReportScreen = () => {
                     y2="206.354"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="53.3862"
@@ -267,7 +267,7 @@ const ReportScreen = () => {
                     y2="204.776"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="59.269"
@@ -276,7 +276,7 @@ const ReportScreen = () => {
                     y2="203.202"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="65.1518"
@@ -285,7 +285,7 @@ const ReportScreen = () => {
                     y2="201.624"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="71.0346"
@@ -294,7 +294,7 @@ const ReportScreen = () => {
                     y2="200.048"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="76.9174"
@@ -303,7 +303,7 @@ const ReportScreen = () => {
                     y2="198.471"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="82.7983"
@@ -312,7 +312,7 @@ const ReportScreen = () => {
                     y2="196.896"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="88.6791"
@@ -321,7 +321,7 @@ const ReportScreen = () => {
                     y2="195.32"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="94.5639"
@@ -330,7 +330,7 @@ const ReportScreen = () => {
                     y2="193.743"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="100.447"
@@ -339,7 +339,7 @@ const ReportScreen = () => {
                     y2="192.167"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="106.33"
@@ -348,7 +348,7 @@ const ReportScreen = () => {
                     y2="190.59"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="112.21"
@@ -357,7 +357,7 @@ const ReportScreen = () => {
                     y2="189.014"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="118.095"
@@ -366,7 +366,7 @@ const ReportScreen = () => {
                     y2="187.439"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="123.978"
@@ -375,7 +375,7 @@ const ReportScreen = () => {
                     y2="185.862"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="129.861"
@@ -384,7 +384,7 @@ const ReportScreen = () => {
                     y2="184.286"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="135.74"
@@ -393,7 +393,7 @@ const ReportScreen = () => {
                     y2="182.709"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="141.628"
@@ -402,7 +402,7 @@ const ReportScreen = () => {
                     y2="181.133"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="147.509"
@@ -411,7 +411,7 @@ const ReportScreen = () => {
                     y2="179.556"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="153.392"
@@ -420,7 +420,7 @@ const ReportScreen = () => {
                     y2="177.98"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="159.271"
@@ -429,7 +429,7 @@ const ReportScreen = () => {
                     y2="176.405"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="165.158"
@@ -438,7 +438,7 @@ const ReportScreen = () => {
                     y2="174.829"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="34.7303"
@@ -447,7 +447,7 @@ const ReportScreen = () => {
                     y2="173.583"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="33.1542"
@@ -456,7 +456,7 @@ const ReportScreen = () => {
                     y2="167.7"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="31.578"
@@ -465,7 +465,7 @@ const ReportScreen = () => {
                     y2="161.818"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="29.9999"
@@ -474,7 +474,7 @@ const ReportScreen = () => {
                     y2="155.935"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="28.4257"
@@ -483,7 +483,7 @@ const ReportScreen = () => {
                     y2="150.051"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="26.8495"
@@ -492,7 +492,7 @@ const ReportScreen = () => {
                     y2="144.169"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="25.2733"
@@ -501,7 +501,7 @@ const ReportScreen = () => {
                     y2="138.288"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="23.6952"
@@ -510,7 +510,7 @@ const ReportScreen = () => {
                     y2="132.405"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="22.119"
@@ -519,7 +519,7 @@ const ReportScreen = () => {
                     y2="126.521"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="20.5448"
@@ -528,7 +528,7 @@ const ReportScreen = () => {
                     y2="120.638"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="18.9686"
@@ -537,7 +537,7 @@ const ReportScreen = () => {
                     y2="114.757"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="17.3886"
@@ -546,7 +546,7 @@ const ReportScreen = () => {
                     y2="108.875"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="15.8143"
@@ -555,7 +555,7 @@ const ReportScreen = () => {
                     y2="102.99"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="14.2382"
@@ -564,7 +564,7 @@ const ReportScreen = () => {
                     y2="97.1071"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="12.6639"
@@ -573,7 +573,7 @@ const ReportScreen = () => {
                     y2="91.2272"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="11.0858"
@@ -582,7 +582,7 @@ const ReportScreen = () => {
                     y2="85.3434"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="9.50965"
@@ -591,7 +591,7 @@ const ReportScreen = () => {
                     y2="79.4596"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="7.93347"
@@ -600,7 +600,7 @@ const ReportScreen = () => {
                     y2="73.5797"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="6.3534"
@@ -609,7 +609,7 @@ const ReportScreen = () => {
                     y2="67.6959"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="4.77722"
@@ -618,7 +618,7 @@ const ReportScreen = () => {
                     y2="61.8131"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="3.203"
@@ -627,7 +627,7 @@ const ReportScreen = () => {
                     y2="55.9303"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="1.62683"
@@ -636,7 +636,7 @@ const ReportScreen = () => {
                     y2="50.0495"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="0.0506607"
@@ -645,7 +645,7 @@ const ReportScreen = () => {
                     y2="44.1657"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="-1.52551"
@@ -654,7 +654,7 @@ const ReportScreen = () => {
                     y2="38.2829"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="-3.10168"
@@ -663,7 +663,7 @@ const ReportScreen = () => {
                     y2="32.4"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="-4.6759"
@@ -672,7 +672,7 @@ const ReportScreen = () => {
                     y2="26.5192"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="-6.25403"
@@ -681,7 +681,7 @@ const ReportScreen = () => {
                     y2="20.6354"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="-7.83215"
@@ -690,7 +690,7 @@ const ReportScreen = () => {
                     y2="14.7526"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="-9.40832"
@@ -699,7 +699,7 @@ const ReportScreen = () => {
                     y2="8.8688"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="-10.9845"
@@ -708,7 +708,7 @@ const ReportScreen = () => {
                     y2="2.98794"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                   <line
                     x1="-12.5607"
@@ -717,7 +717,7 @@ const ReportScreen = () => {
                     y2="-2.89487"
                     stroke="#737373"
                     stroke-opacity="0.14"
-                    stroke-width="1.26871"
+                    strokeWidth="1.26871"
                   />
                 </g>
               </g>
