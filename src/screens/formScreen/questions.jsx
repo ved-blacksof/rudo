@@ -87,7 +87,7 @@ const QuestionsScreen = () => {
               return (
                 <SplideSlide
                   key={index}
-                  className="flex py-4 lg:py-8 xl:py-10 flex-nowrap px-3  flex-col w-full overflow-auto"
+                  className="flex py-2 lg:py-3 xl:py-5 flex-nowrap px-3  flex-col w-full overflow-auto"
                 >
                   <div className="flex flex-nowrap gap-2 items-center max-w-screen-lg">
                     <div className="flex-1  max-w-screen-md">
@@ -103,11 +103,11 @@ const QuestionsScreen = () => {
                     </div>
                     <img
                       src={icon}
-                      className="h-16 w-16 md:h-24 md:w-24 lg:w-40 lg:h-40"
+                      className="h-16 w-16 md:h-24 md:w-24 lg:w-30 lg:h-30"
                       alt=""
                     />
                   </div>
-                  <div className="flex items-start justify-start h-min flex-wrap  gap-4   xl:mt-4  xl:mb-6 py-4">
+                  <div className="flex flex-col items-start justify-start h-min flex-wrap  gap-4   xl:mt-4  xl:mb-6 py-4">
                     {answers.map((i) => {
                       return (
                         <OptionItem
