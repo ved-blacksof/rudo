@@ -13,7 +13,7 @@ const LandingPage = () => {
       <div className="formBgNew">
         <section className="flex flex-wrap md:gap-10 justify-between  items-start flex-col-reverse sm:flex-row max-w-screen-2xl mx-auto pt-8 md:pt-16 lg:pt-24 pb-24 sm:pb-5 md:w-11/12">
           <div className="basis-96 grow max-w-screen-sm shrink px-3 py-10 grid items-start">
-            <h3 className="text-darkGreen  flex items-center  pt-3 rounded-xl bg-green bg-opacity-25 py-1 px-4  font-epilogue  text-base  sm:text-2xl font-bold  mr-auto mb-4 ">
+            <h3 className="text-darkGreen  flex items-center  pt-3 rounded-xl bg-lightGreen  py-1 px-4  font-epilogue  text-base  sm:text-2xl font-bold  mr-auto mb-4 ">
               #Financial Wellness Test
             </h3>
             <h1 className="text-2xl md:text-4xl xl:text-4xl font-epilogue font-bold md:leading-relaxed xl:leading-tight max-w-screen-md ">
