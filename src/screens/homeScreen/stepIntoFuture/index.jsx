@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 
 const StepIntoFuture = () => {
   return (
@@ -29,7 +29,7 @@ const StepIntoFuture = () => {
             Step into the future of Saving and Investing with RuDo!
           </div>
         </div>
-        
+
         <div className="sm:mt-3 flex items-center lg:justify-around flex-nowrap sm:gap-20 max-w-screen-2xl ">
           <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 p-1 self-stretch sm:mr-0 mr-1 bg-gradient rounded-xl">
             <svg
@@ -167,7 +167,7 @@ const StepIntoFuture = () => {
               <path
                 d="M23.1797 45.5408C32.2316 45.5408 39.5696 38.2028 39.5696 29.1509C39.5696 20.099 32.2316 12.761 23.1797 12.761C14.1278 12.761 6.78979 20.099 6.78979 29.1509C6.78979 38.2028 14.1278 45.5408 23.1797 45.5408Z"
                 stroke="black"
-                stroke-width="1.71025"
+                strokeWidth="1.71025"
                 stroke-miterlimit="10"
               />
               <path
@@ -181,7 +181,7 @@ const StepIntoFuture = () => {
               <path
                 d="M35.1256 44.2287C43.4522 44.2287 50.2023 37.4786 50.2023 29.152C50.2023 20.8253 43.4522 14.0753 35.1256 14.0753C26.7989 14.0753 20.0488 20.8253 20.0488 29.152C20.0488 37.4786 26.7989 44.2287 35.1256 44.2287Z"
                 stroke="black"
-                stroke-width="1.57322"
+                strokeWidth="1.57322"
                 stroke-miterlimit="10"
               />
               <path

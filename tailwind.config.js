@@ -25,6 +25,7 @@ module.exports = {
       colors: {
         darkGreen: "#1C96A0",
         green: "#4ABE9A",
+        lightGreen: "rgb(28,150,160,0.2)",
         red: "#E75553",
         darkRed: "#E75553",
         blue: "#173588",
@@ -40,6 +41,7 @@ module.exports = {
         btnLeft: "#ed8663",
         btnRight: "#e75553",
         formBg: "#FFE4B6",
+        formBgNew: "#FFE25C",
       },
     },
   },

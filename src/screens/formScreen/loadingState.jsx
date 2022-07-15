@@ -1,7 +1,6 @@
-import React  from "react";
+import React from "react";
 
 const LoadingState = () => {
-
   return (
     <div className=" fixed top-0 left-0 right-0 bottom-0 bg-dark bg-opacity-30 z-[10000] grid place-content-center">
       <svg
@@ -16,7 +15,7 @@ const LoadingState = () => {
           cy="50"
           fill="none"
           stroke="#ffa400"
-          stroke-width="10"
+          strokeWidth="10"
           r="35"
           stroke-dasharray="164.93361431346415 56.97787143782138"
         >

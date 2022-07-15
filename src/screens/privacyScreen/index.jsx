@@ -1,7 +1,7 @@
 import React from 'react'
 import { ImCross } from 'react-icons/im'
 import ReactMarkdown from 'react-markdown'
-import style from "./style.module.css"
+import remarkGfm from 'remark-gfm'
 
 let pr = `
 # Interpretation and Definitions
@@ -243,24 +243,80 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 If you have any questions about this Privacy Policy, you can contact us at [Info@rudowealth.com](mailto:Info@rudowealth.com).
 `
 
-function PrivacyScreen() {
-
-
-
+function LinkRenderer(props) {
     return (
-        <div className="sm:py-36 py-20 px-3 sm:w-11/12 max-w-screen-lg mx-auto">
-            <h1 className='sm:text-5xl text-3xl text-center pb-10'>
+        <a
+            href={props.href}
+            target="_blank"
+            rel="noreferrer noopener"
+            className=""
+        >
+            {props.children}
+        </a>
+    );
+}
+function HeadingRenderer(props) {
+    return <h1 className="text-red sm:mt-10 mt-4 mb-3 font-semibold sm:text-3xl text-2xl">{props.children}</h1>;
+}
+function Heading2Renderer(props) {
+    return <h2 className=" sm:mt-5 mt-3 mb-3 font-semibold sm:text-xl text-lg leading-tight">{props.children}</h2>;
+}
+function Heading3Renderer(props) {
+    return <h3 className=" sm:mt-5 mt-2 mb-3 font-semibold sm:text-xl  leading-tight">{props.children}</h3>;
+}
+function paraRenderer(props) {
+    return <p className="">{props.children}</p>;
+}
+function subtitleRenderer(props) {
+    return <p className="font-semibold sm:mt-2 mt-3">{props.children}</p>;
+}
+function ulRenderer(props) {
+    return <ul className="mt-2 list-disc ml-5">{props.children}</ul>;
+}
+function liRenderer(props) {
+    return <li className="">{props.children}</li>;
+}
+
+const MarkdownRenderer = ({ children }) => {
+    return (
+        <ReactMarkdown
+            className=""
+            components={{
+                a: LinkRenderer,
+                h1: HeadingRenderer,
+                h2: Heading2Renderer,
+                h3: subtitleRenderer,
+                p: paraRenderer,
+                span: paraRenderer,
+                ul: ulRenderer,
+
+                li: liRenderer,
+            }}
+            remarkPlugins={[remarkGfm]}
+        >
+            {children}
+        </ReactMarkdown>
+    );
+};
+
+
+function PrivacyScreen({ children }) {
+    return (
+        <div className="sm:py-36 py-24 px-3 sm:w-11/12 max-w-screen-lg mx-auto">
+            <h1 className='sm:text-5xl text-red font-semibold text-3xl text-center sm:pb-10 pb-5'>
                 Privacy Policy
             </h1>
             <h3 className='text-lg font-normal'>
                 This Privacy Policy describes our policies and procedures on the collection, use and disclosure of your information when you use the services and determines your privacy rights and how the law protects you.
-
             </h3>
             <h3 className='text-lg font-normal'>
                 We use your personal data to provide and improve the services. By using the services, you agree to the collection and use of information in accordance with this Privacy Policy.
             </h3>
+
             <div className='font-epilogue '>
-                <ReactMarkdown children={pr} className={style.privacyPolicy}></ReactMarkdown>
+
+                <MarkdownRenderer>{pr}</MarkdownRenderer>
+
             </div>
 
         </div>

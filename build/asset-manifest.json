@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3084ec9b.css",
+    "main.js": "/static/js/main.826233ae.js",
+    "static/media/Spare_Change_Investment.mp4": "/static/media/Spare_Change_Investment.1cb4ca1b8c411e52f9d4.mp4",
+    "static/media/landing_revised.png": "/static/media/landing_revised.0218f912b6b9ef376f70.png",
+    "static/media/vanio.woff": "/static/media/vanio.59079c2e5512bb59c58c.woff",
+    "static/media/3.svg": "/static/media/3.f2d671c3d19dfb080249.svg",
+    "static/media/feature3.svg": "/static/media/feature3.229ec2ffd6e47f17543a37567c1f4b15.svg",
+    "static/media/feature1.svg": "/static/media/feature1.547479817c3d62136bc375acbfb41b07.svg",
+    "static/media/1.svg": "/static/media/1.3055fdd04b8d6d7e5f52.svg",
+    "static/media/2.svg": "/static/media/2.542fab77bd1909995e45.svg",
+    "static/media/feature2.svg": "/static/media/feature2.fbf5c4db6783098eb0e7e400d5522b30.svg",
+    "static/media/trophyBg.png": "/static/media/trophyBg.ee0aad3983e68531d46e.png",
+    "static/media/Asset 8.svg": "/static/media/Asset 8.5c7bd93b647636c9380f.svg",
+    "static/media/logo.svg": "/static/media/logo.0d106077f7d5e736ec5a63e191e95ea9.svg",
+    "index.html": "/index.html",
+    "static/media/Vector2.svg": "/static/media/Vector2.9362ca6c386ece2e4235543147574b4c.svg",
+    "static/media/Vector.svg": "/static/media/Vector.8a169ad83cefc0b0dbdcecbcc70e33a7.svg",
+    "static/media/insta.svg": "/static/media/insta.f1fa763e6d87516e7c70eb0836db3530.svg",
+    "static/media/Vector1.svg": "/static/media/Vector1.ded81968a69e82e8261083c7d90f9122.svg",
+    "static/media/chevronDesktop.svg": "/static/media/chevronDesktop.39372522e15c2c6342f984f4bafe2672.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.da3c3225b43606fe1a1b58ce904474f4.svg",
+    "static/media/twitter.svg": "/static/media/twitter.717f0a0a16041887459ece1db62c7d1d.svg",
+    "static/media/facebook.svg": "/static/media/facebook.cd7979d9eff5106fdfe41c9c02d90d6d.svg",
+    "static/media/star.svg": "/static/media/star.06d9e931c96b2cb878ff.svg",
+    "static/media/circle_rope.svg": "/static/media/circle_rope.dce0d682ebff69f541ba.svg",
+    "main.3084ec9b.css.map": "/static/css/main.3084ec9b.css.map",
+    "main.826233ae.js.map": "/static/js/main.826233ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3084ec9b.css",
+    "static/js/main.826233ae.js"
+  ]
+}

@@ -1,5 +1,5 @@
-import React  from "react";
-import FormProgress from "./formProgress";
+import React from "react";
+
 import { useState, useRef } from "react";
 import FormHeader from "./formHeader";
 import trophy from "../../assets/formPage/trophyBg.png";
@@ -7,11 +7,13 @@ import { Formik } from "formik";
 import emailjs from "emailjs-com";
 import LoadingState from "./loadingState";
 
-import { useDispatchContext } from "../../context";
+import { useDispatchContext, useFormContext } from "../../context";
 
 const EmailFormScreen = () => {
   const formRef = useRef();
   const { moveNext } = useDispatchContext();
+  const { ansData } = useFormContext();
+  console.log(ansData);
   const [isLoading, toggleLoading] = useState(false);
   const initalFormState = {
     email: "",
@@ -161,7 +163,7 @@ const EmailFormScreen = () => {
           </Formik>
         </div>
       </div>
-      <FormProgress />
+      {/* <FormProgress /> */}
     </>
   );
 };
