@@ -1,0 +1,33 @@
+.splide__arrow {
+    background: #FFEDCF !important;
+    height: 3em;
+    width: 3em;
+}
+
+.splide__arrow--prev {
+    background: #FFEDCF !important;
+}
+
+.splide__arrow--next {
+    background: #FFEDCF !important;
+}
+
+.splide__arrow svg {
+    fill: #000;
+}
+
+.splide__arrow:hover:not(:disabled) svg {
+    fill: #000;
+}
+
+.splide__pagination__page {
+    background:#FFEDCF !important ;
+}
+
+@media (max-width:640px) {
+    .splide__arrow {
+        background: transparent !important;
+        height: 3em;
+        width: 3em;
+    }
+}

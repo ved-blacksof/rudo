@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { HomeScreen, ErrorScreen, FormScreen, PrivacyScreen } from "../screens";
 import { Ribbon, NavBar, Footer } from "../components";
 import ContextProvider from "../context";
+import Blogs from "../screens/blogs";
 
 const ViewWithNavAndFooter = () => {
   return (
@@ -23,9 +24,14 @@ const routeTree = () => {
       children: [{ path: "", element: <HomeScreen /> }],
     },
     {
-      path: "/privacypolicy",
+      path: "/privacy-policy",
       element: <ViewWithNavAndFooter />,
       children: [{ path: "", element: <PrivacyScreen /> }],
+    },
+    {
+      path: "/blogs",
+      element: <ViewWithNavAndFooter />,
+      children: [{ path: "", element: <Blogs /> }],
     },
     {
       path: "/wellness-test",
