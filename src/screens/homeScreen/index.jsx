@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 
 import Banner from "./banner";
 import StepIntoFuture from "./stepIntoFuture";
@@ -15,10 +15,10 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="banner__wrapper">
+      <div className="banner__wrapper bg-gradient">
         <Banner />
       </div>
-       <StepIntoFuture />
+      <StepIntoFuture />
       <div className="hidden sm:block">
         <HomeCardAnim />
       </div>

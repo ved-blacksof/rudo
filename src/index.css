@@ -36,11 +36,7 @@ html {
 }
 
 .bg-gradient {
-  background: linear-gradient(
-    180deg,
-    #ffeccb -30.84%,
-    rgba(255, 236, 203, 0) 141%
-  );
+  background: linear-gradient(180deg, rgba(255, 248, 236, 0.55) 17.88%, rgba(255, 226, 175, 0.55) 100%);
 }
 
 .bg-green {

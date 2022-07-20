@@ -302,7 +302,7 @@ const MarkdownRenderer = ({ children }) => {
 
 function PrivacyScreen({ children }) {
     return (
-        <div className="sm:py-36 py-24 px-3 sm:w-11/12 max-w-screen-lg mx-auto">
+        <div className="sm:py-36 py-16 px-3 sm:w-11/12 max-w-screen-lg mx-auto">
             <h1 className='sm:text-5xl text-red font-semibold text-3xl text-center sm:pb-10 pb-5'>
                 Privacy Policy
             </h1>
@@ -322,5 +322,4 @@ function PrivacyScreen({ children }) {
         </div>
     )
 }
-
 export default PrivacyScreen

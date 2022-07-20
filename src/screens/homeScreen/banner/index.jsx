@@ -94,7 +94,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section>
+    <section className="">
       <div className="px-3 md:w-11/12 mx-auto flex justify-between lg:justify-around gap-y-10 gap-x-6 lg:flex-row flex-col py-5 sm:py-16">
         <div className="grow-[3] shrink flex flex-col  justify-center max-w-screen-lg lg:px-3 ">
           <h1 className="text-2xl md:text-4xl xl:text-5xl font-epilogue font-bold md:leading-relaxed xl:leading-snug leading-7 text-center sm:text-left">

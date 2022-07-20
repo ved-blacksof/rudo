@@ -30,7 +30,7 @@ const StepIntoFuture = () => {
           </div>
         </div>
 
-        <div className="sm:mt-3 flex items-center lg:justify-around flex-nowrap sm:gap-20 max-w-screen-2xl ">
+        <div className="sm:mt-10 flex items-center lg:justify-around flex-nowrap sm:gap-20 max-w-screen-2xl ">
           <div className="flex lg:flex-row flex-col flex-1 flex-nowrap gap-2 items-center justify-start sm:p-4 p-1 self-stretch sm:mr-0 mr-1 bg-gradient rounded-xl">
             <svg
               width="90"
@@ -143,7 +143,7 @@ const StepIntoFuture = () => {
                 strokeMiterlimit="10"
               />
             </svg>
-            <p className="sm:basis-[20rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-2xl font-epilogue sm:px-3">
+            <p className="lg:basis-[20rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-2xl font-epilogue sm:px-3">
               No prior knowledge required
             </p>
           </div>
@@ -198,7 +198,7 @@ const StepIntoFuture = () => {
               />
             </svg>
 
-            <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-2xl font-epilogue sm:px-3">
+            <p className=" lg:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-2xl font-epilogue sm:px-3">
               Start investing as small as AED20
             </p>
           </div>
@@ -252,7 +252,7 @@ const StepIntoFuture = () => {
                 </clipPath>
               </defs>
             </svg>
-            <p className=" sm:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-2xl font-epilogue sm:px-3">
+            <p className=" lg:basis-[18rem] text-dark lg:text-left text-center text-sm sm:text-2xl xl:text-2xl font-epilogue sm:px-3">
               Withdraw as and when you like
             </p>
           </div>
