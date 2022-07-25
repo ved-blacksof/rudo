@@ -33,6 +33,13 @@
     display: none;
 }
 
+#O9IEEdQ8EgxuoqTO2MoSKwvtlOE_embedForm_z04d6u {
+    z-index: 0 !important;
+}
+.vl-frame {
+    z-index: 0 !important;
+}
+
 @media screen and (max-width: 600px) {
     .viral-loops-wrapper {
         height: fit-content;

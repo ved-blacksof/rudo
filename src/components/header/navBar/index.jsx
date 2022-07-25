@@ -85,7 +85,7 @@ const Nav = () => {
     <header
       className={`${
         scrolled ? "bg-white shadow" : "bg-transparent"
-      } transition header sticky top-0 left-0 right-0 z-[10]`}
+      } transition header sticky top-0 left-0 right-0 z-[9999999999999999999999999999]`}
     >
       <nav className="h-[4.5rem] py-2 px-3 lg:w-11/12 mx-auto  flex flex-nowrap items-center justify-between gap-y-10 gap-x-6  ">
         <Link to="/">
@@ -112,13 +112,15 @@ const Nav = () => {
         {/* <button onClick={JoinWaitlist} className=" btn sm:block hidden pt-3 pb-2 px-6 text-lg xl:text-xl text-white font-epilogue bg-red rounded-full hover:bg-darkRed transition-colors duration-300 cursor-pointer ">
           Join The Waitlist
         </button> */}
+
         <button
           onClick={JoinWaitlist}
-          className="sm:pb-2 pb-1 pt-2 sm:pt-3 sm:px-10 px-6 text-sm sm:text-lg xl:text-xl text-white whitespace-nowrap font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer  "
+          className="sm:pb-2 pb-1 pt-2 sm:pt-3 sm:px-10 px-6 text-sm sm:text-lg xl:text-xl text-white whitespace-nowrap font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer hover:bg-transparent hover:text-darkRed "
         >
           Join Waitlist
         </button>
       </nav>
+
       {/* <MobileModal isOpen={isModalOpen} /> */}
       <div
         className={`  ${

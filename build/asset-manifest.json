@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1c0f2cd.css",
-    "main.js": "/static/js/main.800eded4.js",
+    "main.css": "/static/css/main.5db4283c.css",
+    "main.js": "/static/js/main.8babaada.js",
     "static/media/Spare_Change_Investment.mp4": "/static/media/Spare_Change_Investment.1cb4ca1b8c411e52f9d4.mp4",
     "static/media/landing_revised.png": "/static/media/landing_revised.0218f912b6b9ef376f70.png",
     "static/media/vanio.woff": "/static/media/vanio.59079c2e5512bb59c58c.woff",
@@ -26,11 +26,11 @@
     "static/media/facebook.svg": "/static/media/facebook.cd7979d9eff5106fdfe41c9c02d90d6d.svg",
     "static/media/star.svg": "/static/media/star.06d9e931c96b2cb878ff.svg",
     "static/media/circle_rope.svg": "/static/media/circle_rope.dce0d682ebff69f541ba.svg",
-    "main.a1c0f2cd.css.map": "/static/css/main.a1c0f2cd.css.map",
-    "main.800eded4.js.map": "/static/js/main.800eded4.js.map"
+    "main.5db4283c.css.map": "/static/css/main.5db4283c.css.map",
+    "main.8babaada.js.map": "/static/js/main.8babaada.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1c0f2cd.css",
-    "static/js/main.800eded4.js"
+    "static/css/main.5db4283c.css",
+    "static/js/main.8babaada.js"
   ]
 }

@@ -126,21 +126,20 @@ const Banner = () => {
           <div className="viral-loops-wrapper rounded-md sm:p-0 p-2 bg-opacity-10 font-epilogue max-w-screen-xs mt-8 sm:mt-5 ">
             {/* POPUP */}
             <div
-              className={`  ${
-                joinWaitlist
-                  ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50"
-                  : "hidden"
-              }`}
+              className={`  ${joinWaitlist
+                ? "fixed top-0 left-0 right-2 flex justify-center items-center w-screen h-screen z-10 bg-slate-600 bg-opacity-50"
+                : "hidden"
+                }`}
             >
               <div className="viral-loops-formss relative p-5 flex items-center justify-center">
                 <ImCross
-                  className="absolute top-5 right-5 block font-bold cursor-pointer hover:text-black text-red"
+                  className="absolute top-5 right-5 block font-bold cursor-pointer z-[999] hover:text-black text-red"
                   onClick={JoinWaitlist}
                 />
 
                 {/* VIRAL Loops */}
 
-                <div data-vl-widget="embedForm" className="z-[100]"></div>
+                <div data-vl-widget="embedForm" className=" z-[100] signup_form_zindex"></div>
                 <div className="absolute top-0 left-0 right-0 bottom-0 my-auto grid place-content-center z-[0] h-16">
                   <svg
                     style={{
@@ -179,20 +178,24 @@ const Banner = () => {
 
             <span className="rounded-2xl w-full h-[3px] bg-[#FFDF9E] sm:block hidden"></span>
 
-            <div className="inline-flex justify-center flex-col items-center sm:items-start mt-3">
-              <h1 className="font-epilogue  text-center text-black py-1 sm:font-normal font-semibold sm:text-xl sm:px-0 px-8">
+            <div className=" items-center sm:items-start mt-6">
+              <div data-vl-widget="embedForm" className="z-[100] flex justify-start"></div>
+
+              {/* <h1 className="font-epilogue  text-center text-black py-1 sm:font-normal font-semibold sm:text-xl sm:px-0 px-8">
                 Signup now to join our waitlist and get AED 50
-              </h1>
-              <button
+              </h1> */}
+              {/* <button
                 onClick={JoinWaitlist}
                 className="sm:pb-2 pb-1 sm:pt-3 pt-1 mt-3 sm:px-10 px-8 text-lg xl:text-xl text-white font-epilogue border-2 bg-red rounded-xl transition-colors duration-300 cursor-pointer"
               >
                 Join Waitlist
-              </button>
+              </button> */}
 
-              <div className="font-epilogue mt-3 ">
+
+
+              <div className="font-epilogue  ">
                 <h3
-                  className="text-[9px] cursor-pointer sm:text-left text-center hover:text-red  transition-all sm:text-xs"
+                  className="text-[9px] cursor-pointer sm:text-left text-center text-gray hover:text-red  transition-all sm:text-xs"
                   onClick={() =>
                     popupTerms ? setPopupTerms(false) : setPopupTerms(true)
                   }
